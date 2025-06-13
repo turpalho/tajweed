@@ -1,0 +1,1 @@
+export { QuranPage } from './ui/quran-page'; 
