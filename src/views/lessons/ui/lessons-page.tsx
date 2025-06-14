@@ -3,112 +3,33 @@
 import { useState } from "react";
 import { Course, Lesson } from "@/entities/lesson";
 import { CheckCircle, Play, Clock } from "lucide-react";
+import { useRouter } from "next/navigation";
+import lessonsData from "@/shared/data/lessons.json";
 
-// Моковые данные уроков для каждого курса
-const mockLessons: Record<string, Lesson[]> = {
-  "1": [
-    // Основы таджвида
-    {
-      id: "1-1",
-      title: "Введение в таджвид",
-      description: "Основные понятия и значение таджвида в исламе",
-      duration: 900, // 15 минут
-      videoUrl: "/videos/intro-tajweed.mp4",
-      thumbnail: "/thumbnails/intro.jpg",
-      courseId: "1",
-      order: 1,
-      status: "completed",
-    },
-    {
-      id: "1-2",
-      title: "Арабский алфавит",
-      description: "Изучение всех 28 букв арабского алфавита",
-      duration: 1200, // 20 минут
-      videoUrl: "/videos/alphabet.mp4",
-      thumbnail: "/thumbnails/alphabet.jpg",
-      courseId: "1",
-      order: 2,
-      status: "completed",
-    },
-    {
-      id: "1-3",
-      title: "Харакаты (огласовки)",
-      description: "Изучение фатха, касра, дамма и их правильное произношение",
-      duration: 1080, // 18 минут
-      videoUrl: "/videos/harakats.mp4",
-      thumbnail: "/thumbnails/harakats.jpg",
-      courseId: "1",
-      order: 3,
-      status: "in_progress",
-    },
-    {
-      id: "1-4",
-      title: "Мадд (удлинение)",
-      description: "Правила удлинения гласных звуков",
-      duration: 960, // 16 минут
-      videoUrl: "/videos/madd.mp4",
-      thumbnail: "/thumbnails/madd.jpg",
-      courseId: "1",
-      order: 4,
-      status: "not_started",
-    },
-  ],
-  "2": [
-    // Продвинутые правила
-    {
-      id: "2-1",
-      title: "Идгам (слияние)",
-      description: "Правила слияния букв при чтении Корана",
-      duration: 1500, // 25 минут
-      videoUrl: "/videos/idgam.mp4",
-      thumbnail: "/thumbnails/idgam.jpg",
-      courseId: "2",
-      order: 1,
-      status: "completed",
-    },
-    {
-      id: "2-2",
-      title: "Икляб (замена)",
-      description: "Правило замены звуков в определенных случаях",
-      duration: 1200, // 20 минут
-      videoUrl: "/videos/iklyab.mp4",
-      thumbnail: "/thumbnails/iklyab.jpg",
-      courseId: "2",
-      order: 2,
-      status: "not_started",
-    },
-    {
-      id: "2-3",
-      title: "Ихфа (сокрытие)",
-      description: "Правила сокрытия звуков при чтении",
-      duration: 1800, // 30 минут
-      videoUrl: "/videos/ihfa.mp4",
-      thumbnail: "/thumbnails/ihfa.jpg",
-      courseId: "2",
-      order: 3,
-      status: "not_started",
-    },
-  ],
-};
-
-// Обновленные данные курсов с уроками
+// Обновленные данные курсов с реальными уроками
 const mockCourses: Course[] = [
   {
     id: "1",
     title: "Основы таджвида",
     description: "Базовые правила чтения Корана и произношения арабских букв",
-    lessons: mockLessons["1"],
-    totalDuration: 3600, // 60 минут
-    completedLessons: 3,
+    lessons: lessonsData["1"] as Lesson[],
+    totalDuration: lessonsData["1"].reduce(
+      (total, lesson) => total + lesson.duration,
+      0
+    ),
+    completedLessons: 0,
   },
   {
     id: "2",
     title: "Продвинутые правила",
     description:
       "Сложные правила таджвида и их применение в различных контекстах",
-    lessons: mockLessons["2"],
-    totalDuration: 4800, // 80 минут
-    completedLessons: 1,
+    lessons: lessonsData["2"] as Lesson[],
+    totalDuration: lessonsData["2"].reduce(
+      (total, lesson) => total + lesson.duration,
+      0
+    ),
+    completedLessons: 0,
   },
 ];
 
@@ -205,14 +126,13 @@ function LessonList({ lessons, onLessonClick }: LessonListProps) {
 
 export function LessonsPage() {
   const [activeTab, setActiveTab] = useState<"1" | "2">("1");
+  const router = useRouter();
 
   const activeCourse = mockCourses.find((course) => course.id === activeTab);
-  const lessons = mockLessons[activeTab] || [];
+  const lessons = (lessonsData[activeTab] as Lesson[]) || [];
 
   const handleLessonClick = (lessonId: string) => {
-    console.log("Navigate to lesson", lessonId);
-    // Здесь будет навигация на страницу урока
-    // router.push(`/lessons/${lessonId}`);
+    router.push(`/lessons/${lessonId}`);
   };
 
   return (

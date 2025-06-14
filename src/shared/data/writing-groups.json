@@ -9,7 +9,7 @@
       { "letter": "ب", "name": "Ба", "transliteration": "ba" }
     ],
     "pdfUrl": "/pdfs/group-1-writing.pdf",
-    "videoUrl": "/videos/group-1-writing.mp4",
+    "videoUrl": "https://youtu.be/KQJcVYHX4ow",
     "isDownloaded": false
   },
   {
@@ -22,7 +22,7 @@
       { "letter": "ي", "name": "Йа", "transliteration": "ya" }
     ],
     "pdfUrl": "/pdfs/group-2-writing.pdf",
-    "videoUrl": "/videos/group-2-writing.mp4",
+    "videoUrl": "https://youtu.be/ySy1AV0atHQ",
     "isDownloaded": false
   },
   {
@@ -35,7 +35,7 @@
       { "letter": "س", "name": "Син", "transliteration": "sin" }
     ],
     "pdfUrl": "/pdfs/group-3-writing.pdf",
-    "videoUrl": "/videos/group-3-writing.mp4",
+    "videoUrl": "https://youtu.be/ciZAhpItZFg",
     "isDownloaded": false
   },
   {
@@ -48,7 +48,7 @@
       { "letter": "ط", "name": "ТIo", "transliteration": "tIo" }
     ],
     "pdfUrl": "/pdfs/group-4-writing.pdf",
-    "videoUrl": "/videos/group-4-writing.mp4",
+    "videoUrl": "https://youtu.be/phwar7MJyzo",
     "isDownloaded": false
   },
   {
@@ -61,7 +61,7 @@
       { "letter": "ف", "name": "Фа", "transliteration": "fa" }
     ],
     "pdfUrl": "/pdfs/group-5-writing.pdf",
-    "videoUrl": "/videos/group-5-writing.mp4",
+    "videoUrl": "https://youtu.be/tmTRJjbBX5I",
     "isDownloaded": false
   },
   {
@@ -74,7 +74,7 @@
       { "letter": "م", "name": "Мим", "transliteration": "mim" }
     ],
     "pdfUrl": "/pdfs/group-6-writing.pdf",
-    "videoUrl": "/videos/group-6-writing.mp4",
+    "videoUrl": "https://youtu.be/4IspThuEB9c",
     "isDownloaded": false
   },
   {
@@ -87,7 +87,7 @@
       { "letter": "ا", "name": "Алиф", "transliteration": "alif" }
     ],
     "pdfUrl": "/pdfs/group-7-writing.pdf",
-    "videoUrl": "/videos/group-7-writing.mp4",
+    "videoUrl": "https://youtu.be/wDehDgFNOi8",
     "isDownloaded": false
   },
   {
@@ -95,7 +95,7 @@
     "title": "Буква ء (х1амза)",
     "letters": [{ "letter": "ء", "name": "Хамза", "transliteration": "hamza" }],
     "pdfUrl": "/pdfs/group-8-writing.pdf",
-    "videoUrl": "/videos/group-8-writing.mp4",
+    "videoUrl": "https://youtu.be/LxZ60b8Sk1A",
     "isDownloaded": false
   }
 ]
