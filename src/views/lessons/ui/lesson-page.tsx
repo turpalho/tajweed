@@ -4,6 +4,11 @@ import { useState } from "react";
 import { ArrowLeft, Play, CheckCircle } from "lucide-react";
 import lessonsData from "@/shared/data/lessons.json";
 import { useRouter } from "next/navigation";
+import { useYouTubeDuration } from "@/shared/hooks/use-youtube-duration";
+import {
+  formatDurationInMinutes,
+  getYouTubeId,
+} from "@/shared/lib/youtube-player";
 
 interface LessonPageProps {
   lessonId: string;
@@ -16,6 +21,14 @@ export function LessonPage({ lessonId }: LessonPageProps) {
   // Находим урок по ID
   const allLessons = [...lessonsData["1"], ...lessonsData["2"]];
   const lesson = allLessons.find((l) => l.id === lessonId);
+
+  // Получаем реальную длительность видео
+  const { duration: realDuration, isLoading: isDurationLoading } =
+    useYouTubeDuration(
+      lesson?.videoUrl || "",
+      lesson?.duration, // fallback из JSON
+      !!lesson?.videoUrl // enabled только если есть URL
+    );
 
   // Находим предыдущий и следующий уроки в том же курсе
   const courseLessons = lessonsData[lesson?.courseId as "1" | "2"] || [];
@@ -67,15 +80,13 @@ export function LessonPage({ lessonId }: LessonPageProps) {
     console.log(`Урок ${lessonId} отмечен как завершенный`);
   };
 
-  // Получаем YouTube ID из URL
-  const getYouTubeId = (url: string) => {
-    const regExp =
-      /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-    const match = url.match(regExp);
-    return match && match[2].length === 11 ? match[2] : null;
-  };
-
   const youtubeId = getYouTubeId(lesson.videoUrl);
+
+  // Используем реальную длительность или fallback
+  const displayDuration = realDuration || lesson.duration;
+  const durationText = isDurationLoading
+    ? "Загрузка..."
+    : formatDurationInMinutes(displayDuration);
 
   return (
     <div className="min-h-screen relative">
@@ -94,7 +105,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                 {lesson.title}
               </h1>
               <p className="text-[#E0E0E0]/70 text-sm">
-                Урок {lesson.order} • {Math.floor(lesson.duration / 60)} минут
+                Урок {lesson.order} • {durationText}
               </p>
             </div>
           </div>
@@ -165,7 +176,9 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                 <div className="space-y-2 text-sm text-[#E0E0E0]/60">
                   <div className="flex justify-between">
                     <span>Длительность:</span>
-                    <span>{Math.floor(lesson.duration / 60)} минут</span>
+                    <span className={isDurationLoading ? "animate-pulse" : ""}>
+                      {durationText}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span>Номер урока:</span>

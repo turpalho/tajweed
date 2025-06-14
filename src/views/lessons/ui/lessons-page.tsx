@@ -33,12 +33,12 @@ const mockCourses: Course[] = [
   },
 ];
 
-interface LessonListProps {
-  lessons: Lesson[];
+interface LessonItemProps {
+  lesson: Lesson;
   onLessonClick: (lessonId: string) => void;
 }
 
-function LessonList({ lessons, onLessonClick }: LessonListProps) {
+function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
   const getStatusIcon = (status: Lesson["status"]) => {
     switch (status) {
       case "completed":
@@ -65,61 +65,73 @@ function LessonList({ lessons, onLessonClick }: LessonListProps) {
     }
   };
 
+  const StatusIcon = getStatusIcon(lesson.status);
+
   return (
-    <div className="flex flex-col gap-3">
-      {lessons.map((lesson) => {
-        const StatusIcon = getStatusIcon(lesson.status);
-        return (
-          <div
-            key={lesson.id}
-            className="group relative cursor-pointer"
-            onClick={() => onLessonClick(lesson.id)}
-          >
-            {/* Glass morphism card */}
-            <div className="relative bg-secondary rounded-3xl p-4 md:p-6 hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] hover:bg-[#E0E0E0]/15">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 md:w-16 md:h-16 bg-[#E0E0E0]/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-[#E0E0E0]/30 group-hover:bg-[#E0E0E0]/30 transition-colors flex-shrink-0">
-                    <StatusIcon size={24} color="#E0E0E0" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="font-semibold text-base md:text-lg text-[#E0E0E0] mb-1 group-hover:text-[#E0E0E0]/90 transition-colors">
-                      {lesson.title}
-                    </h3>
-                    <p className="text-sm text-[#E0E0E0]/70 mb-2 font-light line-clamp-2">
-                      {lesson.description}
-                    </p>
-                    <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs text-[#E0E0E0]/50">
-                      <span>{Math.floor(lesson.duration / 60)} мин</span>
-                      <span>Урок {lesson.order}</span>
-                      <span
-                        className={`px-2 py-1 rounded-full backdrop-blur-sm border text-xs ${
-                          lesson.status === "completed"
-                            ? "bg-accent/20 text-accent border-accent/30"
-                            : lesson.status === "in_progress"
-                            ? "bg-accent/20 text-accent border-accent/30"
-                            : "bg-[#E0E0E0]/10 text-[#E0E0E0]/60 border-[#E0E0E0]/20"
-                        }`}
-                      >
-                        {getStatusText(lesson.status)}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex justify-end md:flex-col md:items-end">
-                  <div className="px-4 py-2 bg-secondary backdrop-blur-sm border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-                    {lesson.status === "completed"
-                      ? "Пересмотреть"
+    <div
+      className="group relative cursor-pointer"
+      onClick={() => onLessonClick(lesson.id)}
+    >
+      {/* Glass morphism card */}
+      <div className="relative bg-secondary rounded-3xl p-4 md:p-6 hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] hover:bg-[#E0E0E0]/15">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-[#E0E0E0]/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-[#E0E0E0]/30 group-hover:bg-[#E0E0E0]/30 transition-colors flex-shrink-0">
+              <StatusIcon size={24} color="#E0E0E0" />
+            </div>
+            <div className="min-w-0 flex-1">
+              <h3 className="font-semibold text-base md:text-lg text-[#E0E0E0] mb-1 group-hover:text-[#E0E0E0]/90 transition-colors">
+                {lesson.title}
+              </h3>
+              <p className="text-sm text-[#E0E0E0]/70 mb-2 font-light line-clamp-2">
+                {lesson.description}
+              </p>
+              <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs text-[#E0E0E0]/50">
+                <span>Урок {lesson.order}</span>
+                <span
+                  className={`px-2 py-1 rounded-full backdrop-blur-sm border text-xs ${
+                    lesson.status === "completed"
+                      ? "bg-accent/20 text-accent border-accent/30"
                       : lesson.status === "in_progress"
-                      ? "Продолжить"
-                      : "Начать"}
-                  </div>
-                </div>
+                      ? "bg-accent/20 text-accent border-accent/30"
+                      : "bg-[#E0E0E0]/10 text-[#E0E0E0]/60 border-[#E0E0E0]/20"
+                  }`}
+                >
+                  {getStatusText(lesson.status)}
+                </span>
               </div>
             </div>
           </div>
-        );
-      })}
+          <div className="flex justify-end md:flex-col md:items-end">
+            <div className="px-4 py-2 bg-secondary backdrop-blur-sm border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
+              {lesson.status === "completed"
+                ? "Пересмотреть"
+                : lesson.status === "in_progress"
+                ? "Продолжить"
+                : "Начать"}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+interface LessonListProps {
+  lessons: Lesson[];
+  onLessonClick: (lessonId: string) => void;
+}
+
+function LessonList({ lessons, onLessonClick }: LessonListProps) {
+  return (
+    <div className="flex flex-col gap-3">
+      {lessons.map((lesson) => (
+        <LessonItem
+          key={lesson.id}
+          lesson={lesson}
+          onLessonClick={onLessonClick}
+        />
+      ))}
     </div>
   );
 }
@@ -204,7 +216,7 @@ export function LessonsPage() {
               </div>
 
               {/* Progress Bar */}
-              <div className="mb-6">
+              <div>
                 <div className="w-full bg-primary rounded-full h-3">
                   <div
                     className="h-3 rounded-full transition-all duration-700 ease-out"
@@ -221,16 +233,6 @@ export function LessonsPage() {
                     }}
                   />
                 </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-                <span className="text-sm text-[#E0E0E0]/60 font-light">
-                  Общая длительность:{" "}
-                  {Math.floor(activeCourse.totalDuration / 60)} минут
-                </span>
-                <span className="text-sm text-[#E0E0E0]/60 font-light">
-                  {activeCourse.lessons.length} уроков в курсе
-                </span>
               </div>
             </div>
           )}
