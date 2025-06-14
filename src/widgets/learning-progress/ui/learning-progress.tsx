@@ -13,9 +13,9 @@ export function LearningProgress({
 }: LearningProgressProps) {
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
+      <div className="bg-secondary  rounded-3xl p-8">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-white mb-2">
+          <h2 className="text-2xl font-bold text-[#E0E0E0] mb-2">
             Прогресс обучения
           </h2>
           <p className="font-light" style={{ color: "var(--text-secondary)" }}>
@@ -64,7 +64,7 @@ export function LearningProgress({
               </defs>
             </svg>
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-3xl font-bold text-white">
+              <span className="text-3xl font-bold text-[#E0E0E0]">
                 {totalProgress}%
               </span>
               <span
@@ -80,7 +80,7 @@ export function LearningProgress({
         {/* Stats grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           <div className="text-center group">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 group-hover:bg-white/10 transition-all duration-300">
+            <div className="bg-[#E0E0E0]/5 backdrop-blur-sm border border-[#E0E0E0]/10 rounded-2xl p-4 group-hover:bg-[#E0E0E0]/10 transition-all duration-300">
               <div
                 className="text-3xl font-bold mb-1"
                 style={{ color: "#ED6F4C" }}
@@ -96,7 +96,7 @@ export function LearningProgress({
             </div>
           </div>
           <div className="text-center group">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 group-hover:bg-white/10 transition-all duration-300">
+            <div className="bg-[#E0E0E0]/5 backdrop-blur-sm border border-[#E0E0E0]/10 rounded-2xl p-4 group-hover:bg-[#E0E0E0]/10 transition-all duration-300">
               <div
                 className="text-3xl font-bold mb-1"
                 style={{ color: "#ED6F4CCC" }}
@@ -112,7 +112,7 @@ export function LearningProgress({
             </div>
           </div>
           <div className="text-center group">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 group-hover:bg-white/10 transition-all duration-300">
+            <div className="bg-[#E0E0E0]/5 backdrop-blur-sm border border-[#E0E0E0]/10 rounded-2xl p-4 group-hover:bg-[#E0E0E0]/10 transition-all duration-300">
               <div
                 className="text-3xl font-bold mb-1"
                 style={{ color: "#ED6F4C80" }}

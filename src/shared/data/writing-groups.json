@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "title": "Буквы ب ت ث ن (6а, та, са, нун)",
+    "letters": [
+      { "letter": "ن", "name": "Нун", "transliteration": "nun" },
+      { "letter": "ث", "name": "Са", "transliteration": "tha" },
+      { "letter": "ت", "name": "Та", "transliteration": "ta" },
+      { "letter": "ب", "name": "Ба", "transliteration": "ba" }
+    ],
+    "pdfUrl": "/pdfs/group-1-writing.pdf",
+    "videoUrl": "/videos/group-1-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "2",
+    "title": "Буквы ي ج ح خ (йа, джим, хьа, хо)",
+    "letters": [
+      { "letter": "خ", "name": "Хо", "transliteration": "ho" },
+      { "letter": "ح", "name": "Хьа", "transliteration": "ha" },
+      { "letter": "ج", "name": "Джим", "transliteration": "jim" },
+      { "letter": "ي", "name": "Йа", "transliteration": "ya" }
+    ],
+    "pdfUrl": "/pdfs/group-2-writing.pdf",
+    "videoUrl": "/videos/group-2-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "3",
+    "title": "Буквы س ش ص ض (син, шин, сод, дод)",
+    "letters": [
+      { "letter": "ض", "name": "Дод", "transliteration": "dad" },
+      { "letter": "ص", "name": "Сод", "transliteration": "sad" },
+      { "letter": "ش", "name": "Шин", "transliteration": "shin" },
+      { "letter": "س", "name": "Син", "transliteration": "sin" }
+    ],
+    "pdfUrl": "/pdfs/group-3-writing.pdf",
+    "videoUrl": "/videos/group-3-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "4",
+    "title": "Буквы ط ظ ع غ (тIо, зо, 1айн, г1ойн)",
+    "letters": [
+      { "letter": "غ", "name": "Гайн", "transliteration": "ghayn" },
+      { "letter": "ع", "name": "Айн", "transliteration": "ayn" },
+      { "letter": "ظ", "name": "ЗIo", "transliteration": "zIo" },
+      { "letter": "ط", "name": "ТIo", "transliteration": "tIo" }
+    ],
+    "pdfUrl": "/pdfs/group-4-writing.pdf",
+    "videoUrl": "/videos/group-4-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "5",
+    "title": "Буквы ف ق ك ل (фа, къоф, каф, лам)",
+    "letters": [
+      { "letter": "ل", "name": "Лам", "transliteration": "lam" },
+      { "letter": "ك", "name": "Каф", "transliteration": "kaf" },
+      { "letter": "ق", "name": "Къоф", "transliteration": "qaf" },
+      { "letter": "ف", "name": "Фа", "transliteration": "fa" }
+    ],
+    "pdfUrl": "/pdfs/group-5-writing.pdf",
+    "videoUrl": "/videos/group-5-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "6",
+    "title": "Буквы م ه د ذ (мим, хIа, даль, заль)",
+    "letters": [
+      { "letter": "ذ", "name": "Заль", "transliteration": "zal" },
+      { "letter": "د", "name": "Даль", "transliteration": "dal" },
+      { "letter": "ه", "name": "ХIа", "transliteration": "ha" },
+      { "letter": "م", "name": "Мим", "transliteration": "mim" }
+    ],
+    "pdfUrl": "/pdfs/group-6-writing.pdf",
+    "videoUrl": "/videos/group-6-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "7",
+    "title": "Буквы ر ز و ا (ро, за, вав, алиф)",
+    "letters": [
+      { "letter": "ر", "name": "Ро", "transliteration": "ro" },
+      { "letter": "و", "name": "Вав", "transliteration": "waw" },
+      { "letter": "ز", "name": "За", "transliteration": "za" },
+      { "letter": "ا", "name": "Алиф", "transliteration": "alif" }
+    ],
+    "pdfUrl": "/pdfs/group-7-writing.pdf",
+    "videoUrl": "/videos/group-7-writing.mp4",
+    "isDownloaded": false
+  },
+  {
+    "id": "8",
+    "title": "Буква ء (х1амза)",
+    "letters": [{ "letter": "ء", "name": "Хамза", "transliteration": "hamza" }],
+    "pdfUrl": "/pdfs/group-8-writing.pdf",
+    "videoUrl": "/videos/group-8-writing.mp4",
+    "isDownloaded": false
+  }
+]

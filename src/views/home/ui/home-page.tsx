@@ -18,11 +18,11 @@ export function HomePage() {
 
   return (
     <div className="min-h-screen relative">
-      <div className="relative py-16">
-        <div className="max-w-4xl mx-auto flex flex-col gap-8">
+      <div className="relative py-20 sm:py-16">
+        <div className="max-w-4xl mx-auto flex flex-col gap-6">
           {/* Hero Section */}
           <div className="text-center ">
-            <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm font-medium text-white/90 mb-2 shadow-2xl">
+            <div className="inline-flex items-center px-4 py-2 bg-[#E0E0E0]/10 backdrop-blur-md border border-[#E0E0E0]/20 rounded-full text-sm font-medium text-[#E0E0E0]/90 mb-2 shadow-2xl">
               <span
                 className="w-2 h-2 rounded-full mr-2 animate-pulse shadow-lg"
                 style={{
@@ -33,7 +33,7 @@ export function HomePage() {
               Активное обучение
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-[#E0E0E0] leading-tight tracking-tight">
               Изучение
               <span
                 className="bg-gradient-to-r bg-clip-text text-transparent"
@@ -48,11 +48,11 @@ export function HomePage() {
           </div>
 
           {/* Daily Goal Card - Glass morphism */}
-          <div className="flex justify-center">
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
+          <div>
+            <div className="bg-secondary rounded-3xl p-8 max-w-2xl mx-auto flex flex-col items-center">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-white mb-1">
+                  <div className="text-4xl font-bold text-[#E0E0E0] mb-1">
                     {dailyGoal.current}
                   </div>
                   <div
@@ -112,7 +112,7 @@ export function HomePage() {
                     </defs>
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-sm font-bold text-white">
+                    <span className="text-sm font-bold text-[#E0E0E0]">
                       {Math.round((dailyGoal.current / dailyGoal.target) * 100)}
                       %
                     </span>
@@ -120,7 +120,7 @@ export function HomePage() {
                 </div>
 
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-white mb-1">
+                  <div className="text-4xl font-bold text-[#E0E0E0] mb-1">
                     {dailyGoal.streak}
                   </div>
                   <div
@@ -135,12 +135,12 @@ export function HomePage() {
           </div>
 
           {/* Quick Access Cards */}
-          <div className="">
+          <div>
             <QuickAccessCards />
           </div>
 
           {/* Learning Progress */}
-          <div className="">
+          <div>
             <LearningProgress {...progressData} />
           </div>
         </div>

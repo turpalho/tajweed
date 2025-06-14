@@ -1,11 +1,16 @@
 "use client";
 
+import { BookOpen } from "lucide-react";
+
 export function LearningSettings() {
   return (
-    <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
-      <h3 className="text-2xl font-semibold text-white mb-6">
-        📚 Настройки обучения
-      </h3>
+    <div className="bg-secondary rounded-3xl p-8">
+      <div className="flex items-center gap-2 mb-6">
+        <BookOpen size={24} color="#E0E0E0" />
+        <h3 className="text-xl font-semibold text-[#E0E0E0]">
+          Настройки обучения
+        </h3>
+      </div>
 
       <div className="space-y-6">
         <div>

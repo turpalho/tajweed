@@ -41,11 +41,11 @@ const mockSurahs: Surah[] = [
 export function QuranPage() {
   return (
     <div className="min-h-screen relative">
-      <div className="relative py-16">
-        <div className="max-w-4xl mx-auto flex flex-col gap-8">
+      <div className="relative py-20 sm:py-16">
+        <div className="max-w-4xl mx-auto flex flex-col gap-6">
           {/* Hero Section */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#E0E0E0] leading-tight tracking-tight">
               Священный
               <span
                 className="bg-gradient-to-r bg-clip-text text-transparent ml-3"
@@ -59,10 +59,10 @@ export function QuranPage() {
           </div>
 
           {/* Search and Filters */}
-          <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
+          <div className="bg-secondary rounded-3xl p-8">
             <div className="flex flex-col md:flex-row gap-4">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 flex-1">
-                <select className="bg-transparent text-white w-full outline-none text-sm font-medium">
+              <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
+                <select className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium">
                   <option value="" className="bg-gray-800">
                     Все суры
                   </option>
@@ -77,15 +77,15 @@ export function QuranPage() {
                   </option>
                 </select>
               </div>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 flex-1">
+              <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
                 <input
                   type="text"
                   placeholder="Поиск по названию суры..."
-                  className="bg-transparent text-white placeholder-white/50 w-full outline-none text-sm font-light"
+                  className="bg-transparent text-[#E0E0E0] placeholder-[#E0E0E0]/50 w-full outline-none text-sm font-light"
                 />
               </div>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3 flex-1">
-                <select className="bg-transparent text-white w-full outline-none text-sm font-medium">
+              <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
+                <select className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium">
                   <option value="" className="bg-gray-800">
                     Сортировка
                   </option>
@@ -104,32 +104,32 @@ export function QuranPage() {
           </div>
 
           {/* Recently Listened */}
-          <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
-            <h3 className="text-xl font-semibold text-white">
-              Последние прослушанные
+          <div className="bg-secondary rounded-3xl p-8 flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#E0E0E0]">
+              Последние просмотренные
             </h3>
-            <div className="flex space-x-6 overflow-x-auto pb-2">
+            <div className="flex gap-2 overflow-x-auto pb-2">
               <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-white hover:bg-white/30 transition-colors cursor-pointer">
+                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
                   1
                 </div>
-                <div className="text-xs text-white/70 font-light">
+                <div className="text-xs text-[#E0E0E0]/70 font-light">
                   Аль-Фатиха
                 </div>
               </div>
               <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-white hover:bg-white/30 transition-colors cursor-pointer">
+                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
                   2
                 </div>
-                <div className="text-xs text-white/70 font-light">
+                <div className="text-xs text-[#E0E0E0]/70 font-light">
                   Аль-Бакара
                 </div>
               </div>
               <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-white hover:bg-white/30 transition-colors cursor-pointer">
+                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
                   3
                 </div>
-                <div className="text-xs text-white/70 font-light">
+                <div className="text-xs text-[#E0E0E0]/70 font-light">
                   Али Имран
                 </div>
               </div>
