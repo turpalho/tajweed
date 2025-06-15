@@ -1,19 +1,24 @@
 "use client";
 
 import { ArabicLetter } from "@/entities/alphabet";
+import { useRouter } from "next/navigation";
 
 interface AlphabetGridProps {
   letters: ArabicLetter[];
 }
 
 export function AlphabetGrid({ letters }: AlphabetGridProps) {
+  const router = useRouter();
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <div
+      className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4"
+      style={{ direction: "rtl" }}
+    >
       {letters.map((letter) => (
         <div
           key={letter.id}
           className="group relative cursor-pointer"
-          onClick={() => console.log("Open letter", letter.id)}
+          onClick={() => router.push(`/alphabet/${letter.id}`)}
         >
           {/* Glass morphism card */}
           <div className="relative bg-secondary rounded-3xl p-6 hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:bg-[#E0E0E0]/15 text-center">
@@ -30,18 +35,18 @@ export function AlphabetGrid({ letters }: AlphabetGridProps) {
               {letter.articulationPoint}
             </div>
 
-            {/* Status indicator */}
+            {/* Status indicator - переместили влево для RTL */}
             <div
-              className={`absolute top-4 right-4 w-3 h-3 rounded-full ${
+              className={`absolute top-4 left-4 w-3 h-3 rounded-full ${
                 letter.isLearned
                   ? "bg-accent shadow-lg shadow-accent/50"
                   : "bg-[#E0E0E0]/30"
               }`}
             ></div>
 
-            {/* Learned indicator */}
+            {/* Learned indicator - переместили вправо для RTL */}
             {letter.isLearned && (
-              <div className="absolute bottom-3 left-3 text-accent text-xs font-medium">
+              <div className="absolute bottom-3 right-3 text-accent text-xs font-medium">
                 ✓ Изучена
               </div>
             )}

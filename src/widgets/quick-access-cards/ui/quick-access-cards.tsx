@@ -2,44 +2,46 @@
 
 import { useRouter } from "next/navigation";
 import { Video, Type, BookOpen, PenTool } from "lucide-react";
-
-const quickAccessItems = [
-  {
-    id: "lessons",
-    title: "Видео уроки",
-    icon: Video,
-    subtitle: "2 курса обучения",
-    path: "/lessons",
-    gradient: "from-blue-500/20 to-cyan-500/20",
-  },
-  {
-    id: "alphabet",
-    title: "Арабский алфавит",
-    icon: Type,
-    subtitle: "28 букв с произношением",
-    path: "/alphabet",
-    gradient: "from-green-500/20 to-emerald-500/20",
-  },
-  {
-    id: "quran",
-    title: "Коран онлайн",
-    icon: BookOpen,
-    subtitle: "Текст и аудио",
-    path: "/quran",
-    gradient: "from-purple-500/20 to-pink-500/20",
-  },
-  {
-    id: "writing",
-    title: "Прописи букв",
-    icon: PenTool,
-    subtitle: "PDF + видео написания",
-    path: "/writing",
-    gradient: "from-orange-500/20 to-red-500/20",
-  },
-];
+import { useI18n } from "@/shared/lib/i18n/context";
 
 export function QuickAccessCards() {
   const router = useRouter();
+  const { t } = useI18n();
+
+  const quickAccessItems = [
+    {
+      id: "lessons",
+      title: t("quickAccess.videoLessons"),
+      icon: Video,
+      subtitle: `2 ${t("quickAccess.courses")}`,
+      path: "/lessons",
+      gradient: "from-blue-500/20 to-cyan-500/20",
+    },
+    {
+      id: "alphabet",
+      title: t("quickAccess.arabicAlphabet"),
+      icon: Type,
+      subtitle: `28 ${t("quickAccess.lettersWithPronunciation")}`,
+      path: "/alphabet",
+      gradient: "from-green-500/20 to-emerald-500/20",
+    },
+    {
+      id: "quran",
+      title: t("quickAccess.quranOnline"),
+      icon: BookOpen,
+      subtitle: t("quickAccess.textAndAudio"),
+      path: "/quran",
+      gradient: "from-purple-500/20 to-pink-500/20",
+    },
+    {
+      id: "writing",
+      title: t("quickAccess.letterCopybooks"),
+      icon: PenTool,
+      subtitle: t("quickAccess.pdfAndVideo"),
+      path: "/writing",
+      gradient: "from-orange-500/20 to-red-500/20",
+    },
+  ];
 
   return (
     <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">

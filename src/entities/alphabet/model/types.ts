@@ -6,6 +6,7 @@ export interface ArabicLetter {
     name: string;
     transliteration: string;
     audioUrl: string;
+    imageUrl: string;
     positions: {
         isolated: string;
         initial: string;

@@ -2,12 +2,15 @@
 
 import { Card, Button, Progress } from "@/shared/ui";
 import { Course } from "@/entities/lesson";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 interface CourseListProps {
   courses: Course[];
 }
 
 export function CourseList({ courses }: CourseListProps) {
+  const { t } = useI18n();
+
   return (
     <div className="flex flex-col gap-3">
       {courses.map((course) => (
@@ -21,7 +24,8 @@ export function CourseList({ courses }: CourseListProps) {
             </div>
             <div className="text-right">
               <div className="text-sm text-gray-500">
-                {course.completedLessons} из {course.lessons.length || 0} уроков
+                {course.completedLessons} {t("courses.of")}{" "}
+                {course.lessons.length || 0} {t("courses.lessons")}
               </div>
             </div>
           </div>
@@ -37,12 +41,13 @@ export function CourseList({ courses }: CourseListProps) {
 
           <div className="flex justify-between items-center">
             <span className="text-sm text-gray-500">
-              Общая длительность: {Math.floor(course.totalDuration / 60)} мин
+              {t("courses.totalDuration")}:{" "}
+              {Math.floor(course.totalDuration / 60)} {t("quran.minutes")}
             </span>
             <Button
               onClick={() => console.log("Navigate to course", course.id)}
             >
-              Продолжить изучение
+              {t("courses.continueStudy")}
             </Button>
           </div>
         </Card>

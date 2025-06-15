@@ -4,7 +4,8 @@
     "letter": "ا",
     "name": "Алиф",
     "transliteration": "Alif",
-    "audioUrl": "/audio/alif.mp3",
+    "audioUrl": "/audio/letters/alif.ogg",
+    "imageUrl": "/images/letters/alif.jpg",
     "positions": {
       "isolated": "ا",
       "initial": "ا",
@@ -12,7 +13,7 @@
       "final": "ـا"
     },
     "articulationPoint": "Горло",
-    "examples": ["أب", "إسلام", "أمل"],
+    "examples": ["أب", "مائة", "دعا"],
     "isLearned": true
   },
   {
@@ -20,7 +21,8 @@
     "letter": "ب",
     "name": "Ба",
     "transliteration": "Ba",
-    "audioUrl": "/audio/ba.mp3",
+    "audioUrl": "/audio/letters/ba.ogg",
+    "imageUrl": "/images/letters/ba.jpg",
     "positions": {
       "isolated": "ب",
       "initial": "بـ",
@@ -28,7 +30,7 @@
       "final": "ـب"
     },
     "articulationPoint": "Губы",
-    "examples": ["بيت", "كتاب", "ذهب"],
+    "examples": ["بيت", "حبيب", "كتاب"],
     "isLearned": true
   },
   {
@@ -36,7 +38,8 @@
     "letter": "ت",
     "name": "Та",
     "transliteration": "Ta",
-    "audioUrl": "/audio/ta.mp3",
+    "audioUrl": "/audio/letters/ta.ogg",
+    "imageUrl": "/images/letters/ta.jpg",
     "positions": {
       "isolated": "ت",
       "initial": "تـ",
@@ -52,7 +55,8 @@
     "letter": "ث",
     "name": "Са",
     "transliteration": "Tha",
-    "audioUrl": "/audio/tha.mp3",
+    "audioUrl": "/audio/letters/tha.ogg",
+    "imageUrl": "/images/letters/tha.jpg",
     "positions": {
       "isolated": "ث",
       "initial": "ثـ",
@@ -60,15 +64,16 @@
       "final": "ـث"
     },
     "articulationPoint": "Кончик языка с зубами",
-    "examples": ["ثوب", "أثر", "حديث"],
+    "examples": ["ثوب", "مثل", "حديث"],
     "isLearned": false
   },
   {
     "id": "5",
     "letter": "ج",
-    "name": "Жим",
+    "name": "Джим",
     "transliteration": "Jim",
-    "audioUrl": "/audio/jim.mp3",
+    "audioUrl": "/audio/letters/jim.ogg",
+    "imageUrl": "/images/letters/jim.jpg",
     "positions": {
       "isolated": "ج",
       "initial": "جـ",
@@ -82,9 +87,10 @@
   {
     "id": "6",
     "letter": "ح",
-    "name": "Ха",
+    "name": "Хьа",
     "transliteration": "Ha",
-    "audioUrl": "/audio/ha.mp3",
+    "audioUrl": "/audio/letters/ha.ogg",
+    "imageUrl": "/images/letters/ha.jpg",
     "positions": {
       "isolated": "ح",
       "initial": "حـ",
@@ -98,9 +104,10 @@
   {
     "id": "7",
     "letter": "خ",
-    "name": "Ха с придыханием",
-    "transliteration": "Kha",
-    "audioUrl": "/audio/kha.mp3",
+    "name": "Хо",
+    "transliteration": "Kho",
+    "audioUrl": "/audio/letters/kho.ogg",
+    "imageUrl": "/images/letters/kho.jpg",
     "positions": {
       "isolated": "خ",
       "initial": "خـ",
@@ -108,7 +115,7 @@
       "final": "ـخ"
     },
     "articulationPoint": "Горло",
-    "examples": ["خير", "أخ", "مطبخ"],
+    "examples": ["خير", "أخت", "مطبخ"],
     "isLearned": false
   },
   {
@@ -116,7 +123,8 @@
     "letter": "د",
     "name": "Даль",
     "transliteration": "Dal",
-    "audioUrl": "/audio/dal.mp3",
+    "audioUrl": "/audio/letters/dal.ogg",
+    "imageUrl": "/images/letters/dal.jpg",
     "positions": {
       "isolated": "د",
       "initial": "د",
@@ -124,7 +132,7 @@
       "final": "ـد"
     },
     "articulationPoint": "Кончик языка",
-    "examples": ["دار", "يد", "ولد"],
+    "examples": ["دار", "بدء", "ولد"],
     "isLearned": false
   },
   {
@@ -132,7 +140,8 @@
     "letter": "ذ",
     "name": "Заль",
     "transliteration": "Zal",
-    "audioUrl": "/audio/zal.mp3",
+    "audioUrl": "/audio/letters/zal.ogg",
+    "imageUrl": "/images/letters/zal.jpg",
     "positions": {
       "isolated": "ذ",
       "initial": "ذ",
@@ -140,15 +149,16 @@
       "final": "ـذ"
     },
     "articulationPoint": "Кончик языка с зубами",
-    "examples": ["ذهب", "إذا", "أخذ"],
+    "examples": ["ذهب", "أذن", "أخذ"],
     "isLearned": false
   },
   {
     "id": "10",
     "letter": "ر",
-    "name": "Ра",
-    "transliteration": "Ra",
-    "audioUrl": "/audio/ra.mp3",
+    "name": "Ро",
+    "transliteration": "Ro",
+    "audioUrl": "/audio/letters/ro.ogg",
+    "imageUrl": "/images/letters/ro.jpg",
     "positions": {
       "isolated": "ر",
       "initial": "ر",
@@ -156,15 +166,16 @@
       "final": "ـر"
     },
     "articulationPoint": "Кончик языка",
-    "examples": ["رجل", "نور", "كبير"],
+    "examples": ["رجل", "فرح", "نور"],
     "isLearned": false
   },
   {
     "id": "11",
     "letter": "ز",
-    "name": "Зай",
-    "transliteration": "Zay",
-    "audioUrl": "/audio/zay.mp3",
+    "name": "За",
+    "transliteration": "Za",
+    "audioUrl": "/audio/letters/za.ogg",
+    "imageUrl": "/images/letters/za.jpg",
     "positions": {
       "isolated": "ز",
       "initial": "ز",
@@ -180,7 +191,8 @@
     "letter": "س",
     "name": "Син",
     "transliteration": "Sin",
-    "audioUrl": "/audio/sin.mp3",
+    "audioUrl": "/audio/letters/sin.ogg",
+    "imageUrl": "/images/letters/sin.jpg",
     "positions": {
       "isolated": "س",
       "initial": "سـ",
@@ -196,7 +208,8 @@
     "letter": "ش",
     "name": "Шин",
     "transliteration": "Shin",
-    "audioUrl": "/audio/shin.mp3",
+    "audioUrl": "/audio/letters/shin.ogg",
+    "imageUrl": "/images/letters/shin.jpg",
     "positions": {
       "isolated": "ش",
       "initial": "شـ",
@@ -204,15 +217,16 @@
       "final": "ـش"
     },
     "articulationPoint": "Кончик языка",
-    "examples": ["شمس", "مشكلة", "عيش"],
+    "examples": ["شمس", "مشي", "عيش"],
     "isLearned": false
   },
   {
     "id": "14",
     "letter": "ص",
-    "name": "Сад",
-    "transliteration": "Sad",
-    "audioUrl": "/audio/sad.mp3",
+    "name": "Сод",
+    "transliteration": "Sod",
+    "audioUrl": "/audio/letters/sod.ogg",
+    "imageUrl": "/images/letters/sod.jpg",
     "positions": {
       "isolated": "ص",
       "initial": "صـ",
@@ -226,9 +240,10 @@
   {
     "id": "15",
     "letter": "ض",
-    "name": "Дад",
-    "transliteration": "Dad",
-    "audioUrl": "/audio/dad.mp3",
+    "name": "Д1од",
+    "transliteration": "Dod",
+    "audioUrl": "/audio/letters/dod.ogg",
+    "imageUrl": "/images/letters/dod.jpg",
     "positions": {
       "isolated": "ض",
       "initial": "ضـ",
@@ -236,15 +251,16 @@
       "final": "ـض"
     },
     "articulationPoint": "Боковые стороны языка",
-    "examples": ["ضوء", "أرض", "أبيض"],
+    "examples": ["ضوء", "مضى", "أرض"],
     "isLearned": false
   },
   {
     "id": "16",
     "letter": "ط",
-    "name": "Та эмфатическая",
-    "transliteration": "Ta",
-    "audioUrl": "/audio/ta-emphatic.mp3",
+    "name": "Т1о",
+    "transliteration": "T1o",
+    "audioUrl": "/audio/letters/to.ogg",
+    "imageUrl": "/images/letters/to.jpg",
     "positions": {
       "isolated": "ط",
       "initial": "طـ",
@@ -258,9 +274,10 @@
   {
     "id": "17",
     "letter": "ظ",
-    "name": "За эмфатическая",
-    "transliteration": "Za",
-    "audioUrl": "/audio/za-emphatic.mp3",
+    "name": "З1о",
+    "transliteration": "Z1",
+    "audioUrl": "/audio/letters/zo.ogg",
+    "imageUrl": "/images/letters/zo.jpg",
     "positions": {
       "isolated": "ظ",
       "initial": "ظـ",
@@ -268,15 +285,16 @@
       "final": "ـظ"
     },
     "articulationPoint": "Кончик языка с зубами",
-    "examples": ["ظهر", "حافظ", "نظيف"],
+    "examples": ["ظهر", "نظر", "حافظ"],
     "isLearned": false
   },
   {
     "id": "18",
     "letter": "ع",
-    "name": "Айн",
-    "transliteration": "Ayn",
-    "audioUrl": "/audio/ayn.mp3",
+    "name": "1айн",
+    "transliteration": "Ain",
+    "audioUrl": "/audio/letters/ain.ogg",
+    "imageUrl": "/images/letters/ain.jpg",
     "positions": {
       "isolated": "ع",
       "initial": "عـ",
@@ -284,15 +302,16 @@
       "final": "ـع"
     },
     "articulationPoint": "Горло",
-    "examples": ["علم", "معرفة", "سمع"],
+    "examples": ["علم", "معنى", "سمع"],
     "isLearned": false
   },
   {
     "id": "19",
     "letter": "غ",
-    "name": "Гайн",
-    "transliteration": "Ghayn",
-    "audioUrl": "/audio/ghayn.mp3",
+    "name": "Г1ойн",
+    "transliteration": "Ghoyn",
+    "audioUrl": "/audio/letters/goin.ogg",
+    "imageUrl": "/images/letters/goin.jpg",
     "positions": {
       "isolated": "غ",
       "initial": "غـ",
@@ -308,7 +327,8 @@
     "letter": "ف",
     "name": "Фа",
     "transliteration": "Fa",
-    "audioUrl": "/audio/fa.mp3",
+    "audioUrl": "/audio/letters/fa.ogg",
+    "imageUrl": "/images/letters/fa.jpg",
     "positions": {
       "isolated": "ف",
       "initial": "فـ",
@@ -322,9 +342,10 @@
   {
     "id": "21",
     "letter": "ق",
-    "name": "Каф",
+    "name": "Къаф",
     "transliteration": "Qaf",
-    "audioUrl": "/audio/qaf.mp3",
+    "audioUrl": "/audio/letters/qof.ogg",
+    "imageUrl": "/images/letters/qof.jpg",
     "positions": {
       "isolated": "ق",
       "initial": "قـ",
@@ -332,15 +353,16 @@
       "final": "ـق"
     },
     "articulationPoint": "Основание языка",
-    "examples": ["قرآن", "وقت", "حق"],
+    "examples": ["قرآن", "مقام", "حق"],
     "isLearned": false
   },
   {
     "id": "22",
     "letter": "ك",
-    "name": "Каф мягкая",
+    "name": "Каф",
     "transliteration": "Kaf",
-    "audioUrl": "/audio/kaf.mp3",
+    "audioUrl": "/audio/letters/kaf.ogg",
+    "imageUrl": "/images/letters/kaf.jpg",
     "positions": {
       "isolated": "ك",
       "initial": "كـ",
@@ -348,7 +370,7 @@
       "final": "ـك"
     },
     "articulationPoint": "Основание языка",
-    "examples": ["كتاب", "مكة", "ملك"],
+    "examples": ["كتاب", "مكان", "ملك"],
     "isLearned": false
   },
   {
@@ -356,7 +378,8 @@
     "letter": "ل",
     "name": "Лям",
     "transliteration": "Lam",
-    "audioUrl": "/audio/lam.mp3",
+    "audioUrl": "/audio/letters/lam.ogg",
+    "imageUrl": "/images/letters/lam.jpg",
     "positions": {
       "isolated": "ل",
       "initial": "لـ",
@@ -372,7 +395,8 @@
     "letter": "م",
     "name": "Мим",
     "transliteration": "Mim",
-    "audioUrl": "/audio/mim.mp3",
+    "audioUrl": "/audio/letters/mim.ogg",
+    "imageUrl": "/images/letters/mim.jpg",
     "positions": {
       "isolated": "م",
       "initial": "مـ",
@@ -388,7 +412,8 @@
     "letter": "ن",
     "name": "Нун",
     "transliteration": "Nun",
-    "audioUrl": "/audio/nun.mp3",
+    "audioUrl": "/audio/letters/nun.ogg",
+    "imageUrl": "/images/letters/nun.jpg",
     "positions": {
       "isolated": "ن",
       "initial": "نـ",
@@ -401,26 +426,11 @@
   },
   {
     "id": "26",
-    "letter": "ه",
-    "name": "Ха мягкая",
-    "transliteration": "Ha",
-    "audioUrl": "/audio/ha-soft.mp3",
-    "positions": {
-      "isolated": "ه",
-      "initial": "هـ",
-      "medial": "ـهـ",
-      "final": "ـه"
-    },
-    "articulationPoint": "Горло",
-    "examples": ["هدى", "فهم", "مه"],
-    "isLearned": false
-  },
-  {
-    "id": "27",
     "letter": "و",
     "name": "Вав",
     "transliteration": "Waw",
-    "audioUrl": "/audio/waw.mp3",
+    "audioUrl": "/audio/letters/waw.ogg",
+    "imageUrl": "/images/letters/waw.jpg",
     "positions": {
       "isolated": "و",
       "initial": "و",
@@ -428,7 +438,24 @@
       "final": "ـو"
     },
     "articulationPoint": "Губы",
-    "examples": ["ولد", "نور", "يوم"],
+    "examples": ["ولد", "دولة", "نوم"],
+    "isLearned": false
+  },
+  {
+    "id": "27",
+    "letter": "ه",
+    "name": "Х1а",
+    "transliteration": "H1a",
+    "audioUrl": "/audio/letters/h1a.ogg",
+    "imageUrl": "/images/letters/h1a.jpg",
+    "positions": {
+      "isolated": "ه",
+      "initial": "هـ",
+      "medial": "ـهـ",
+      "final": "ـه"
+    },
+    "articulationPoint": "Горло",
+    "examples": ["هدى", "فهم", "كتابه"],
     "isLearned": false
   },
   {
@@ -436,7 +463,8 @@
     "letter": "ي",
     "name": "Йа",
     "transliteration": "Ya",
-    "audioUrl": "/audio/ya.mp3",
+    "audioUrl": "/audio/letters/ya.ogg",
+    "imageUrl": "/images/letters/ya.jpg",
     "positions": {
       "isolated": "ي",
       "initial": "يـ",
@@ -445,6 +473,23 @@
     },
     "articulationPoint": "Середина языка",
     "examples": ["يد", "بيت", "في"],
+    "isLearned": false
+  },
+  {
+    "id": "29",
+    "letter": "ء",
+    "name": "Хамза",
+    "transliteration": "Hamza",
+    "audioUrl": "/audio/letters/hamza.ogg",
+    "imageUrl": "/images/letters/hamza.jpg",
+    "positions": {
+      "isolated": "ء",
+      "initial": "ء",
+      "medial": "ـء",
+      "final": "ـء"
+    },
+    "articulationPoint": "Горло",
+    "examples": ["أب", "سؤال", "جزء"],
     "isLearned": false
   }
 ]

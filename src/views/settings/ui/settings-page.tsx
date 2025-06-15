@@ -1,10 +1,15 @@
+"use client";
+
 import {
-  AudioSettings,
   VisualSettings,
   AboutSettings,
+  ReciterSettings,
 } from "@/widgets/settings-sections";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 export function SettingsPage() {
+  const { t } = useI18n();
+
   return (
     <div className="min-h-screen relative">
       <div className="relative py-20 sm:py-16">
@@ -18,14 +23,14 @@ export function SettingsPage() {
                   backgroundImage: `linear-gradient(to right, #ED6F4C, #ED6F4C80, #ED6F4CCC)`,
                 }}
               >
-                Настройки
+                {t("settings.title")}
               </span>
             </h1>
           </div>
 
           {/* Settings Sections */}
           <div className="space-y-4 flex flex-col gap-2">
-            <AudioSettings />
+            <ReciterSettings />
             <VisualSettings />
             <AboutSettings />
           </div>

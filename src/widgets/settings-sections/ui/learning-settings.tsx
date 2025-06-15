@@ -1,21 +1,24 @@
 "use client";
 
 import { BookOpen } from "lucide-react";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 export function LearningSettings() {
+  const { t } = useI18n();
+
   return (
     <div className="bg-secondary rounded-3xl p-8">
       <div className="flex items-center gap-2 mb-6">
         <BookOpen size={24} color="#E0E0E0" />
         <h3 className="text-xl font-semibold text-[#E0E0E0]">
-          Настройки обучения
+          {t("settings.learningSettings")}
         </h3>
       </div>
 
       <div className="space-y-6">
         <div>
           <label className="block text-sm font-medium text-white/80 mb-3">
-            Ежедневная цель (минуты)
+            {t("settings.dailyGoal")}
           </label>
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3">
             <input
@@ -40,7 +43,7 @@ export function LearningSettings() {
               htmlFor="notifications"
               className="text-sm text-white/80 font-light"
             >
-              Уведомления о занятиях
+              {t("settings.lessonNotifications")}
             </label>
           </div>
 
@@ -55,14 +58,14 @@ export function LearningSettings() {
               htmlFor="reminders"
               className="text-sm text-white/80 font-light"
             >
-              Ежедневные напоминания
+              {t("settings.dailyReminders")}
             </label>
           </div>
         </div>
 
         <div>
           <label className="block text-sm font-medium text-white/80 mb-3">
-            Время напоминаний
+            {t("settings.reminderTime")}
           </label>
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl px-4 py-3">
             <input
@@ -78,10 +81,10 @@ export function LearningSettings() {
             className="w-full px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl text-sm font-medium text-white/80 hover:bg-white/20 transition-colors cursor-pointer text-center mb-3"
             onClick={() => console.log("Reset progress")}
           >
-            ⚠️ Сбросить прогресс обучения
+            {t("settings.resetProgress")}
           </div>
           <p className="text-xs text-white/50 text-center font-light">
-            Это действие нельзя отменить
+            {t("settings.cannotUndo")}
           </p>
         </div>
       </div>

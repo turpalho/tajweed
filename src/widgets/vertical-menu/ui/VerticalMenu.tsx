@@ -3,21 +3,25 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
+import { useI18n } from "@/shared/lib/i18n/context";
+import { languageFlags, locales, type Locale } from "@/shared/lib/i18n";
+import { saveAppSettings } from "@/shared/lib/app-settings";
 
 type MenuItem = {
-  label: string;
+  labelKey: string;
   href: string;
 };
 
 const menuItems: MenuItem[] = [
-  { label: "Главная", href: "/" },
-  { label: "Уроки", href: "/lessons" },
-  { label: "Коран", href: "/quran" },
-  { label: "Настройки", href: "/settings" },
+  { labelKey: "nav.home", href: "/" },
+  { labelKey: "nav.lessons", href: "/lessons" },
+  { labelKey: "nav.quran", href: "/quran" },
+  { labelKey: "nav.settings", href: "/settings" },
 ];
 
 export function VerticalMenu() {
   const pathname = usePathname();
+  const { locale, setLocale, t } = useI18n();
   const [indicatorTop, setIndicatorTop] = useState(0);
   const [isInitialized, setIsInitialized] = useState(false);
   const navRef = useRef<HTMLElement>(null);
@@ -34,15 +38,40 @@ export function VerticalMenu() {
     }
   }, [pathname]);
 
+  const handleLanguageChange = (lang: Locale) => {
+    setLocale(lang);
+    // Синхронизируем с настройками приложения
+    saveAppSettings({ interfaceLanguage: lang });
+  };
+
   return (
     <div
       data-menu="vertical"
-      className="fixed top-0 right-0 h-screen w-11 z-50 flex flex-col items-center justify-center border-l-3 border-accent"
+      className="fixed top-0 right-0 h-screen w-11 z-50 flex flex-col items-center justify-between border-l-3 border-accent bg-white/5 backdrop-blur-sm"
     >
+      {/* Переключатель языков вверху */}
+      <div className="flex flex-col gap-1 pt-4">
+        {locales.map((lang) => (
+          <button
+            key={lang}
+            onClick={() => handleLanguageChange(lang)}
+            className={`w-8 h-8 rounded-md text-sm transition-all duration-300 ${
+              locale === lang
+                ? "bg-accent text-white shadow-lg scale-110"
+                : "bg-white/10 hover:bg-white/20 text-white hover:scale-105"
+            }`}
+            title={lang.toUpperCase()}
+          >
+            {languageFlags[lang]}
+          </button>
+        ))}
+      </div>
+
+      {/* Основное меню по центру */}
       <nav ref={navRef} className="flex flex-col gap-2 relative">
         {/* Анимированный индикатор */}
         <div
-          className={`absolute -left-1 w-11 h-20 bg-accent transition-transform duration-400 ease-out ${
+          className={`absolute -left-1 w-11 h-20 bg-accent transition-all duration-400 ease-out ${
             isInitialized ? "opacity-100" : "opacity-0"
           }`}
           style={{
@@ -74,14 +103,24 @@ export function VerticalMenu() {
                   text-xs font-semibold transition-all duration-300 writing-mode-vertical-rl text-orientation-mixed
                   ${isActive ? "text-white font-bold" : "text-primary"}
                 `}
-                style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
+                style={{
+                  writingMode: "vertical-rl",
+                  textOrientation: "mixed",
+                  // Для арабского языка добавляем поддержку RTL
+                  direction: locale === "ar" ? "rtl" : "ltr",
+                }}
               >
-                {item.label}
+                {t(item.labelKey)}
               </span>
             </Link>
           );
         })}
       </nav>
+
+      {/* Пустой блок для баланса снизу */}
+      <div className="pb-4 opacity-0">
+        <div className="w-8 h-8"></div>
+      </div>
     </div>
   );
 }

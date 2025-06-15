@@ -1,44 +1,69 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import { SurahList } from "@/widgets/surah-list";
 import { Surah } from "@/entities/quran";
-
-// Моковые данные для демонстрации
-const mockSurahs: Surah[] = [
-  {
-    id: 1,
-    name: "Al-Fatiha",
-    nameArabic: "الفاتحة",
-    transliteration: "Al-Fātiḥah",
-    translation: "Открывающая",
-    verses: 7,
-    revelationType: "meccan",
-    audioUrl: "/audio/surah1.mp3",
-    duration: 120,
-  },
-  {
-    id: 2,
-    name: "Al-Baqarah",
-    nameArabic: "البقرة",
-    transliteration: "Al-Baqarah",
-    translation: "Корова",
-    verses: 286,
-    revelationType: "medinan",
-    audioUrl: "/audio/surah2.mp3",
-    duration: 7200,
-  },
-  {
-    id: 3,
-    name: "Ali Imran",
-    nameArabic: "آل عمران",
-    transliteration: "Āl ʿImrān",
-    translation: "Семейство Имрана",
-    verses: 200,
-    revelationType: "medinan",
-    audioUrl: "/audio/surah3.mp3",
-    duration: 4800,
-  },
-];
+import { useI18n } from "@/shared/lib/i18n/context";
+import quranData from "@/shared/data/quran-surahs.json";
 
 export function QuranPage() {
+  const { t } = useI18n();
+  const [filter, setFilter] = useState<string>("");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [sortBy, setSortBy] = useState<string>("");
+
+  const surahs = quranData as Surah[];
+
+  // Применяем фильтрацию, поиск и сортировку
+  const filteredAndSortedSurahs = useMemo(() => {
+    let result = [...surahs];
+
+    // Фильтрация по типу
+    if (filter && filter !== "") {
+      if (filter === "meccan" || filter === "medinan") {
+        result = result.filter((surah) => surah.revelationType === filter);
+      }
+      // Здесь можно добавить логику для "favorites" когда будет реализована
+    }
+
+    // Поиск по названию
+    if (searchQuery.trim()) {
+      result = result.filter(
+        (surah) =>
+          surah.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          surah.nameArabic.includes(searchQuery) ||
+          surah.transliteration
+            .toLowerCase()
+            .includes(searchQuery.toLowerCase()) ||
+          surah.translation.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+    }
+
+    // Сортировка
+    if (sortBy) {
+      switch (sortBy) {
+        case "number":
+          result.sort((a, b) => a.id - b.id);
+          break;
+        case "name":
+          result.sort((a, b) => a.name.localeCompare(b.name));
+          break;
+        case "duration":
+          result.sort((a, b) => {
+            const durationA = a.duration || 0;
+            const durationB = b.duration || 0;
+            return durationB - durationA; // По убыванию длительности
+          });
+          break;
+        default:
+          // По умолчанию по номеру
+          result.sort((a, b) => a.id - b.id);
+      }
+    }
+
+    return result;
+  }, [surahs, filter, searchQuery, sortBy]);
+
   return (
     <div className="min-h-screen relative">
       <div className="relative py-20 sm:py-16">
@@ -46,14 +71,14 @@ export function QuranPage() {
           {/* Hero Section */}
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-[#E0E0E0] leading-tight tracking-tight">
-              Священный
+              {t("quran.sacred")} <br />
               <span
                 className="bg-gradient-to-r bg-clip-text text-transparent ml-3"
                 style={{
                   backgroundImage: `linear-gradient(to right, #ED6F4C, #ED6F4C80, #ED6F4CCC)`,
                 }}
               >
-                Коран
+                {t("quran.title")}
               </span>
             </h1>
           </div>
@@ -62,83 +87,60 @@ export function QuranPage() {
           <div className="bg-secondary rounded-3xl p-8">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
-                <select className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium">
+                <select
+                  className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium"
+                  value={filter}
+                  onChange={(e) => setFilter(e.target.value)}
+                >
                   <option value="" className="bg-gray-800">
-                    Все суры
+                    {t("quran.allSurahs")}
                   </option>
                   <option value="meccan" className="bg-gray-800">
-                    Мекканские
+                    {t("quran.meccanSurahs")}
                   </option>
                   <option value="medinan" className="bg-gray-800">
-                    Мединские
+                    {t("quran.medinanSurahs")}
                   </option>
                   <option value="favorites" className="bg-gray-800">
-                    Избранные
+                    {t("quran.favorites")}
                   </option>
                 </select>
               </div>
               <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
                 <input
                   type="text"
-                  placeholder="Поиск по названию суры..."
+                  placeholder={t("quran.searchPlaceholder")}
                   className="bg-transparent text-[#E0E0E0] placeholder-[#E0E0E0]/50 w-full outline-none text-sm font-light"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
               <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3 flex-1">
-                <select className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium">
+                <select
+                  className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium"
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                >
                   <option value="" className="bg-gray-800">
-                    Сортировка
+                    {t("quran.sort")}
                   </option>
                   <option value="number" className="bg-gray-800">
-                    По номеру
+                    {t("quran.sortByNumber")}
                   </option>
                   <option value="name" className="bg-gray-800">
-                    По названию
+                    {t("quran.sortByName")}
                   </option>
                   <option value="duration" className="bg-gray-800">
-                    По длительности
+                    {t("quran.sortByDuration")}
                   </option>
                 </select>
               </div>
             </div>
           </div>
 
-          {/* Recently Listened */}
-          <div className="bg-secondary rounded-3xl p-8 flex flex-col gap-4">
-            <h3 className="text-xl font-semibold text-[#E0E0E0]">
-              Последние просмотренные
-            </h3>
-            <div className="flex gap-2 overflow-x-auto pb-2">
-              <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-                  1
-                </div>
-                <div className="text-xs text-[#E0E0E0]/70 font-light">
-                  Аль-Фатиха
-                </div>
-              </div>
-              <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-                  2
-                </div>
-                <div className="text-xs text-[#E0E0E0]/70 font-light">
-                  Аль-Бакара
-                </div>
-              </div>
-              <div className="text-center min-w-[80px]">
-                <div className="w-16 h-16 bg-primary border border-[#E0E0E0]/30 rounded-2xl flex items-center justify-center mb-3 text-lg font-bold text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-                  3
-                </div>
-                <div className="text-xs text-[#E0E0E0]/70 font-light">
-                  Али Имран
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Surah List */}
           <div className="space-y-6">
-            <SurahList surahs={mockSurahs} />
+            <SurahList surahs={filteredAndSortedSurahs} />
           </div>
         </div>
       </div>

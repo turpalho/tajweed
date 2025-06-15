@@ -1,3 +1,7 @@
+"use client";
+
+import { useI18n } from "@/shared/lib/i18n/context";
+
 interface LearningProgressProps {
   totalProgress: number;
   learnedLetters: number;
@@ -11,15 +15,17 @@ export function LearningProgress({
   completedLessons,
   readSurahs,
 }: LearningProgressProps) {
+  const { t } = useI18n();
+
   return (
     <div className="max-w-2xl mx-auto">
       <div className="bg-secondary  rounded-3xl p-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-[#E0E0E0] mb-2">
-            Прогресс обучения
+            {t("home.learningProgress")}
           </h2>
           <p className="font-light" style={{ color: "var(--text-secondary)" }}>
-            Ваши достижения
+            {t("home.achievements")}
           </p>
         </div>
 
@@ -71,7 +77,7 @@ export function LearningProgress({
                 className="text-sm font-light"
                 style={{ color: "var(--text-secondary)" }}
               >
-                завершено
+                {t("alphabet.completed")}
               </span>
             </div>
           </div>
@@ -91,7 +97,7 @@ export function LearningProgress({
                 className="text-sm font-light"
                 style={{ color: "var(--text-secondary)" }}
               >
-                Изученных букв
+                {t("progress.learnedLetters")}
               </div>
             </div>
           </div>
@@ -107,7 +113,7 @@ export function LearningProgress({
                 className="text-sm font-light"
                 style={{ color: "var(--text-secondary)" }}
               >
-                Завершенных уроков
+                {t("progress.completedLessons")}
               </div>
             </div>
           </div>
@@ -123,7 +129,7 @@ export function LearningProgress({
                 className="text-sm font-light"
                 style={{ color: "var(--text-secondary)" }}
               >
-                Прочитанных сур
+                {t("progress.readSurahs")}
               </div>
             </div>
           </div>

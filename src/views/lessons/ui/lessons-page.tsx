@@ -5,12 +5,13 @@ import { Course, Lesson } from "@/entities/lesson";
 import { CheckCircle, Play, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import lessonsData from "@/shared/data/lessons.json";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 // Обновленные данные курсов с реальными уроками
 const mockCourses: Course[] = [
   {
     id: "1",
-    title: "Основы таджвида",
+    title: "lessons.basicTajweed",
     description: "Базовые правила чтения Корана и произношения арабских букв",
     lessons: lessonsData["1"] as Lesson[],
     totalDuration: lessonsData["1"].reduce(
@@ -21,7 +22,7 @@ const mockCourses: Course[] = [
   },
   {
     id: "2",
-    title: "Продвинутые правила",
+    title: "lessons.advancedRules",
     description:
       "Сложные правила таджвида и их применение в различных контекстах",
     lessons: lessonsData["2"] as Lesson[],
@@ -39,6 +40,8 @@ interface LessonItemProps {
 }
 
 function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
+  const { t } = useI18n();
+
   const getStatusIcon = (status: Lesson["status"]) => {
     switch (status) {
       case "completed":
@@ -55,13 +58,26 @@ function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
   const getStatusText = (status: Lesson["status"]) => {
     switch (status) {
       case "completed":
-        return "Завершен";
+        return t("lessons.completed");
       case "in_progress":
-        return "В процессе";
+        return t("lessons.inProgress");
       case "not_started":
-        return "Не начат";
+        return t("lessons.notStarted");
       default:
-        return "Не начат";
+        return t("lessons.notStarted");
+    }
+  };
+
+  const getActionText = (status: Lesson["status"]) => {
+    switch (status) {
+      case "completed":
+        return t("lessons.rewatch");
+      case "in_progress":
+        return t("lessons.continue");
+      case "not_started":
+        return t("lessons.start");
+      default:
+        return t("lessons.start");
     }
   };
 
@@ -87,7 +103,9 @@ function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
                 {lesson.description}
               </p>
               <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs text-[#E0E0E0]/50">
-                <span>Урок {lesson.order}</span>
+                <span>
+                  {t("lessons.lesson")} {lesson.order}
+                </span>
                 <span
                   className={`px-2 py-1 rounded-full backdrop-blur-sm border text-xs ${
                     lesson.status === "completed"
@@ -104,11 +122,7 @@ function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
           </div>
           <div className="flex justify-end md:flex-col md:items-end">
             <div className="px-4 py-2 bg-secondary backdrop-blur-sm border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-              {lesson.status === "completed"
-                ? "Пересмотреть"
-                : lesson.status === "in_progress"
-                ? "Продолжить"
-                : "Начать"}
+              {getActionText(lesson.status)}
             </div>
           </div>
         </div>
@@ -139,6 +153,7 @@ function LessonList({ lessons, onLessonClick }: LessonListProps) {
 export function LessonsPage() {
   const [activeTab, setActiveTab] = useState<"1" | "2">("1");
   const router = useRouter();
+  const { t } = useI18n();
 
   const activeCourse = mockCourses.find((course) => course.id === activeTab);
   const lessons = (lessonsData[activeTab] as Lesson[]) || [];
@@ -148,13 +163,13 @@ export function LessonsPage() {
   };
 
   return (
-    <div className="min-h-screen relative md:pr-0">
+    <div className="min-h-screen relative">
       <div className="relative py-20 sm:py-16">
-        <div className="max-w-4xl mx-auto flex flex-col gap-6 md:px-0">
+        <div className="max-w-4xl mx-auto flex flex-col gap-6">
           {/* Hero Section */}
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-[#E0E0E0] leading-tight tracking-tight">
-              Видео
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-[#E0E0E3] leading-tight tracking-tight">
+              {t("nav.lessons")}
               <span
                 className="bg-gradient-to-r bg-clip-text text-transparent"
                 style={{
@@ -162,7 +177,7 @@ export function LessonsPage() {
                 }}
               >
                 {" "}
-                уроки
+                {t("lessons.videoLessons")}
               </span>
             </h1>
           </div>
@@ -179,7 +194,7 @@ export function LessonsPage() {
                       : "text-[#E0E0E0]/60 hover:text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/5"
                   }`}
                 >
-                  Основы таджвида
+                  {t("lessons.basicTajweed")}
                 </button>
                 <button
                   onClick={() => setActiveTab("2")}
@@ -189,7 +204,7 @@ export function LessonsPage() {
                       : "text-[#E0E0E0]/60 hover:text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/5"
                   }`}
                 >
-                  Продвинутые правила
+                  {t("lessons.advancedRules")}
                 </button>
               </div>
             </div>
@@ -201,7 +216,9 @@ export function LessonsPage() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                 <div className="mb-4 md:mb-0">
                   <h2 className="text-xl md:text-2xl font-bold text-[#E0E0E0] mb-3">
-                    {activeCourse.title}
+                    {activeTab === "1"
+                      ? t("lessons.basicTajweed")
+                      : t("lessons.advancedRules")}
                   </h2>
                   <p className="text-[#E0E0E0]/70 text-base md:text-lg font-light leading-relaxed">
                     {activeCourse.description}
@@ -209,8 +226,8 @@ export function LessonsPage() {
                 </div>
                 <div className="text-right">
                   <div className="text-sm text-[#E0E0E0]/60 font-light">
-                    {activeCourse.completedLessons} из{" "}
-                    {activeCourse.lessons.length} уроков
+                    {activeCourse.completedLessons} {t("alphabet.of")}{" "}
+                    {activeCourse.lessons.length} {t("lessons.videoLessons")}
                   </div>
                 </div>
               </div>

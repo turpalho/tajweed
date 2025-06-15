@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, Play, CheckCircle } from "lucide-react";
 import lessonsData from "@/shared/data/lessons.json";
 import { useRouter } from "next/navigation";
@@ -9,6 +9,12 @@ import {
   formatDurationInMinutes,
   getYouTubeId,
 } from "@/shared/lib/youtube-player";
+import {
+  isLessonCompleted,
+  markLessonAsCompleted,
+  unmarkLessonAsCompleted,
+} from "@/shared/lib/learning-progress";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 interface LessonPageProps {
   lessonId: string;
@@ -17,10 +23,18 @@ interface LessonPageProps {
 export function LessonPage({ lessonId }: LessonPageProps) {
   const router = useRouter();
   const [isCompleted, setIsCompleted] = useState(false);
+  const { t } = useI18n();
 
   // Находим урок по ID
   const allLessons = [...lessonsData["1"], ...lessonsData["2"]];
   const lesson = allLessons.find((l) => l.id === lessonId);
+
+  // Загружаем состояние из localStorage при монтировании
+  useEffect(() => {
+    if (lesson) {
+      setIsCompleted(isLessonCompleted(lesson.id));
+    }
+  }, [lesson]);
 
   // Получаем реальную длительность видео
   const { duration: realDuration, isLoading: isDurationLoading } =
@@ -45,13 +59,13 @@ export function LessonPage({ lessonId }: LessonPageProps) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-[#E0E0E0] mb-4">
-            Урок не найден
+            {t("lessons.lessonNotFound")}
           </h1>
           <button
             onClick={() => router.push("/lessons")}
             className="px-6 py-3 bg-accent text-white rounded-2xl hover:bg-accent/80 transition-colors"
           >
-            Вернуться к урокам
+            {t("lessons.returnToLessons")}
           </button>
         </div>
       </div>
@@ -75,9 +89,18 @@ export function LessonPage({ lessonId }: LessonPageProps) {
   };
 
   const markAsCompleted = () => {
-    setIsCompleted(true);
-    // Здесь можно добавить логику для сохранения прогресса
-    console.log(`Урок ${lessonId} отмечен как завершенный`);
+    if (lesson) {
+      const newIsCompleted = !isCompleted;
+      setIsCompleted(newIsCompleted);
+
+      if (newIsCompleted) {
+        markLessonAsCompleted(lesson.id);
+        console.log(`Урок ${lessonId} отмечен как завершенный`);
+      } else {
+        unmarkLessonAsCompleted(lesson.id);
+        console.log(`Урок ${lessonId} отмечен как незавершенный`);
+      }
+    }
   };
 
   const youtubeId = getYouTubeId(lesson.videoUrl);
@@ -85,7 +108,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
   // Используем реальную длительность или fallback
   const displayDuration = realDuration || lesson.duration;
   const durationText = isDurationLoading
-    ? "Загрузка..."
+    ? t("common.loading")
     : formatDurationInMinutes(displayDuration);
 
   return (
@@ -105,7 +128,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                 {lesson.title}
               </h1>
               <p className="text-[#E0E0E0]/70 text-sm">
-                Урок {lesson.order} • {durationText}
+                {t("lessons.lesson")} {lesson.order} • {durationText}
               </p>
             </div>
           </div>
@@ -135,7 +158,9 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                         color="#E0E0E0"
                         className="mx-auto mb-4"
                       />
-                      <p className="text-[#E0E0E0]/70">Видео недоступно</p>
+                      <p className="text-[#E0E0E0]/70">
+                        {t("lessons.videoUnavailable")}
+                      </p>
                     </div>
                   </div>
                 )}
@@ -144,20 +169,21 @@ export function LessonPage({ lessonId }: LessonPageProps) {
               {/* Video Controls */}
               <div className="bg-secondary rounded-3xl p-6">
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-4">
-                  Управление уроком
+                  {t("lessons.lessonControl")}
                 </h3>
                 <div className="flex flex-wrap gap-4">
                   <button
                     onClick={markAsCompleted}
-                    disabled={isCompleted}
                     className={`flex items-center gap-2 px-4 py-2 rounded-2xl transition-colors ${
                       isCompleted
-                        ? "bg-green-500/20 text-green-400 cursor-not-allowed"
+                        ? "bg-green-500/20 text-green-400 hover:bg-red-500/20 hover:text-red-400"
                         : "bg-accent text-white hover:bg-accent/80"
                     }`}
                   >
                     <CheckCircle size={20} />
-                    {isCompleted ? "Урок завершен" : "Отметить как завершенный"}
+                    {isCompleted
+                      ? t("lessons.lessonCompleted")
+                      : t("lessons.markAsCompleted")}
                   </button>
                 </div>
               </div>
@@ -168,28 +194,28 @@ export function LessonPage({ lessonId }: LessonPageProps) {
               {/* Lesson Info */}
               <div className="bg-secondary rounded-3xl p-6">
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-4">
-                  О уроке
+                  {t("lessons.aboutLesson")}
                 </h3>
                 <p className="text-[#E0E0E0]/70 mb-4 leading-relaxed">
                   {lesson.description}
                 </p>
                 <div className="space-y-2 text-sm text-[#E0E0E0]/60">
                   <div className="flex justify-between">
-                    <span>Длительность:</span>
+                    <span>{t("lessons.duration")}</span>
                     <span className={isDurationLoading ? "animate-pulse" : ""}>
                       {durationText}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Номер урока:</span>
+                    <span>{t("lessons.lessonNumber")}</span>
                     <span>{lesson.order}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Курс:</span>
+                    <span>{t("lessons.course")}:</span>
                     <span>
                       {lesson.courseId === "1"
-                        ? "Основы таджвида"
-                        : "Продвинутые правила"}
+                        ? t("lessons.basicTajweed")
+                        : t("lessons.advancedRules")}
                     </span>
                   </div>
                 </div>
@@ -198,7 +224,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
               {/* Navigation */}
               <div className="bg-secondary rounded-3xl p-6">
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-4">
-                  Навигация
+                  {t("lessons.navigation")}
                 </h3>
                 <div className="space-y-3">
                   {/* Previous Lesson */}
@@ -208,7 +234,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                       className="w-full text-left p-3 bg-[#E0E0E0]/5 rounded-2xl hover:bg-[#E0E0E0]/10 transition-colors"
                     >
                       <div className="text-sm text-[#E0E0E0]/60 mb-1">
-                        Предыдущий урок
+                        {t("lessons.previousLesson")}
                       </div>
                       <div className="text-[#E0E0E0] font-medium">
                         {previousLesson.title}
@@ -223,7 +249,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                       className="w-full text-left p-3 bg-[#E0E0E0]/5 rounded-2xl hover:bg-[#E0E0E0]/10 transition-colors"
                     >
                       <div className="text-sm text-[#E0E0E0]/60 mb-1">
-                        Следующий урок
+                        {t("lessons.nextLesson")}
                       </div>
                       <div className="text-[#E0E0E0] font-medium">
                         {nextLesson.title}
@@ -236,13 +262,16 @@ export function LessonPage({ lessonId }: LessonPageProps) {
               {/* Progress */}
               <div className="bg-secondary rounded-3xl p-6">
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-4">
-                  Прогресс курса
+                  {t("lessons.progressCourse")}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between text-sm">
-                    <span className="text-[#E0E0E0]/70">Завершено:</span>
+                    <span className="text-[#E0E0E0]/70">
+                      {t("lessons.completedLessons")}
+                    </span>
                     <span className="text-[#E0E0E0]">
-                      {lesson.order - 1} из {courseLessons.length}
+                      {lesson.order - 1} {t("alphabet.of")}{" "}
+                      {courseLessons.length}
                     </span>
                   </div>
                   <div className="w-full bg-primary rounded-full h-2">

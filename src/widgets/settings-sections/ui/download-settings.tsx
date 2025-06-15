@@ -1,32 +1,35 @@
 "use client";
 
 import { Download, Folder, Trash } from "lucide-react";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 export function DownloadSettings() {
+  const { t } = useI18n();
+
   return (
     <div className="bg-secondary rounded-3xl p-8">
       <div className="flex items-center gap-2 mb-6">
         <Download size={24} color="#E0E0E0" />
         <h3 className="text-xl font-semibold text-[#E0E0E0]">
-          Загрузки и хранение
+          {t("settings.downloadAndStorage")}
         </h3>
       </div>
 
       <div className="space-y-6">
         <div>
           <label className="block text-sm font-medium text-[#E0E0E0]/80 mb-3">
-            Качество видео для загрузки
+            {t("settings.videoQuality")}
           </label>
           <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3">
             <select className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium">
               <option value="1080p" className="bg-gray-800">
-                1080p (высокое)
+                1080p ({t("settings.high")})
               </option>
               <option value="720p" className="bg-gray-800">
-                720p (среднее)
+                720p ({t("settings.medium")})
               </option>
               <option value="480p" className="bg-gray-800">
-                480p (низкое)
+                480p ({t("settings.low")})
               </option>
             </select>
           </div>
@@ -42,17 +45,17 @@ export function DownloadSettings() {
             htmlFor="autoDownload"
             className="text-sm text-[#E0E0E0]/80 font-light"
           >
-            Автозагрузка при WiFi
+            {t("settings.autoDownloadWifi")}
           </label>
         </div>
 
         <div className="bg-primary border border-[#E0E0E0]/10 rounded-2xl p-4">
           <div className="flex justify-between text-sm mb-3">
             <span className="text-[#E0E0E0]/80 font-light">
-              Использовано места
+              {t("settings.usedSpace")}
             </span>
             <span className="text-[#E0E0E0]/60 font-light">
-              1.2 ГБ из 16 ГБ
+              1.2 ГБ {t("courses.of")} 16 ГБ
             </span>
           </div>
           <div className="w-full bg-primary rounded-full h-3 border border-[#E0E0E0]/20">
@@ -72,14 +75,14 @@ export function DownloadSettings() {
             onClick={() => console.log("Clear cache")}
           >
             <Trash size={16} color="#E0E0E0" />
-            Очистить кэш (245 МБ)
+            {t("settings.clearCacheSize").replace("{size}", "245")}
           </div>
           <div
             className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-primary border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/20 transition-colors cursor-pointer text-center"
             onClick={() => console.log("Manage downloads")}
           >
             <Folder size={16} color="#E0E0E0" />
-            Управление загрузками
+            {t("settings.manageDownloads")}
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { VerticalMenu } from "@/widgets/vertical-menu";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -47,16 +46,7 @@ export default function RootLayout({
           ></div> */}
         </div>
 
-        {/* Глобальные градиентные блики */}
-        {/* <div className="gradient-blur-1"></div>
-        <div className="gradient-blur-2"></div>
-        <div className="gradient-blur-3"></div> */}
-
-        <div className="min-h-screen flex">
-          <main className="w-full flex-1 px-2 md:pr-2">{children}</main>
-          <div className="h-full w-11"></div>
-        </div>
-        <VerticalMenu />
+        <div>{children}</div>
       </body>
     </html>
   );

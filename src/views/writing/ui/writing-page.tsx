@@ -10,6 +10,7 @@ import {
   AArrowDown,
   VolumeX,
 } from "lucide-react";
+import { useI18n } from "@/shared/lib/i18n/context";
 import writingGroupsData from "@/shared/data/writing-groups.json";
 
 interface WritingGroup {
@@ -28,6 +29,7 @@ interface WritingGroup {
 const writingGroups: WritingGroup[] = writingGroupsData;
 
 export function WritingPage() {
+  const { t } = useI18n();
   const totalPDFs = writingGroups.length;
   const totalVideos = writingGroups.length;
 
@@ -38,14 +40,14 @@ export function WritingPage() {
           {/* Hero Section */}
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-[#E0E0E0] mb-6 leading-tight tracking-tight">
-              Прописи
+              {t("writing.title")}
               <span
                 className="bg-gradient-to-r bg-clip-text text-transparent ml-3"
                 style={{
                   backgroundImage: `linear-gradient(to right, #ED6F4C, #ED6F4C80, #ED6F4CCC)`,
                 }}
               >
-                букв
+                {t("writing.letterCopies")}
               </span>
             </h1>
           </div>
@@ -57,53 +59,46 @@ export function WritingPage() {
                 <Lightbulb size={24} color="#ED6F4C" />
               </div>
               <h3 className="text-xl font-semibold text-[#E0E0E0]">
-                Как работать с прописями
+                {t("writing.howToWork")}
               </h3>
             </div>
 
             <div className="space-y-4 text-[#E0E0E0]/80 leading-relaxed">
-              <p>
-                После того, как распечатаете прописи, вначале вы будете обводить
-                буквы по точкам, (как делали это в первом классе, когда учились
-                в школе), а дальше уже будете писать буквы самостоятельно.
-              </p>
+              <p>{t("writing.instructions")}</p>
 
               <div className="flex items-center gap-2 mt-4 mb-3">
-                <div className="text-red-400 font-bold">Важно</div>
+                <div className="text-red-400 font-bold">
+                  {t("writing.important")}
+                </div>
                 <div className="text-red-400">❗</div>
               </div>
 
               <p>
-                При написании каждой буквы, старайтесь произносить её вслух
+                {t("writing.pronounceAloud")}
                 <VolumeX size={16} className="inline mx-1 text-[#E0E0E0]/60" />
               </p>
 
-              <p className="mt-4">
-                Таким образом, вы сможете задействовать сразу:
-              </p>
+              <p className="mt-4">{t("writing.memoryTypes")}</p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                 <div className="flex items-center gap-3 p-4 bg-primary rounded-xl">
                   <Eye size={20} color="#ED6F4C" />
-                  <span className="text-sm">зрительную память</span>
+                  <span className="text-sm">{t("writing.visualMemory")}</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-primary rounded-xl">
                   <Volume2 size={20} color="#ED6F4C" />
-                  <span className="text-sm">слуховую память</span>
+                  <span className="text-sm">{t("writing.auditoryMemory")}</span>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-primary rounded-xl">
                   <PenTool size={20} color="#ED6F4C" />
-                  <span className="text-sm">память через письмо</span>
+                  <span className="text-sm">{t("writing.writingMemory")}</span>
                 </div>
               </div>
 
               <div className="flex items-center justify-center gap-2 mt-6 p-4 bg-primary rounded-xl">
                 <div className="flex items-center gap-2">
                   <AArrowDown size={44} color="#E0E0E0" />
-                  <span className="text-sm">
-                    Также, у вас появится крепкая ассоциация внешнего вида буквы
-                    и её звучания
-                  </span>
+                  <span className="text-sm">{t("writing.association")}</span>
                 </div>
               </div>
             </div>
@@ -113,12 +108,12 @@ export function WritingPage() {
           <div className="bg-secondary rounded-3xl p-8">
             <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
               <h3 className="text-2xl font-semibold text-[#E0E0E0] mb-4 md:mb-0">
-                Доступные материалы
+                {t("writing.availableMaterials")}
               </h3>
               <div className="px-6 py-3 bg-primary border border-[#E0E0E0]/30 rounded-2xl text-[#E0E0E0] font-medium hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
                 <div className="flex items-center gap-2">
                   <File size={16} color="#E0E0E0" />
-                  Скачать все PDF
+                  {t("writing.downloadAllPdf")}
                 </div>
               </div>
             </div>
@@ -129,7 +124,7 @@ export function WritingPage() {
                   {totalPDFs}
                 </div>
                 <div className="text-sm text-[#E0E0E0]/60 font-light">
-                  PDF прописей
+                  {t("writing.pdfCopybooks")}
                 </div>
               </div>
               <div className="text-center">
@@ -137,7 +132,7 @@ export function WritingPage() {
                   {totalVideos}
                 </div>
                 <div className="text-sm text-[#E0E0E0]/60 font-light">
-                  Видео уроков
+                  {t("writing.videoLessons")}
                 </div>
               </div>
             </div>
@@ -172,11 +167,11 @@ export function WritingPage() {
                   <div className="space-y-3">
                     <div className="px-4 flex items-center gap-2 py-2 bg-primary border border-[#E0E0E0]/30 rounded-2xl text-sm font-medium text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
                       <File size={20} color="#E0E0E0" />
-                      PDF пропись
+                      {t("writing.pdfCopybook")}
                     </div>
                     <div className="px-4 flex items-center gap-2 py-2 bg-primary border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/20 transition-colors cursor-pointer">
                       <Video size={20} color="#E0E0E0" />
-                      Видео урок
+                      {t("writing.videoLesson")}
                     </div>
                   </div>
                 </div>
