@@ -1,0 +1,1 @@
+export { AboutSettingsWidget } from './ui/about-settings-widget'; 

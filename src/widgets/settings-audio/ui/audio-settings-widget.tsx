@@ -1,54 +1,24 @@
 "use client";
 
 import { Volume2 } from "lucide-react";
-import { useState, useEffect } from "react";
 import { useI18n } from "@/shared/lib/i18n/context";
-import {
-  getAppSettings,
-  saveAppSettings,
-  type AppSettings,
-} from "@/shared/lib/app-settings";
+import { useAppSettings } from "@/shared/hooks/use-app-settings";
 
-const DEFAULT_SETTINGS = {
-  masterVolume: 0.8,
-  backgroundMusic: false,
-  soundEffects: true,
-  arabicFontSize: 18,
-  interfaceLanguage: "ru" as const,
-  theme: "dark" as const,
-  autoSave: true,
-};
-
-export function AudioSettings() {
+export function AudioSettingsWidget() {
   const { t } = useI18n();
-  const [settings, setSettings] = useState<AppSettings>(DEFAULT_SETTINGS);
-
-  useEffect(() => {
-    // Загружаем настройки только на клиенте
-    const loadedSettings = getAppSettings();
-    setSettings(loadedSettings);
-  }, []);
+  const { settings, updateSettings } = useAppSettings();
 
   const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const volume = parseFloat(e.target.value) / 100;
-    const newSettings = { ...settings, masterVolume: volume };
-    setSettings(newSettings);
-    saveAppSettings({ masterVolume: volume });
+    updateSettings({ masterVolume: volume });
   };
 
   const handleBackgroundMusicToggle = () => {
-    const newSettings = {
-      ...settings,
-      backgroundMusic: !settings.backgroundMusic,
-    };
-    setSettings(newSettings);
-    saveAppSettings({ backgroundMusic: newSettings.backgroundMusic });
+    updateSettings({ backgroundMusic: !settings.backgroundMusic });
   };
 
   const handleSoundEffectsToggle = () => {
-    const newSettings = { ...settings, soundEffects: !settings.soundEffects };
-    setSettings(newSettings);
-    saveAppSettings({ soundEffects: newSettings.soundEffects });
+    updateSettings({ soundEffects: !settings.soundEffects });
   };
 
   return (

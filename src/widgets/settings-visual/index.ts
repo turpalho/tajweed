@@ -1,0 +1,1 @@
+export { VisualSettingsWidget } from './ui/visual-settings-widget'; 

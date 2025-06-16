@@ -1,78 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import { Volume2 } from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
-import {
-  getAudioEditions,
-  QuranReciter,
-  POPULAR_RECITERS,
-} from "@/shared/lib/quran-api";
-import {
-  getReciterSettings,
-  saveReciterSettings,
-} from "@/shared/lib/reciter-settings";
-import type { ReciterSettings } from "@/shared/lib/reciter-settings";
+import { POPULAR_RECITERS, type QuranReciter } from "@/shared/lib/quran-api";
+import { useReciterManagement } from "@/features/reciter-management";
 
-const DEFAULT_RECITER_SETTINGS: ReciterSettings = {
-  selectedReciter: "ar.alafasy",
-  volume: 0.8,
-  autoplay: false,
-  repeat: false,
-};
-
-export function ReciterSettings() {
+export function ReciterSettingsWidget() {
   const { t } = useI18n();
-  const [reciters, setReciters] = useState<QuranReciter[]>([]);
-  const [settings, setSettings] = useState<ReciterSettings>(
-    DEFAULT_RECITER_SETTINGS
-  );
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    // Загружаем настройки только на клиенте
-    const loadedSettings = getReciterSettings();
-    setSettings(loadedSettings);
-    loadReciters();
-  }, []);
-
-  const loadReciters = async () => {
-    try {
-      setLoading(true);
-      const allReciters = await getAudioEditions();
-
-      // Сортируем чтецов: сначала популярные, потом остальные по алфавиту
-      const popularReciters = allReciters
-        .filter((r) => POPULAR_RECITERS.includes(r.identifier))
-        .sort(
-          (a, b) =>
-            POPULAR_RECITERS.indexOf(a.identifier) -
-            POPULAR_RECITERS.indexOf(b.identifier)
-        );
-
-      const otherReciters = allReciters
-        .filter((r) => !POPULAR_RECITERS.includes(r.identifier))
-        .sort((a, b) => a.englishName.localeCompare(b.englishName));
-
-      setReciters([...popularReciters, ...otherReciters]);
-    } catch (err) {
-      setError(t("settings.loadingRecitersError"));
-      console.error("Error loading reciters:", err);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const updateSettings = (newSettings: Partial<ReciterSettings>) => {
-    const updated = { ...settings, ...newSettings };
-    setSettings(updated);
-    saveReciterSettings(newSettings);
-  };
-
-  const handleReciterChange = (reciterIdentifier: string) => {
-    updateSettings({ selectedReciter: reciterIdentifier });
-  };
+  const { reciters, settings, loading, error, updateReciter, retryLoading } =
+    useReciterManagement();
 
   const getReciterDisplayName = (reciter: QuranReciter) => {
     // Показываем арабское имя если есть, иначе английское
@@ -111,7 +47,7 @@ export function ReciterSettings() {
         <div className="text-center py-8">
           <p className="text-red-400 mb-4">{error}</p>
           <button
-            onClick={loadReciters}
+            onClick={retryLoading}
             className="px-4 py-2 bg-accent text-white rounded-xl hover:bg-accent/80 transition-colors"
           >
             {t("settings.retryAttempt")}
@@ -139,10 +75,10 @@ export function ReciterSettings() {
           <div className="bg-primary border border-[#E0E0E0]/20 rounded-2xl px-4 py-3">
             <select
               value={settings.selectedReciter}
-              onChange={(e) => handleReciterChange(e.target.value)}
+              onChange={(e) => updateReciter(e.target.value)}
               className="bg-transparent text-[#E0E0E0] w-full outline-none text-sm font-medium"
             >
-              {reciters.map((reciter) => (
+              {reciters.map((reciter: QuranReciter) => (
                 <option
                   key={reciter.identifier}
                   value={reciter.identifier}

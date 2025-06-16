@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
 
-export function AboutSettings() {
+export function AboutSettingsWidget() {
   const { t } = useI18n();
 
   const handleFeedbackClick = () => {

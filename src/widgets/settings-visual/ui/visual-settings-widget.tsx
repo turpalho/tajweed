@@ -5,7 +5,7 @@ import { useI18n } from "@/shared/lib/i18n/context";
 import { useAppSettings } from "@/shared/hooks/use-app-settings";
 import { languageNames, type Locale } from "@/shared/lib/i18n";
 
-export function VisualSettings() {
+export function VisualSettingsWidget() {
   const { t, locale } = useI18n();
   const { settings, updateSettings } = useAppSettings();
 
