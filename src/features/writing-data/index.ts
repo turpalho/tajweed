@@ -1,0 +1,1 @@
+export { useWritingData } from "./model/use-writing-data"; 

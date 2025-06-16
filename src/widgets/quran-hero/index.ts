@@ -1,0 +1,1 @@
+export { QuranHero } from "./ui/quran-hero"; 

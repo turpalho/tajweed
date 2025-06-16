@@ -1,0 +1,1 @@
+export { WritingHero } from "./ui/writing-hero"; 
