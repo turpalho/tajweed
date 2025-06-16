@@ -9,10 +9,14 @@ import {
   PenTool,
   AArrowDown,
   VolumeX,
+  Download,
+  Loader2,
 } from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
 import { useLocalizedText } from "@/shared/lib/localized-data";
 import writingGroupsData from "@/shared/data/writing-groups.json";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 interface LocalizedText {
   ru: string;
@@ -40,6 +44,29 @@ export function WritingPage() {
   const { getLocalizedText } = useLocalizedText();
   const totalPDFs = writingGroups.length;
   const totalVideos = writingGroups.length;
+  const router = useRouter();
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const downloadAllPDFs = async () => {
+    setIsDownloading(true);
+    try {
+      for (const group of writingGroups) {
+        const link = document.createElement("a");
+        link.href = group.pdfUrl;
+        link.download = `group-${group.id}-writing.pdf`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Небольшая задержка между скачиваниями для избежания блокировки браузером
+        await new Promise((resolve) => setTimeout(resolve, 300));
+      }
+    } catch (error) {
+      console.error("Ошибка при скачивании файлов:", error);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
 
   return (
     <div className="min-h-screen relative">
@@ -118,12 +145,29 @@ export function WritingPage() {
               <h3 className="text-2xl font-semibold text-[#E0E0E0] mb-4 md:mb-0">
                 {t("writing.availableMaterials")}
               </h3>
-              <div className="px-6 py-3 bg-primary border border-[#E0E0E0]/30 rounded-2xl text-[#E0E0E0] font-medium hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
+              <button
+                onClick={downloadAllPDFs}
+                disabled={isDownloading}
+                className="px-6 py-3 bg-primary border border-[#E0E0E0]/30 rounded-2xl text-[#E0E0E0] font-medium hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              >
                 <div className="flex items-center gap-2">
-                  <File size={16} color="#E0E0E0" />
-                  {t("writing.downloadAllPdf")}
+                  {isDownloading ? (
+                    <>
+                      <Loader2
+                        size={16}
+                        color="#E0E0E0"
+                        className="animate-spin"
+                      />
+                      {t("writing.downloading")}
+                    </>
+                  ) : (
+                    <>
+                      <Download size={16} color="#E0E0E0" />
+                      {t("writing.downloadAllPdf")}
+                    </>
+                  )}
                 </div>
-              </div>
+              </button>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -149,7 +193,11 @@ export function WritingPage() {
           {/* Groups Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {writingGroups.map((group) => (
-              <div key={group.id} className="group relative cursor-pointer">
+              <div
+                key={group.id}
+                className="group relative cursor-pointer"
+                onClick={() => router.push(`/writing/${group.id}`)}
+              >
                 {/* Glass morphism card */}
                 <div className="relative bg-secondary rounded-3xl p-6 hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:bg-[#E0E0E0]/15">
                   <div className="flex justify-between items-start mb-4">
