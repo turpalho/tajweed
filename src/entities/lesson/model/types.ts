@@ -1,7 +1,13 @@
+export interface LocalizedText {
+    ru: string;
+    en: string;
+    ar: string;
+}
+
 export interface Lesson {
     id: string;
-    title: string;
-    description: string;
+    title: LocalizedText;
+    description: LocalizedText;
     duration: number; // в секундах
     videoUrl: string;
     thumbnail: string;

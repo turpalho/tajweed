@@ -1,217 +1,26 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Course, Lesson } from "@/entities/lesson";
-import { CheckCircle, Play, Clock } from "lucide-react";
-import { useRouter } from "next/navigation";
-import lessonsData from "@/shared/data/lessons.json";
+import { useCourseManagement } from "@/features/course-management";
+import { CourseSelector } from "@/features/course-management";
+import { useLessonNavigation } from "@/features/lesson-navigation";
+import { CourseInfoCard } from "@/widgets/course-info-card";
+import { LessonList } from "@/widgets/lesson-list";
 import { useI18n } from "@/shared/lib/i18n/context";
-import { useLocalizedText } from "@/shared/lib/localized-data";
-import {
-  getLearningProgress,
-  isLessonCompleted,
-} from "@/shared/lib/learning-progress";
-
-// Обновленные данные курсов с реальными уроками
-const mockCourses: Course[] = [
-  {
-    id: "1",
-    title: "lessons.basicTajweed",
-    description: "lessons.basicTajweedDescription",
-    lessons: lessonsData["1"] as unknown as Lesson[],
-    totalDuration: lessonsData["1"].reduce(
-      (total, lesson) => total + lesson.duration,
-      0
-    ),
-    completedLessons: 0,
-  },
-  {
-    id: "2",
-    title: "lessons.advancedRules",
-    description: "lessons.advancedRulesDescription",
-    lessons: lessonsData["2"] as unknown as Lesson[],
-    totalDuration: lessonsData["2"].reduce(
-      (total, lesson) => total + lesson.duration,
-      0
-    ),
-    completedLessons: 0,
-  },
-];
-
-interface LessonItemProps {
-  lesson: Lesson;
-  onLessonClick: (lessonId: string) => void;
-}
-
-function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
-  const { t } = useI18n();
-  const { getLocalizedText } = useLocalizedText();
-
-  const getStatusIcon = (status: Lesson["status"]) => {
-    switch (status) {
-      case "completed":
-        return CheckCircle;
-      case "in_progress":
-        return Play;
-      case "not_started":
-        return Clock;
-      default:
-        return Clock;
-    }
-  };
-
-  const getStatusText = (status: Lesson["status"]) => {
-    switch (status) {
-      case "completed":
-        return t("lessons.completed");
-      case "in_progress":
-        return t("lessons.inProgress");
-      case "not_started":
-        return t("lessons.notStarted");
-      default:
-        return t("lessons.notStarted");
-    }
-  };
-
-  const getActionText = (status: Lesson["status"]) => {
-    switch (status) {
-      case "completed":
-        return t("lessons.rewatch");
-      case "in_progress":
-        return t("lessons.continue");
-      case "not_started":
-        return t("lessons.start");
-      default:
-        return t("lessons.start");
-    }
-  };
-
-  const StatusIcon = getStatusIcon(lesson.status);
-
-  return (
-    <div
-      className="group relative cursor-pointer"
-      onClick={() => onLessonClick(lesson.id)}
-    >
-      {/* Glass morphism card */}
-      <div className="relative bg-secondary rounded-3xl p-4 md:p-6 hover:shadow-3xl transition-all duration-500 hover:scale-[1.02] hover:bg-[#E0E0E0]/15">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-[#E0E0E0]/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-[#E0E0E0]/30 group-hover:bg-[#E0E0E0]/30 transition-colors flex-shrink-0">
-              <StatusIcon
-                size={24}
-                color={lesson.status === "completed" ? "#ED6F4C" : "#E0E0E0"}
-              />
-            </div>
-            <div className="min-w-0 flex-1">
-              <h3 className="font-semibold text-base md:text-lg text-[#E0E0E0] mb-1 group-hover:text-[#E0E0E0]/90 transition-colors">
-                {getLocalizedText(lesson.title)}
-              </h3>
-              <p className="text-sm text-[#E0E0E0]/70 mb-2 font-light line-clamp-2">
-                {getLocalizedText(lesson.description)}
-              </p>
-              <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs text-[#E0E0E0]/50">
-                <span>
-                  {t("lessons.lesson")} {lesson.order}
-                </span>
-                <span
-                  className={`px-2 py-1 rounded-full backdrop-blur-sm border text-xs ${
-                    lesson.status === "completed"
-                      ? "bg-accent/20 text-accent border-accent/30"
-                      : lesson.status === "in_progress"
-                      ? "bg-accent/20 text-accent border-accent/30"
-                      : "bg-[#E0E0E0]/10 text-[#E0E0E0]/60 border-[#E0E0E0]/20"
-                  }`}
-                >
-                  {getStatusText(lesson.status)}
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-end md:flex-col md:items-end">
-            <div className="px-4 py-2 bg-secondary backdrop-blur-sm border border-[#E0E0E0]/20 rounded-2xl text-sm font-medium text-[#E0E0E0] hover:bg-[#E0E0E0]/30 transition-colors cursor-pointer">
-              {getActionText(lesson.status)}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-interface LessonListProps {
-  lessons: Lesson[];
-  onLessonClick: (lessonId: string) => void;
-}
-
-function LessonList({ lessons, onLessonClick }: LessonListProps) {
-  return (
-    <div className="flex flex-col gap-3">
-      {lessons.map((lesson) => (
-        <LessonItem
-          key={lesson.id}
-          lesson={lesson}
-          onLessonClick={onLessonClick}
-        />
-      ))}
-    </div>
-  );
-}
 
 export function LessonsPage() {
-  const [activeTab, setActiveTab] = useState<"1" | "2">("1");
-  const [coursesWithProgress, setCoursesWithProgress] =
-    useState<Course[]>(mockCourses);
-  const router = useRouter();
   const { t } = useI18n();
+  const { activeTab, activeCourse, isLoading, setActiveTab } =
+    useCourseManagement();
 
-  // Обновляем прогресс курсов при изменении данных
-  useEffect(() => {
-    const progress = getLearningProgress();
+  const { onLessonClick } = useLessonNavigation();
 
-    const updatedCourses = mockCourses.map((course) => {
-      const completedCount = course.lessons.filter((lesson) =>
-        progress.completedLessons.includes(lesson.id)
-      ).length;
-
-      return {
-        ...course,
-        completedLessons: completedCount,
-      };
-    });
-
-    setCoursesWithProgress(updatedCourses);
-  }, [activeTab]);
-
-  // Обновляем статус уроков на основе прогресса
-  useEffect(() => {
-    const lessonsWithStatus = (
-      lessonsData[activeTab] as unknown as Lesson[]
-    ).map((lesson) => ({
-      ...lesson,
-      status: isLessonCompleted(lesson.id)
-        ? ("completed" as const)
-        : ("not_started" as const),
-    }));
-
-    // Обновляем курсы с новыми статусами уроков
-    setCoursesWithProgress((prev) =>
-      prev.map((course) =>
-        course.id === activeTab
-          ? { ...course, lessons: lessonsWithStatus }
-          : course
-      )
+  if (isLoading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-[#E0E0E0]">{t("common.loading")}</div>
+      </div>
     );
-  }, [activeTab]);
-
-  const activeCourse = coursesWithProgress.find(
-    (course) => course.id === activeTab
-  );
-  const lessons = activeCourse?.lessons || [];
-
-  const handleLessonClick = (lessonId: string) => {
-    router.push(`/lessons/${lessonId}`);
-  };
+  }
 
   return (
     <div className="min-h-screen relative">
@@ -233,82 +42,21 @@ export function LessonsPage() {
             </h1>
           </div>
 
-          {/* Tabs */}
-          <div className="flex justify-center w-full">
-            <div className="bg-secondary rounded-3xl p-2 shadow-2xl max-w-full overflow-hidden">
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setActiveTab("1")}
-                  className={`px-4 md:px-6 py-3 rounded-2xl font-medium transition-all duration-300 text-sm md:text-base ${
-                    activeTab === "1"
-                      ? "bg-[#E0E0E0]/5 backdrop-blur-sm border border-[#E0E0E0]/10 text-[#E0E0E0]"
-                      : "text-[#E0E0E0]/60 hover:text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/5"
-                  }`}
-                >
-                  {t("lessons.basicTajweed")}
-                </button>
-                <button
-                  onClick={() => setActiveTab("2")}
-                  className={`px-4 md:px-6 py-3 rounded-2xl font-medium transition-all duration-300 text-sm md:text-base ${
-                    activeTab === "2"
-                      ? "bg-[#E0E0E0]/5 backdrop-blur-sm border border-[#E0E0E0]/10 text-[#E0E0E0]"
-                      : "text-[#E0E0E0]/60 hover:text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/5"
-                  }`}
-                >
-                  {t("lessons.advancedRules")}
-                </button>
-              </div>
-            </div>
-          </div>
+          {/* Course Selector */}
+          <CourseSelector activeTab={activeTab} onTabChange={setActiveTab} />
 
           {/* Course Info */}
-          {activeCourse && (
-            <div className="bg-secondary rounded-3xl p-6 md:p-8">
-              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
-                <div className="mb-4 md:mb-0">
-                  <h2 className="text-xl md:text-2xl font-bold text-[#E0E0E0] mb-3">
-                    {activeTab === "1"
-                      ? t("lessons.basicTajweed")
-                      : t("lessons.advancedRules")}
-                  </h2>
-                  <p className="text-[#E0E0E0]/70 text-base md:text-lg font-light leading-relaxed">
-                    {t(activeCourse.description)}
-                  </p>
-                </div>
-                <div className="text-right">
-                  <div className="text-sm text-[#E0E0E0]/60 font-light">
-                    {activeCourse.completedLessons} {t("alphabet.of")}{" "}
-                    {activeCourse.lessons.length} {t("lessons.videoLessons")}
-                  </div>
-                </div>
-              </div>
-
-              {/* Progress Bar */}
-              <div>
-                <div className="w-full bg-primary rounded-full h-3">
-                  <div
-                    className="h-3 rounded-full transition-all duration-700 ease-out"
-                    style={{
-                      width: `${
-                        activeCourse.lessons.length
-                          ? (activeCourse.completedLessons /
-                              activeCourse.lessons.length) *
-                            100
-                          : 0
-                      }%`,
-                      background: `linear-gradient(to right, #ED6F4C, #ED6F4C80)`,
-                      boxShadow: "0 0 20px rgba(237, 111, 76, 0.3)",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-          )}
+          {activeCourse && <CourseInfoCard course={activeCourse} />}
 
           {/* Lesson List */}
-          <div className="space-y-6">
-            <LessonList lessons={lessons} onLessonClick={handleLessonClick} />
-          </div>
+          {activeCourse && (
+            <div className="space-y-6">
+              <LessonList
+                lessons={activeCourse.lessons}
+                onLessonClick={onLessonClick}
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
