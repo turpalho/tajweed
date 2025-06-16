@@ -1,10 +1,10 @@
 "use client";
 
 import { ReciterSettingsWidget } from "@/widgets/settings-reciter";
-import { AudioSettingsWidget } from "@/widgets/settings-audio";
+// import { AudioSettingsWidget } from "@/widgets/settings-audio";
 import { VisualSettingsWidget } from "@/widgets/settings-visual";
-import { LearningSettingsWidget } from "@/widgets/settings-learning";
-import { DownloadSettingsWidget } from "@/widgets/settings-downloads";
+// import { LearningSettingsWidget } from "@/widgets/settings-learning";
+// import { DownloadSettingsWidget } from "@/widgets/settings-downloads";
 import { AboutSettingsWidget } from "@/widgets/settings-about";
 import { PageHero } from "@/widgets/page-hero";
 import { useI18n } from "@/shared/lib/i18n/context";
@@ -22,10 +22,10 @@ export function SettingsPage() {
           {/* Settings Sections */}
           <div className="space-y-4 flex flex-col gap-2">
             <ReciterSettingsWidget />
-            <AudioSettingsWidget />
+            {/* <AudioSettingsWidget /> */}
             <VisualSettingsWidget />
-            <LearningSettingsWidget />
-            <DownloadSettingsWidget />
+            {/* <LearningSettingsWidget /> */}
+            {/* <DownloadSettingsWidget /> */}
             <AboutSettingsWidget />
           </div>
         </div>

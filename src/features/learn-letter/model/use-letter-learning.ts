@@ -7,7 +7,13 @@ import type { LetterLearningState, LetterLearningActions } from "./types";
 export function useLetterLearning(letterId: string, audioUrl?: string): LetterLearningState & LetterLearningActions {
     const [isLearned, setIsLearned] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef<HTMLAudioElement>(null);
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+
+    useEffect(() => {
+        if (!audioRef.current) {
+            audioRef.current = new Audio();
+        }
+    }, []);
 
     useEffect(() => {
         setIsLearned(isLetterLearned(letterId));
@@ -36,6 +42,7 @@ export function useLetterLearning(letterId: string, audioUrl?: string): LetterLe
     const stopAudio = () => {
         if (audioRef.current) {
             audioRef.current.pause();
+            audioRef.current.currentTime = 0;
             setIsPlaying(false);
         }
     };
@@ -48,6 +55,15 @@ export function useLetterLearning(letterId: string, audioUrl?: string): LetterLe
         audio.addEventListener('ended', handleEnded);
 
         return () => audio.removeEventListener('ended', handleEnded);
+    }, []);
+
+    useEffect(() => {
+        return () => {
+            if (audioRef.current) {
+                audioRef.current.pause();
+                audioRef.current = null;
+            }
+        };
     }, []);
 
     return {
