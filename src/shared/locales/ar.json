@@ -227,6 +227,10 @@
   "settings.popularReciters": "⭐ - القراء المشهورون",
   "settings.loadingRecitersError": "خطأ في تحميل قائمة القراء",
   "settings.retryAttempt": "المحاولة مرة أخرى",
+  "settings.developer": "المطور",
+  "settings.telegramChannel": "قناة التليجرام",
+  "settings.instagramProfile": "حساب الإنستغرام",
+  "settings.contactDeveloper": "التواصل مع المطور",
 
   "courses.of": "من",
   "courses.lessons": "دروس",

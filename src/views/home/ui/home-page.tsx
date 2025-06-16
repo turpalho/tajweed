@@ -5,7 +5,7 @@ import { QuickAccessCards } from "@/widgets/quick-access-cards";
 import { LearningProgress } from "@/widgets/learning-progress";
 import {
   getProgressStats,
-  getDailyStats,
+  // getDailyStats,
 } from "@/shared/lib/learning-progress";
 import { useI18n } from "@/shared/lib/i18n/context";
 import { useAppSettings } from "@/shared/hooks/use-app-settings";
@@ -24,18 +24,18 @@ export function HomePage() {
     readSurahs: 0,
   });
 
-  const [dailyGoal, setDailyGoal] = useState({
-    current: 0,
-    target: 30,
-    streak: 0,
-  });
+  // const [dailyGoal, setDailyGoal] = useState({
+  //   current: 0,
+  //   target: 30,
+  //   streak: 0,
+  // });
 
   // Загружаем данные прогресса при монтировании компонента
   useEffect(() => {
     if (!isLoaded) return;
 
     const stats = getProgressStats();
-    const daily = getDailyStats();
+    // const daily = getDailyStats();
 
     // Вычисляем общий прогресс
     const totalSurahs = quranData.length;
@@ -58,7 +58,7 @@ export function HomePage() {
       readSurahs: stats.readSurahsCount,
     });
 
-    setDailyGoal(daily);
+    // setDailyGoal(daily);
   }, [isLoaded]);
 
   if (!isLoaded) {
@@ -92,7 +92,7 @@ export function HomePage() {
           </div>
 
           {/* Daily Goal Card - Glass morphism */}
-          <div>
+          {/* <div>
             <div className="bg-secondary rounded-3xl p-8 max-w-2xl mx-auto flex flex-col items-center">
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
@@ -176,7 +176,7 @@ export function HomePage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Quick Access Cards */}
           <div>

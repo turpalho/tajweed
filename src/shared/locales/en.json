@@ -227,6 +227,10 @@
   "settings.popularReciters": "⭐ - popular reciters",
   "settings.loadingRecitersError": "Error loading reciters list",
   "settings.retryAttempt": "Retry",
+  "settings.developer": "Developer",
+  "settings.telegramChannel": "Telegram channel",
+  "settings.instagramProfile": "Instagram profile",
+  "settings.contactDeveloper": "Contact developer",
 
   "courses.of": "of",
   "courses.lessons": "lessons",
