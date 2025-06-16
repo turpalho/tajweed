@@ -1,0 +1,1 @@
+export { WritingGroupInfoCard } from "./ui/writing-group-info-card"; 
