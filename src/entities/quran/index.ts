@@ -1,1 +1,1 @@
-export type { Surah, Verse, TajweedRule } from './model/types'; 
+export type { Surah, Verse, TajweedRule, LocalizedText } from './model/types'; 

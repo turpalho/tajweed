@@ -2,6 +2,8 @@
 
 import { ArabicLetter } from "@/entities/alphabet";
 import { useRouter } from "next/navigation";
+import { useLocalizedText } from "@/shared/lib/localized-data";
+import { useI18n } from "@/shared/lib/i18n/context";
 
 interface AlphabetGridProps {
   letters: ArabicLetter[];
@@ -9,6 +11,9 @@ interface AlphabetGridProps {
 
 export function AlphabetGrid({ letters }: AlphabetGridProps) {
   const router = useRouter();
+  const { getLocalizedText } = useLocalizedText();
+  const { t } = useI18n();
+
   return (
     <div
       className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4"
@@ -26,13 +31,13 @@ export function AlphabetGrid({ letters }: AlphabetGridProps) {
               {letter.letter}
             </div>
             <div className="text-lg font-semibold text-[#E0E0E0] mb-2 group-hover:text-[#E0E0E0]/90 transition-colors">
-              {letter.name}
+              {getLocalizedText(letter.name)}
             </div>
             <div className="text-sm text-[#E0E0E0]/60 font-light mb-3">
               {letter.transliteration}
             </div>
             <div className="text-xs text-[#E0E0E0]/50 font-light">
-              {letter.articulationPoint}
+              {getLocalizedText(letter.articulationPoint)}
             </div>
 
             {/* Status indicator - переместили влево для RTL */}
@@ -47,7 +52,7 @@ export function AlphabetGrid({ letters }: AlphabetGridProps) {
             {/* Learned indicator - переместили вправо для RTL */}
             {letter.isLearned && (
               <div className="absolute bottom-3 right-3 text-accent text-xs font-medium">
-                ✓ Изучена
+                ✓ {t("alphabet.learned")}
               </div>
             )}
           </div>

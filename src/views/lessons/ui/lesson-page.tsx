@@ -15,6 +15,7 @@ import {
   unmarkLessonAsCompleted,
 } from "@/shared/lib/learning-progress";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 
 interface LessonPageProps {
   lessonId: string;
@@ -24,6 +25,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
   const router = useRouter();
   const [isCompleted, setIsCompleted] = useState(false);
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
 
   // Находим урок по ID
   const allLessons = [...lessonsData["1"], ...lessonsData["2"]];
@@ -125,7 +127,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
             </button>
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-[#E0E0E0] mb-1">
-                {lesson.title}
+                {getLocalizedText(lesson.title)}
               </h1>
               <p className="text-[#E0E0E0]/70 text-sm">
                 {t("lessons.lesson")} {lesson.order} • {durationText}
@@ -143,7 +145,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                       width="100%"
                       height="100%"
                       src={`https://www.youtube.com/embed/${youtubeId}?rel=0&modestbranding=1&playsinline=1&enablejsapi=1`}
-                      title={lesson.title}
+                      title={getLocalizedText(lesson.title)}
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowFullScreen
@@ -197,7 +199,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                   {t("lessons.aboutLesson")}
                 </h3>
                 <p className="text-[#E0E0E0]/70 mb-4 leading-relaxed">
-                  {lesson.description}
+                  {getLocalizedText(lesson.description)}
                 </p>
                 <div className="space-y-2 text-sm text-[#E0E0E0]/60">
                   <div className="flex justify-between">
@@ -237,7 +239,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                         {t("lessons.previousLesson")}
                       </div>
                       <div className="text-[#E0E0E0] font-medium">
-                        {previousLesson.title}
+                        {getLocalizedText(previousLesson.title)}
                       </div>
                     </button>
                   )}
@@ -252,7 +254,7 @@ export function LessonPage({ lessonId }: LessonPageProps) {
                         {t("lessons.nextLesson")}
                       </div>
                       <div className="text-[#E0E0E0] font-medium">
-                        {nextLesson.title}
+                        {getLocalizedText(nextLesson.title)}
                       </div>
                     </button>
                   )}

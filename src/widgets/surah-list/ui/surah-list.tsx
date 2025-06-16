@@ -6,6 +6,7 @@ import { BookOpen, Volume2, CheckCircle } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useI18n } from "@/shared/lib/i18n/context";
 import { getLearningProgress } from "@/shared/lib/learning-progress";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 
 interface SurahListProps {
   surahs: Surah[];
@@ -14,6 +15,7 @@ interface SurahListProps {
 export function SurahList({ surahs }: SurahListProps) {
   const router = useRouter();
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
   const [readSurahs, setReadSurahs] = useState<number[]>([]);
 
   useEffect(() => {
@@ -62,7 +64,7 @@ export function SurahList({ surahs }: SurahListProps) {
                       {surah.transliteration}
                     </p>
                     <p className="text-sm text-[#E0E0E0]/60 font-light">
-                      {surah.translation}
+                      {getLocalizedText(surah.translation)}
                     </p>
                   </div>
                 </div>

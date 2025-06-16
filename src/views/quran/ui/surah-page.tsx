@@ -16,6 +16,7 @@ import {
 import { getReciterSettings } from "@/shared/lib/reciter-settings";
 import { getSurahWithTextAndAudio, QuranApiAyah } from "@/shared/lib/quran-api";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 import { useAppSettings } from "@/shared/hooks/use-app-settings";
 
 interface SurahPageProps {
@@ -35,6 +36,7 @@ export function SurahPage({ surahId }: SurahPageProps) {
   );
   const [isPlaying, setIsPlaying] = useState(false);
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
   const { settings, isLoaded } = useAppSettings();
 
   // Находим суру по ID
@@ -181,13 +183,7 @@ export function SurahPage({ surahId }: SurahPageProps) {
             </button>
             <div>
               <div className="flex items-center gap-4 mb-2">
-                <h1
-                  className="font-bold text-[#E0E0E0] font-arabic"
-                  style={{
-                    fontSize: `${settings.arabicFontSize * 2.5}px`,
-                    lineHeight: 1.2,
-                  }}
-                >
+                <h1 className="text-4xl font-bold text-[#E0E0E0] font-arabic">
                   {surah.nameArabic}
                 </h1>
                 <div>
@@ -195,7 +191,8 @@ export function SurahPage({ surahId }: SurahPageProps) {
                     {surah.name}
                   </h2>
                   <p className="text-[#E0E0E0]/70 text-sm">
-                    {surah.transliteration} - {surah.translation}
+                    {surah.transliteration} -{" "}
+                    {getLocalizedText(surah.translation)}
                   </p>
                 </div>
               </div>
@@ -224,7 +221,7 @@ export function SurahPage({ surahId }: SurahPageProps) {
                     {surah.name}
                   </div>
                   <div className="text-lg text-[#E0E0E0]/70">
-                    {surah.translation}
+                    {getLocalizedText(surah.translation)}
                   </div>
                 </div>
                 <div className="bg-primary rounded-2xl p-6">
@@ -276,9 +273,19 @@ export function SurahPage({ surahId }: SurahPageProps) {
                   currentAyahNumber={currentAyahNumber}
                   isPlaying={isPlaying}
                   onPlayAyah={(ayahIndex) => {
-                    // Передаем индекс аята в AudioPlayer через ref
-                    if (audioPlayerRef.current) {
-                      audioPlayerRef.current.playSpecificAyah(ayahIndex);
+                    // Получаем номер аята по индексу
+                    const ayahNumber = ayahs[ayahIndex]?.number;
+
+                    // Если этот аят уже воспроизводится, ставим на паузу
+                    if (currentAyahNumber === ayahNumber && isPlaying) {
+                      if (audioPlayerRef.current) {
+                        audioPlayerRef.current.pauseAudio();
+                      }
+                    } else {
+                      // Иначе начинаем воспроизведение этого аята
+                      if (audioPlayerRef.current) {
+                        audioPlayerRef.current.playSpecificAyah(ayahIndex);
+                      }
                     }
                   }}
                 />
@@ -345,7 +352,7 @@ export function SurahPage({ surahId }: SurahPageProps) {
                           {t("quran.aboutSurah")}
                         </span>
                         <span className="text-[#E0E0E0] text-sm">
-                          {surah.description}
+                          {getLocalizedText(surah.description)}
                         </span>
                       </div>
                     </div>
@@ -393,7 +400,7 @@ export function SurahPage({ surahId }: SurahPageProps) {
                     <div className="flex justify-between">
                       <span>{t("quran.translation")}:</span>
                       <span className="text-[#E0E0E0]">
-                        {surah.translation}
+                        {getLocalizedText(surah.translation)}
                       </span>
                     </div>
                     <div className="flex justify-between">

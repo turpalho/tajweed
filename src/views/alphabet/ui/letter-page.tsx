@@ -12,6 +12,7 @@ import {
   unmarkLetterAsLearned,
 } from "@/shared/lib/learning-progress";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 
 interface LetterPageProps {
   letterId: string;
@@ -23,6 +24,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLearned, setIsLearned] = useState(false);
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
 
   // Находим букву по ID
   const letters = alphabetData as ArabicLetter[];
@@ -121,7 +123,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                 </h1>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-[#E0E0E0]">
-                    {letter.name}
+                    {getLocalizedText(letter.name)}
                   </h2>
                   <p className="text-[#E0E0E0]/70 text-sm">
                     {letter.transliteration}
@@ -190,8 +192,10 @@ export function LetterPage({ letterId }: LetterPageProps) {
                 </h3>
                 <div className="bg-white flex justify-center items-center rounded-3xl p-2 mb-4">
                   <Image
-                    src={letter.imageUrl}
-                    alt={`${t("alphabet.articulationPoint")} ${letter.name}`}
+                    src={letter.imageUrl || "/images/default-letter.jpg"}
+                    alt={`${t("alphabet.articulationPoint")} ${getLocalizedText(
+                      letter.name
+                    )}`}
                     width={100}
                     height={100}
                     className="w-full h-full sm:w-[400px] object-cover rounded-lg"
@@ -230,7 +234,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                       {t("alphabet.articulationPoint")}:
                     </span>
                     <span className="text-[#E0E0E0] font-medium">
-                      {letter.articulationPoint}
+                      {getLocalizedText(letter.articulationPoint)}
                     </span>
                   </div>
                 </div>
@@ -292,7 +296,9 @@ export function LetterPage({ letterId }: LetterPageProps) {
                   <div className="space-y-2 text-sm text-[#E0E0E0]/60">
                     <div className="flex justify-between">
                       <span>{t("alphabet.name")}</span>
-                      <span className="text-[#E0E0E0]">{letter.name}</span>
+                      <span className="text-[#E0E0E0]">
+                        {getLocalizedText(letter.name)}
+                      </span>
                     </div>
                     <div className="flex justify-between">
                       <span>{t("alphabet.transliteration")}</span>
@@ -303,7 +309,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                     <div className="flex justify-between">
                       <span>{t("alphabet.articulationPoint")}:</span>
                       <span className="text-[#E0E0E0]">
-                        {letter.articulationPoint}
+                        {getLocalizedText(letter.articulationPoint)}
                       </span>
                     </div>
                     <div className="flex justify-between">
@@ -342,7 +348,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                           {previousLetter.letter}
                         </span>
                         <span className="text-[#E0E0E0] font-medium">
-                          {previousLetter.name}
+                          {getLocalizedText(previousLetter.name)}
                         </span>
                       </div>
                     </button>
@@ -362,7 +368,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                           {nextLetter.letter}
                         </span>
                         <span className="text-[#E0E0E0] font-medium">
-                          {nextLetter.name}
+                          {getLocalizedText(nextLetter.name)}
                         </span>
                       </div>
                     </button>

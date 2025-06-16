@@ -4,1481 +4,2393 @@
     "name": "Al-Fatiha",
     "nameArabic": "الفاتحة",
     "transliteration": "Al-Fātiḥah",
-    "translation": "Открывающая",
+    "translation": {
+      "ru": "Открывающая",
+      "en": "The Opening",
+      "ar": "الفاتحة"
+    },
     "verses": 7,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/001-al-fatiha.mp3",
     "pdfUrl": "/files/quran/001-al-fatiha.pdf",
     "duration": 120,
-    "description": "Первая сура Корана, называемая также \"Матерью Корана\""
+    "description": {
+      "ru": "Первая сура Корана, называемая также \"Матерью Корана\"",
+      "en": "The first chapter of the Quran, also known as 'The Mother of the Quran'",
+      "ar": "السورة الأولى من القرآن الكريم، وتُعرف أيضاً باسم 'أم القرآن'"
+    }
   },
   {
     "id": 2,
     "name": "Al-Baqarah",
     "nameArabic": "البقرة",
     "transliteration": "Al-Baqarah",
-    "translation": "Корова",
+    "translation": {
+      "ru": "Корова",
+      "en": "The Cow",
+      "ar": "البقرة"
+    },
     "verses": 286,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/002-al-baqarah.mp3",
     "pdfUrl": "/files/quran/002-al-baqarah.pdf",
     "duration": 7200,
-    "description": "Самая длинная сура Корана"
+    "description": {
+      "ru": "Самая длинная сура Корана",
+      "en": "The longest chapter of the Quran",
+      "ar": "أطول سورة في القرآن الكريم"
+    }
   },
   {
     "id": 3,
     "name": "Ali Imran",
     "nameArabic": "آل عمران",
     "transliteration": "Āl ʿImrān",
-    "translation": "Семейство Имрана",
+    "translation": {
+      "ru": "Семейство Имрана",
+      "en": "Family of Imran",
+      "ar": "آل عمران"
+    },
     "verses": 200,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/003-ali-imran.mp3",
     "pdfUrl": "/files/quran/003-ali-imran.pdf",
     "duration": 4800,
-    "description": "Сура о семействе Имрана"
+    "description": {
+      "ru": "Сура о семействе Имрана",
+      "en": "Chapter about the family of Imran",
+      "ar": "سورة عن آل عمران"
+    }
   },
   {
     "id": 4,
     "name": "An-Nisa",
     "nameArabic": "النساء",
     "transliteration": "An-Nisāʾ",
-    "translation": "Женщины",
+    "translation": {
+      "ru": "Женщины",
+      "en": "The Women",
+      "ar": "النساء"
+    },
     "verses": 176,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/004-an-nisa.mp3",
     "pdfUrl": "/files/quran/004-an-nisa.pdf",
     "duration": 4320,
-    "description": "Сура о правах женщин и семейных отношениях"
+    "description": {
+      "ru": "Сура о правах женщин и семейных отношениях",
+      "en": "Chapter about women's rights and family relations",
+      "ar": "سورة عن حقوق النساء والعلاقات الأسرية"
+    }
   },
   {
     "id": 5,
     "name": "Al-Ma'idah",
     "nameArabic": "المائدة",
     "transliteration": "Al-Māʾidah",
-    "translation": "Трапеза",
+    "translation": {
+      "ru": "Трапеза",
+      "en": "The Table Spread",
+      "ar": "المائدة"
+    },
     "verses": 120,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/005-al-maidah.mp3",
     "pdfUrl": "/files/quran/005-al-maidah.pdf",
     "duration": 3600,
-    "description": "Сура о небесной трапезе"
+    "description": {
+      "ru": "Сура о небесной трапезе",
+      "en": "Chapter about the heavenly table",
+      "ar": "سورة عن المائدة السماوية"
+    }
   },
   {
     "id": 6,
     "name": "Al-An'am",
     "nameArabic": "الأنعام",
     "transliteration": "Al-Anʿām",
-    "translation": "Скот",
+    "translation": {
+      "ru": "Скот",
+      "en": "The Cattle",
+      "ar": "الأنعام"
+    },
     "verses": 165,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/006-al-anam.mp3",
     "pdfUrl": "/files/quran/006-al-anam.pdf",
     "duration": 3960,
-    "description": "Сура о скоте и дарах Аллаха"
+    "description": {
+      "ru": "Сура о скоте и дарах Аллаха",
+      "en": "Chapter about cattle and Allah's gifts",
+      "ar": "سورة عن الأنعام ونعم الله"
+    }
   },
   {
     "id": 7,
     "name": "Al-A'raf",
     "nameArabic": "الأعراف",
     "transliteration": "Al-Aʿrāf",
-    "translation": "Преграды",
+    "translation": {
+      "ru": "Преграды",
+      "en": "The Heights",
+      "ar": "الأعراف"
+    },
     "verses": 206,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/007-al-araf.mp3",
     "pdfUrl": "/files/quran/007-al-araf.pdf",
     "duration": 4944,
-    "description": "Сура о преградах между раем и адом"
+    "description": {
+      "ru": "Сура о преградах между раем и адом",
+      "en": "Chapter about the barriers between heaven and hell",
+      "ar": "سورة عن الأعراف بين الجنة والنار"
+    }
   },
   {
     "id": 8,
     "name": "Al-Anfal",
     "nameArabic": "الأنفال",
     "transliteration": "Al-Anfāl",
-    "translation": "Трофеи",
+    "translation": {
+      "ru": "Трофеи",
+      "en": "The Spoils of War",
+      "ar": "الأنفال"
+    },
     "verses": 75,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/008-al-anfal.mp3",
     "pdfUrl": "/files/quran/008-al-anfal.pdf",
     "duration": 1800,
-    "description": "Сура о военных трофеях"
+    "description": {
+      "ru": "Сура о военных трофеях",
+      "en": "Chapter about war spoils",
+      "ar": "سورة عن الأنفال"
+    }
   },
   {
     "id": 9,
     "name": "At-Tawbah",
     "nameArabic": "التوبة",
     "transliteration": "At-Tawbah",
-    "translation": "Покаяние",
+    "translation": {
+      "ru": "Покаяние",
+      "en": "The Repentance",
+      "ar": "التوبة"
+    },
     "verses": 129,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/009-at-tawbah.mp3",
     "pdfUrl": "/files/quran/009-at-tawbah.pdf",
     "duration": 3096,
-    "description": "Сура о покаянии"
+    "description": {
+      "ru": "Сура о покаянии",
+      "en": "Chapter about repentance",
+      "ar": "سورة عن التوبة"
+    }
   },
   {
     "id": 10,
     "name": "Yunus",
     "nameArabic": "يونس",
     "transliteration": "Yūnus",
-    "translation": "Юнус",
+    "translation": {
+      "ru": "Юнус",
+      "en": "Jonah",
+      "ar": "يونس"
+    },
     "verses": 109,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/010-yunus.mp3",
     "pdfUrl": "/files/quran/010-yunus.pdf",
     "duration": 2616,
-    "description": "Сура о пророке Юнусе (Ионе)"
+    "description": {
+      "ru": "Сура о пророке Юнусе (Ионе)",
+      "en": "Chapter about Prophet Yunus (Jonah)",
+      "ar": "سورة عن النبي يونس عليه السلام"
+    }
   },
   {
     "id": 11,
     "name": "Hud",
     "nameArabic": "هود",
     "transliteration": "Hūd",
-    "translation": "Худ",
+    "translation": {
+      "ru": "Худ",
+      "en": "Hud",
+      "ar": "هود"
+    },
     "verses": 123,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/011-hud.mp3",
     "pdfUrl": "/files/quran/011-hud.pdf",
     "duration": 2952,
-    "description": "Сура о пророке Худе"
+    "description": {
+      "ru": "Сура о пророке Худе",
+      "en": "Chapter about Prophet Hud",
+      "ar": "سورة عن النبي هود عليه السلام"
+    }
   },
   {
     "id": 12,
     "name": "Yusuf",
     "nameArabic": "يوسف",
     "transliteration": "Yūsuf",
-    "translation": "Юсуф",
+    "translation": {
+      "ru": "Юсуф",
+      "en": "Joseph",
+      "ar": "يوسف"
+    },
     "verses": 111,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/012-yusuf.mp3",
     "pdfUrl": "/files/quran/012-yusuf.pdf",
     "duration": 2664,
-    "description": "Сура о пророке Юсуфе (Иосифе)"
+    "description": {
+      "ru": "Сура о пророке Юсуфе (Иосифе)",
+      "en": "Chapter about Prophet Yusuf (Joseph)",
+      "ar": "سورة عن النبي يوسف عليه السلام"
+    }
   },
   {
     "id": 13,
     "name": "Ar-Ra'd",
     "nameArabic": "الرعد",
     "transliteration": "Ar-Raʿd",
-    "translation": "Гром",
+    "translation": {
+      "ru": "Гром",
+      "en": "The Thunder",
+      "ar": "الرعد"
+    },
     "verses": 43,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/013-ar-rad.mp3",
     "pdfUrl": "/files/quran/013-ar-rad.pdf",
     "duration": 1032,
-    "description": "Сура о грозе как знамении Аллаха"
+    "description": {
+      "ru": "Сура о грозе как знамении Аллаха",
+      "en": "Chapter about thunder as a sign of Allah",
+      "ar": "سورة عن الرعد كآية من آيات الله"
+    }
   },
   {
     "id": 14,
     "name": "Ibrahim",
     "nameArabic": "إبراهيم",
     "transliteration": "Ibrāhīm",
-    "translation": "Ибрахим",
+    "translation": {
+      "ru": "Ибрахим",
+      "en": "Abraham",
+      "ar": "إبراهيم"
+    },
     "verses": 52,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/014-ibrahim.mp3",
     "pdfUrl": "/files/quran/014-ibrahim.pdf",
     "duration": 1248,
-    "description": "Сура о пророке Ибрахиме (Аврааме)"
+    "description": {
+      "ru": "Сура о пророке Ибрахиме (Аврааме)",
+      "en": "Chapter about Prophet Ibrahim (Abraham)",
+      "ar": "سورة عن النبي إبراهيم عليه السلام"
+    }
   },
   {
     "id": 15,
     "name": "Al-Hijr",
     "nameArabic": "الحجر",
     "transliteration": "Al-Ḥijr",
-    "translation": "Каменная область",
+    "translation": {
+      "ru": "Каменная область",
+      "en": "The Rocky Tract",
+      "ar": "الحجر"
+    },
     "verses": 99,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/015-al-hijr.mp3",
     "pdfUrl": "/files/quran/015-al-hijr.pdf",
     "duration": 2376,
-    "description": "Сура о людях Хиджра"
+    "description": {
+      "ru": "Сура о людях Хиджра",
+      "en": "Chapter about the people of Hijr",
+      "ar": "سورة عن أهل الحجر"
+    }
   },
   {
     "id": 16,
     "name": "An-Nahl",
     "nameArabic": "النحل",
     "transliteration": "An-Naḥl",
-    "translation": "Пчёлы",
+    "translation": {
+      "ru": "Пчёлы",
+      "en": "The Bee",
+      "ar": "النحل"
+    },
     "verses": 128,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/016-an-nahl.mp3",
     "pdfUrl": "/files/quran/016-an-nahl.pdf",
     "duration": 3072,
-    "description": "Сура о пчёлах и божественных дарах"
+    "description": {
+      "ru": "Сура о пчёлах и божественных дарах",
+      "en": "Chapter about bees and divine gifts",
+      "ar": "سورة عن النحل والنعم الإلهية"
+    }
   },
   {
     "id": 17,
     "name": "Al-Isra",
     "nameArabic": "الإسراء",
     "transliteration": "Al-Isrāʾ",
-    "translation": "Ночное путешествие",
+    "translation": {
+      "ru": "Ночное путешествие",
+      "en": "The Night Journey",
+      "ar": "الإسراء"
+    },
     "verses": 111,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/017-al-isra.mp3",
     "pdfUrl": "/files/quran/017-al-isra.pdf",
     "duration": 2664,
-    "description": "Сура о ночном путешествии Пророка"
+    "description": {
+      "ru": "Сура о ночном путешествии Пророка",
+      "en": "Chapter about the Prophet's night journey",
+      "ar": "سورة عن إسراء النبي صلى الله عليه وسلم"
+    }
   },
   {
     "id": 18,
     "name": "Al-Kahf",
     "nameArabic": "الكهف",
     "transliteration": "Al-Kahf",
-    "translation": "Пещера",
+    "translation": {
+      "ru": "Пещера",
+      "en": "The Cave",
+      "ar": "الكهف"
+    },
     "verses": 110,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/018-al-kahf.mp3",
     "pdfUrl": "/files/quran/018-al-kahf.pdf",
     "duration": 2640,
-    "description": "Сура о людях пещеры"
+    "description": {
+      "ru": "Сура о людях пещеры",
+      "en": "Chapter about the people of the cave",
+      "ar": "سورة عن أصحاب الكهف"
+    }
   },
   {
     "id": 19,
     "name": "Maryam",
     "nameArabic": "مريم",
     "transliteration": "Maryam",
-    "translation": "Марьям",
+    "translation": {
+      "ru": "Марьям",
+      "en": "Mary",
+      "ar": "مريم"
+    },
     "verses": 98,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/019-maryam.mp3",
     "pdfUrl": "/files/quran/019-maryam.pdf",
     "duration": 2352,
-    "description": "Сура о Марьям (Деве Марии)"
+    "description": {
+      "ru": "Сура о Марьям (Деве Марии)",
+      "en": "Chapter about Maryam (Virgin Mary)",
+      "ar": "سورة عن مريم عليها السلام"
+    }
   },
   {
     "id": 20,
     "name": "Ta-Ha",
     "nameArabic": "طه",
     "transliteration": "Ṭā Hā",
-    "translation": "Та Ха",
+    "translation": {
+      "ru": "Та Ха",
+      "en": "Ta-Ha",
+      "ar": "طه"
+    },
     "verses": 135,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/020-ta-ha.mp3",
     "pdfUrl": "/files/quran/020-ta-ha.pdf",
     "duration": 3240,
-    "description": "Сура, начинающаяся с букв Та Ха"
+    "description": {
+      "ru": "Сура, начинающаяся с букв Та Ха",
+      "en": "Chapter beginning with the letters Ta-Ha",
+      "ar": "سورة تبدأ بالحروف طه"
+    }
   },
   {
     "id": 21,
     "name": "Al-Anbiya",
     "nameArabic": "الأنبياء",
     "transliteration": "Al-Anbiyāʾ",
-    "translation": "Пророки",
+    "translation": {
+      "ru": "Пророки",
+      "en": "The Prophets",
+      "ar": "الأنبياء"
+    },
     "verses": 112,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/021-al-anbiya.mp3",
     "pdfUrl": "/files/quran/021-al-anbiya.pdf",
     "duration": 2688,
-    "description": "Сура о различных пророках"
+    "description": {
+      "ru": "Сура о различных пророках",
+      "en": "Chapter about various prophets",
+      "ar": "سورة عن الأنبياء المختلفين"
+    }
   },
   {
     "id": 22,
     "name": "Al-Hajj",
     "nameArabic": "الحج",
     "transliteration": "Al-Ḥajj",
-    "translation": "Паломничество",
+    "translation": {
+      "ru": "Паломничество",
+      "en": "The Pilgrimage",
+      "ar": "الحج"
+    },
     "verses": 78,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/022-al-hajj.mp3",
     "pdfUrl": "/files/quran/022-al-hajj.pdf",
     "duration": 1872,
-    "description": "Сура о хадже"
+    "description": {
+      "ru": "Сура о хадже",
+      "en": "Chapter about Hajj pilgrimage",
+      "ar": "سورة عن الحج"
+    }
   },
   {
     "id": 23,
     "name": "Al-Mu'minun",
     "nameArabic": "المؤمنون",
     "transliteration": "Al-Muʾminūn",
-    "translation": "Верующие",
+    "translation": {
+      "ru": "Верующие",
+      "en": "The Believers",
+      "ar": "المؤمنون"
+    },
     "verses": 118,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/023-al-muminun.mp3",
     "pdfUrl": "/files/quran/023-al-muminun.pdf",
     "duration": 2832,
-    "description": "Сура о качествах верующих"
+    "description": {
+      "ru": "Сура о качествах верующих",
+      "en": "Chapter about the qualities of believers",
+      "ar": "سورة عن صفات المؤمنين"
+    }
   },
   {
     "id": 24,
     "name": "An-Nur",
     "nameArabic": "النور",
     "transliteration": "An-Nūr",
-    "translation": "Свет",
+    "translation": {
+      "ru": "Свет",
+      "en": "The Light",
+      "ar": "النور"
+    },
     "verses": 64,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/024-an-nur.mp3",
     "pdfUrl": "/files/quran/024-an-nur.pdf",
     "duration": 1536,
-    "description": "Сура о божественном свете"
+    "description": {
+      "ru": "Сура о божественном свете",
+      "en": "Chapter about divine light",
+      "ar": "سورة عن النور الإلهي"
+    }
   },
   {
     "id": 25,
     "name": "Al-Furqan",
     "nameArabic": "الفرقان",
     "transliteration": "Al-Furqān",
-    "translation": "Различение",
+    "translation": {
+      "ru": "Различение",
+      "en": "The Criterion",
+      "ar": "الفرقان"
+    },
     "verses": 77,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/025-al-furqan.mp3",
     "pdfUrl": "/files/quran/025-al-furqan.pdf",
     "duration": 1848,
-    "description": "Сура о различении истины и лжи"
+    "description": {
+      "ru": "Сура о различении истины и лжи",
+      "en": "Chapter about distinguishing truth from falsehood",
+      "ar": "سورة عن التمييز بين الحق والباطل"
+    }
   },
   {
     "id": 26,
     "name": "Ash-Shu'ara",
     "nameArabic": "الشعراء",
     "transliteration": "Aš-Šuʿarāʾ",
-    "translation": "Поэты",
+    "translation": {
+      "ru": "Поэты",
+      "en": "The Poets",
+      "ar": "الشعراء"
+    },
     "verses": 227,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/026-ash-shuara.mp3",
     "pdfUrl": "/files/quran/026-ash-shuara.pdf",
     "duration": 5448,
-    "description": "Сура о поэтах"
+    "description": {
+      "ru": "Сура о поэтах",
+      "en": "Chapter about poets",
+      "ar": "سورة عن الشعراء"
+    }
   },
   {
     "id": 27,
     "name": "An-Naml",
     "nameArabic": "النمل",
     "transliteration": "An-Naml",
-    "translation": "Муравьи",
+    "translation": {
+      "ru": "Муравьи",
+      "en": "The Ant",
+      "ar": "النمل"
+    },
     "verses": 93,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/027-an-naml.mp3",
     "pdfUrl": "/files/quran/027-an-naml.pdf",
     "duration": 2232,
-    "description": "Сура о муравьях и царе Сулеймане"
+    "description": {
+      "ru": "Сура о муравьях и царе Сулеймане",
+      "en": "Chapter about ants and King Solomon",
+      "ar": "سورة عن النمل والملك سليمان"
+    }
   },
   {
     "id": 28,
     "name": "Al-Qasas",
     "nameArabic": "القصص",
     "transliteration": "Al-Qaṣaṣ",
-    "translation": "Рассказы",
+    "translation": {
+      "ru": "Рассказы",
+      "en": "The Stories",
+      "ar": "القصص"
+    },
     "verses": 88,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/028-al-qasas.mp3",
     "pdfUrl": "/files/quran/028-al-qasas.pdf",
     "duration": 2112,
-    "description": "Сура о рассказах пророков"
+    "description": {
+      "ru": "Сура о рассказах пророков",
+      "en": "Chapter about stories of prophets",
+      "ar": "سورة عن قصص الأنبياء"
+    }
   },
   {
     "id": 29,
     "name": "Al-Ankabut",
     "nameArabic": "العنكبوت",
     "transliteration": "Al-ʿAnkabūt",
-    "translation": "Паук",
+    "translation": {
+      "ru": "Паук",
+      "en": "The Spider",
+      "ar": "العنكبوت"
+    },
     "verses": 69,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/029-al-ankabut.mp3",
     "pdfUrl": "/files/quran/029-al-ankabut.pdf",
     "duration": 1656,
-    "description": "Сура о пауке"
+    "description": {
+      "ru": "Сура о пауке",
+      "en": "Chapter about the spider",
+      "ar": "سورة عن العنكبوت"
+    }
   },
   {
     "id": 30,
     "name": "Ar-Rum",
     "nameArabic": "الروم",
     "transliteration": "Ar-Rūm",
-    "translation": "Римляне",
+    "translation": {
+      "ru": "Римляне",
+      "en": "The Romans",
+      "ar": "الروم"
+    },
     "verses": 60,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/030-ar-rum.mp3",
     "pdfUrl": "/files/quran/030-ar-rum.pdf",
     "duration": 1440,
-    "description": "Сура о римлянах"
+    "description": {
+      "ru": "Сура о римлянах",
+      "en": "Chapter about the Romans",
+      "ar": "سورة عن الروم"
+    }
   },
   {
     "id": 31,
     "name": "Luqman",
     "nameArabic": "لقمان",
     "transliteration": "Luqmān",
-    "translation": "Лукман",
+    "translation": {
+      "ru": "Лукман",
+      "en": "Luqman",
+      "ar": "لقمان"
+    },
     "verses": 34,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/031-luqman.mp3",
     "pdfUrl": "/files/quran/031-luqman.pdf",
     "duration": 816,
-    "description": "Сура о мудреце Лукмане"
+    "description": {
+      "ru": "Сура о мудреце Лукмане",
+      "en": "Chapter about the wise Luqman",
+      "ar": "سورة عن الحكيم لقمان"
+    }
   },
   {
     "id": 32,
     "name": "As-Sajdah",
     "nameArabic": "السجدة",
     "transliteration": "As-Sajdah",
-    "translation": "Поклон",
+    "translation": {
+      "ru": "Поклон",
+      "en": "The Prostration",
+      "ar": "السجدة"
+    },
     "verses": 30,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/032-as-sajdah.mp3",
     "pdfUrl": "/files/quran/032-as-sajdah.pdf",
     "duration": 720,
-    "description": "Сура о поклонении"
+    "description": {
+      "ru": "Сура о поклонении",
+      "en": "Chapter about prostration",
+      "ar": "سورة عن السجود"
+    }
   },
   {
     "id": 33,
     "name": "Al-Ahzab",
     "nameArabic": "الأحزاب",
     "transliteration": "Al-Aḥzāb",
-    "translation": "Союзники",
+    "translation": {
+      "ru": "Союзники",
+      "en": "The Clans",
+      "ar": "الأحزاب"
+    },
     "verses": 73,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/033-al-ahzab.mp3",
     "pdfUrl": "/files/quran/033-al-ahzab.pdf",
     "duration": 1752,
-    "description": "Сура о битве у рва"
+    "description": {
+      "ru": "Сура о битве у рва",
+      "en": "Chapter about the Battle of the Trench",
+      "ar": "سورة عن غزوة الأحزاب"
+    }
   },
   {
     "id": 34,
     "name": "Saba",
     "nameArabic": "سبأ",
     "transliteration": "Sabaʾ",
-    "translation": "Сабейцы",
+    "translation": {
+      "ru": "Сабейцы",
+      "en": "Sheba",
+      "ar": "سبأ"
+    },
     "verses": 54,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/034-saba.mp3",
     "pdfUrl": "/files/quran/034-saba.pdf",
     "duration": 1296,
-    "description": "Сура о царице Савской"
+    "description": {
+      "ru": "Сура о царице Савской",
+      "en": "Chapter about the Queen of Sheba",
+      "ar": "سورة عن ملكة سبأ"
+    }
   },
   {
     "id": 35,
     "name": "Fatir",
     "nameArabic": "فاطر",
     "transliteration": "Fāṭir",
-    "translation": "Творец",
+    "translation": {
+      "ru": "Творец",
+      "en": "Originator",
+      "ar": "فاطر"
+    },
     "verses": 45,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/035-fatir.mp3",
     "pdfUrl": "/files/quran/035-fatir.pdf",
     "duration": 1080,
-    "description": "Сура о Творце"
+    "description": {
+      "ru": "Сура о Творце",
+      "en": "Chapter about the Creator",
+      "ar": "سورة عن فاطر السماوات والأرض"
+    }
   },
   {
     "id": 36,
     "name": "Ya-Sin",
     "nameArabic": "يس",
     "transliteration": "Yā Sīn",
-    "translation": "Йа Син",
+    "translation": {
+      "ru": "Йа Син",
+      "en": "Ya-Sin",
+      "ar": "يس"
+    },
     "verses": 83,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/036-ya-sin.mp3",
     "pdfUrl": "/files/quran/036-ya-sin.pdf",
     "duration": 1992,
-    "description": "Сура, начинающаяся с букв Йа Син"
+    "description": {
+      "ru": "Сура, начинающаяся с букв Йа Син",
+      "en": "Chapter beginning with the letters Ya-Sin",
+      "ar": "سورة تبدأ بالحروف يس"
+    }
   },
   {
     "id": 37,
     "name": "As-Saffat",
     "nameArabic": "الصافات",
     "transliteration": "Aṣ-Ṣāffāt",
-    "translation": "Выстроившиеся в ряды",
+    "translation": {
+      "ru": "Выстроившиеся в ряды",
+      "en": "Those who set the Ranks",
+      "ar": "الصافات"
+    },
     "verses": 182,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/037-as-saffat.mp3",
     "pdfUrl": "/files/quran/037-as-saffat.pdf",
     "duration": 4368,
-    "description": "Сура о выстроившихся в ряды ангелах"
+    "description": {
+      "ru": "Сура о выстроившихся в ряды ангелах",
+      "en": "Chapter about angels standing in ranks",
+      "ar": "سورة عن الملائكة الصافات"
+    }
   },
   {
     "id": 38,
     "name": "Sad",
     "nameArabic": "ص",
     "transliteration": "Ṣād",
-    "translation": "Сад",
+    "translation": {
+      "ru": "Сад",
+      "en": "Sad",
+      "ar": "ص"
+    },
     "verses": 88,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/038-sad.mp3",
     "pdfUrl": "/files/quran/038-sad.pdf",
     "duration": 2112,
-    "description": "Сура, начинающаяся с буквы Сад"
+    "description": {
+      "ru": "Сура, начинающаяся с буквы Сад",
+      "en": "Chapter beginning with the letter Sad",
+      "ar": "سورة تبدأ بالحرف ص"
+    }
   },
   {
     "id": 39,
     "name": "Az-Zumar",
     "nameArabic": "الزمر",
     "transliteration": "Az-Zumar",
-    "translation": "Толпы",
+    "translation": {
+      "ru": "Толпы",
+      "en": "The Troops",
+      "ar": "الزمر"
+    },
     "verses": 75,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/039-az-zumar.mp3",
     "pdfUrl": "/files/quran/039-az-zumar.pdf",
     "duration": 1800,
-    "description": "Сура о толпах людей"
+    "description": {
+      "ru": "Сура о толпах людей",
+      "en": "Chapter about groups of people",
+      "ar": "سورة عن الزمر"
+    }
   },
   {
     "id": 40,
     "name": "Ghafir",
     "nameArabic": "غافر",
     "transliteration": "Ġāfir",
-    "translation": "Прощающий",
+    "translation": {
+      "ru": "Прощающий",
+      "en": "The Forgiver",
+      "ar": "غافر"
+    },
     "verses": 85,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/040-ghafir.mp3",
     "pdfUrl": "/files/quran/040-ghafir.pdf",
     "duration": 2040,
-    "description": "Сура о прощающем Аллахе"
+    "description": {
+      "ru": "Сура о прощающем Аллахе",
+      "en": "Chapter about Allah the Forgiver",
+      "ar": "سورة عن الله الغافر"
+    }
   },
   {
     "id": 41,
     "name": "Fussilat",
     "nameArabic": "فصلت",
     "transliteration": "Fuṣṣilat",
-    "translation": "Разъяснены",
+    "translation": {
+      "ru": "Разъяснены",
+      "en": "Explained in Detail",
+      "ar": "فصلت"
+    },
     "verses": 54,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/041-fussilat.mp3",
     "pdfUrl": "/files/quran/041-fussilat.pdf",
     "duration": 1296,
-    "description": "Сура о разъяснённых знамениях"
+    "description": {
+      "ru": "Сура о разъяснённых знамениях",
+      "en": "Chapter about detailed signs",
+      "ar": "سورة عن الآيات المفصلة"
+    }
   },
   {
     "id": 42,
     "name": "Ash-Shura",
     "nameArabic": "الشورى",
     "transliteration": "Aš-Šūrā",
-    "translation": "Совет",
+    "translation": {
+      "ru": "Совет",
+      "en": "The Consultation",
+      "ar": "الشورى"
+    },
     "verses": 53,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/042-ash-shura.mp3",
     "pdfUrl": "/files/quran/042-ash-shura.pdf",
     "duration": 1272,
-    "description": "Сура о совете"
+    "description": {
+      "ru": "Сура о совете",
+      "en": "Chapter about consultation",
+      "ar": "سورة عن الشورى"
+    }
   },
   {
     "id": 43,
     "name": "Az-Zukhruf",
     "nameArabic": "الزخرف",
     "transliteration": "Az-Zuḫruf",
-    "translation": "Украшения",
+    "translation": {
+      "ru": "Украшения",
+      "en": "The Ornaments of Gold",
+      "ar": "الزخرف"
+    },
     "verses": 89,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/043-az-zukhruf.mp3",
     "pdfUrl": "/files/quran/043-az-zukhruf.pdf",
     "duration": 2136,
-    "description": "Сура об украшениях"
+    "description": {
+      "ru": "Сура об украшениях",
+      "en": "Chapter about ornaments",
+      "ar": "سورة عن الزخرف"
+    }
   },
   {
     "id": 44,
     "name": "Ad-Dukhan",
     "nameArabic": "الدخان",
     "transliteration": "Ad-Duḫān",
-    "translation": "Дым",
+    "translation": {
+      "ru": "Дым",
+      "en": "The Smoke",
+      "ar": "الدخان"
+    },
     "verses": 59,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/044-ad-dukhan.mp3",
     "pdfUrl": "/files/quran/044-ad-dukhan.pdf",
     "duration": 1416,
-    "description": "Сура о дыме"
+    "description": {
+      "ru": "Сура о дыме",
+      "en": "Chapter about smoke",
+      "ar": "سورة عن الدخان"
+    }
   },
   {
     "id": 45,
     "name": "Al-Jathiyah",
     "nameArabic": "الجاثية",
     "transliteration": "Al-Jāṯiyah",
-    "translation": "Коленопреклонённые",
+    "translation": {
+      "ru": "Коленопреклонённые",
+      "en": "The Crouching",
+      "ar": "الجاثية"
+    },
     "verses": 37,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/045-al-jathiyah.mp3",
     "pdfUrl": "/files/quran/045-al-jathiyah.pdf",
     "duration": 888,
-    "description": "Сура о коленопреклонённых"
+    "description": {
+      "ru": "Сура о коленопреклонённых",
+      "en": "Chapter about those who crouch",
+      "ar": "سورة عن الجاثية"
+    }
   },
   {
     "id": 46,
     "name": "Al-Ahqaf",
     "nameArabic": "الأحقاف",
     "transliteration": "Al-Aḥqāf",
-    "translation": "Песчаные холмы",
+    "translation": {
+      "ru": "Песчаные холмы",
+      "en": "The Wind-Curved Sandhills",
+      "ar": "الأحقاف"
+    },
     "verses": 35,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/046-al-ahqaf.mp3",
     "pdfUrl": "/files/quran/046-al-ahqaf.pdf",
     "duration": 840,
-    "description": "Сура о песчаных холмах"
+    "description": {
+      "ru": "Сура о песчаных холмах",
+      "en": "Chapter about sand dunes",
+      "ar": "سورة عن الأحقاف"
+    }
   },
   {
     "id": 47,
     "name": "Muhammad",
     "nameArabic": "محمد",
     "transliteration": "Muḥammad",
-    "translation": "Мухаммад",
+    "translation": {
+      "ru": "Мухаммад",
+      "en": "Muhammad",
+      "ar": "محمد"
+    },
     "verses": 38,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/047-muhammad.mp3",
     "pdfUrl": "/files/quran/047-muhammad.pdf",
     "duration": 912,
-    "description": "Сура о пророке Мухаммаде"
+    "description": {
+      "ru": "Сура о пророке Мухаммаде",
+      "en": "Chapter about Prophet Muhammad",
+      "ar": "سورة عن النبي محمد صلى الله عليه وسلم"
+    }
   },
   {
     "id": 48,
     "name": "Al-Fath",
     "nameArabic": "الفتح",
     "transliteration": "Al-Fatḥ",
-    "translation": "Победа",
+    "translation": {
+      "ru": "Победа",
+      "en": "The Victory",
+      "ar": "الفتح"
+    },
     "verses": 29,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/048-al-fath.mp3",
     "pdfUrl": "/files/quran/048-al-fath.pdf",
     "duration": 696,
-    "description": "Сура о победе"
+    "description": {
+      "ru": "Сура о победе",
+      "en": "Chapter about victory",
+      "ar": "سورة عن الفتح"
+    }
   },
   {
     "id": 49,
     "name": "Al-Hujurat",
     "nameArabic": "الحجرات",
     "transliteration": "Al-Ḥujurāt",
-    "translation": "Комнаты",
+    "translation": {
+      "ru": "Комнаты",
+      "en": "The Rooms",
+      "ar": "الحجرات"
+    },
     "verses": 18,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/049-al-hujurat.mp3",
     "pdfUrl": "/files/quran/049-al-hujurat.pdf",
     "duration": 432,
-    "description": "Сура о комнатах"
+    "description": {
+      "ru": "Сура о комнатах",
+      "en": "Chapter about rooms",
+      "ar": "سورة عن الحجرات"
+    }
   },
   {
     "id": 50,
     "name": "Qaf",
     "nameArabic": "ق",
     "transliteration": "Qāf",
-    "translation": "Каф",
+    "translation": {
+      "ru": "Каф",
+      "en": "Qaf",
+      "ar": "ق"
+    },
     "verses": 45,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/050-qaf.mp3",
     "pdfUrl": "/files/quran/050-qaf.pdf",
     "duration": 1080,
-    "description": "Сура, начинающаяся с буквы Каф"
+    "description": {
+      "ru": "Сура, начинающаяся с буквы Каф",
+      "en": "Chapter beginning with the letter Qaf",
+      "ar": "سورة تبدأ بالحرف ق"
+    }
   },
   {
     "id": 51,
     "name": "Adh-Dhariyat",
     "nameArabic": "الذاريات",
     "transliteration": "Aḏ-Ḏāriyāt",
-    "translation": "Рассеивающие",
+    "translation": {
+      "ru": "Рассеивающие",
+      "en": "The Winnowing Winds",
+      "ar": "الذاريات"
+    },
     "verses": 60,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/051-adh-dhariyat.mp3",
     "pdfUrl": "/files/quran/051-adh-dhariyat.pdf",
     "duration": 1440,
-    "description": "Сура о рассеивающих ветрах"
+    "description": {
+      "ru": "Сура о рассеивающих ветрах",
+      "en": "Chapter about scattering winds",
+      "ar": "سورة عن الرياح الذاريات"
+    }
   },
   {
     "id": 52,
     "name": "At-Tur",
     "nameArabic": "الطور",
     "transliteration": "Aṭ-Ṭūr",
-    "translation": "Гора",
+    "translation": {
+      "ru": "Гора",
+      "en": "The Mount",
+      "ar": "الطور"
+    },
     "verses": 49,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/052-at-tur.mp3",
     "pdfUrl": "/files/quran/052-at-tur.pdf",
     "duration": 1176,
-    "description": "Сура о горе Синай"
+    "description": {
+      "ru": "Сура о горе Синай",
+      "en": "Chapter about Mount Sinai",
+      "ar": "سورة عن جبل الطور"
+    }
   },
   {
     "id": 53,
     "name": "An-Najm",
     "nameArabic": "النجم",
     "transliteration": "An-Najm",
-    "translation": "Звезда",
+    "translation": {
+      "ru": "Звезда",
+      "en": "The Star",
+      "ar": "النجم"
+    },
     "verses": 62,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/053-an-najm.mp3",
     "pdfUrl": "/files/quran/053-an-najm.pdf",
     "duration": 1488,
-    "description": "Сура о звезде"
+    "description": {
+      "ru": "Сура о звезде",
+      "en": "Chapter about the star",
+      "ar": "سورة عن النجم"
+    }
   },
   {
     "id": 54,
     "name": "Al-Qamar",
     "nameArabic": "القمر",
     "transliteration": "Al-Qamar",
-    "translation": "Луна",
+    "translation": {
+      "ru": "Луна",
+      "en": "The Moon",
+      "ar": "القمر"
+    },
     "verses": 55,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/054-al-qamar.mp3",
     "pdfUrl": "/files/quran/054-al-qamar.pdf",
     "duration": 1320,
-    "description": "Сура о расколе луны"
+    "description": {
+      "ru": "Сура о расколе луны",
+      "en": "Chapter about the splitting of the moon",
+      "ar": "سورة عن انشقاق القمر"
+    }
   },
   {
     "id": 55,
     "name": "Ar-Rahman",
     "nameArabic": "الرحمن",
     "transliteration": "Ar-Raḥmān",
-    "translation": "Милостивый",
+    "translation": {
+      "ru": "Милостивый",
+      "en": "The Beneficent",
+      "ar": "الرحمن"
+    },
     "verses": 78,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/055-ar-rahman.mp3",
     "pdfUrl": "/files/quran/055-ar-rahman.pdf",
     "duration": 1872,
-    "description": "Сура о милостивом Аллахе"
+    "description": {
+      "ru": "Сура о милостивом Аллахе",
+      "en": "Chapter about Allah the Beneficent",
+      "ar": "سورة عن الله الرحمن"
+    }
   },
   {
     "id": 56,
     "name": "Al-Waqi'ah",
     "nameArabic": "الواقعة",
     "transliteration": "Al-Wāqiʿah",
-    "translation": "Событие",
+    "translation": {
+      "ru": "Событие",
+      "en": "The Inevitable",
+      "ar": "الواقعة"
+    },
     "verses": 96,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/056-al-waqiah.mp3",
     "pdfUrl": "/files/quran/056-al-waqiah.pdf",
     "duration": 2304,
-    "description": "Сура о неизбежном событии"
+    "description": {
+      "ru": "Сура о неизбежном событии",
+      "en": "Chapter about the inevitable event",
+      "ar": "سورة عن الواقعة"
+    }
   },
   {
     "id": 57,
     "name": "Al-Hadid",
     "nameArabic": "الحديد",
     "transliteration": "Al-Ḥadīd",
-    "translation": "Железо",
+    "translation": {
+      "ru": "Железо",
+      "en": "The Iron",
+      "ar": "الحديد"
+    },
     "verses": 29,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/057-al-hadid.mp3",
     "pdfUrl": "/files/quran/057-al-hadid.pdf",
     "duration": 696,
-    "description": "Сура о железе"
+    "description": {
+      "ru": "Сура о железе",
+      "en": "Chapter about iron",
+      "ar": "سورة عن الحديد"
+    }
   },
   {
     "id": 58,
     "name": "Al-Mujadilah",
     "nameArabic": "المجادلة",
     "transliteration": "Al-Mujādilah",
-    "translation": "Препирающаяся",
+    "translation": {
+      "ru": "Препирающаяся",
+      "en": "The Pleading Woman",
+      "ar": "المجادلة"
+    },
     "verses": 22,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/058-al-mujadilah.mp3",
     "pdfUrl": "/files/quran/058-al-mujadilah.pdf",
     "duration": 528,
-    "description": "Сура о препирающейся женщине"
+    "description": {
+      "ru": "Сура о препирающейся женщине",
+      "en": "Chapter about the pleading woman",
+      "ar": "سورة عن المرأة المجادلة"
+    }
   },
   {
     "id": 59,
     "name": "Al-Hashr",
     "nameArabic": "الحشر",
     "transliteration": "Al-Ḥašr",
-    "translation": "Сбор",
+    "translation": {
+      "ru": "Сбор",
+      "en": "The Exile",
+      "ar": "الحشر"
+    },
     "verses": 24,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/059-al-hashr.mp3",
     "pdfUrl": "/files/quran/059-al-hashr.pdf",
     "duration": 576,
-    "description": "Сура о сборе"
+    "description": {
+      "ru": "Сура о сборе",
+      "en": "Chapter about exile",
+      "ar": "سورة عن الحشر"
+    }
   },
   {
     "id": 60,
     "name": "Al-Mumtahanah",
     "nameArabic": "الممتحنة",
     "transliteration": "Al-Mumtaḥanah",
-    "translation": "Испытуемая",
+    "translation": {
+      "ru": "Испытуемая",
+      "en": "The Examined One",
+      "ar": "الممتحنة"
+    },
     "verses": 13,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/060-al-mumtahanah.mp3",
     "pdfUrl": "/files/quran/060-al-mumtahanah.pdf",
     "duration": 312,
-    "description": "Сура об испытуемой"
+    "description": {
+      "ru": "Сура об испытуемой",
+      "en": "Chapter about the examined one",
+      "ar": "سورة عن الممتحنة"
+    }
   },
   {
     "id": 61,
     "name": "As-Saff",
     "nameArabic": "الصف",
     "transliteration": "Aṣ-Ṣaff",
-    "translation": "Ряды",
+    "translation": {
+      "ru": "Ряды",
+      "en": "The Ranks",
+      "ar": "الصف"
+    },
     "verses": 14,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/061-as-saff.mp3",
     "pdfUrl": "/files/quran/061-as-saff.pdf",
     "duration": 336,
-    "description": "Сура о рядах"
+    "description": {
+      "ru": "Сура о рядах",
+      "en": "Chapter about ranks",
+      "ar": "سورة عن الصف"
+    }
   },
   {
     "id": 62,
     "name": "Al-Jumu'ah",
     "nameArabic": "الجمعة",
     "transliteration": "Al-Jumuʿah",
-    "translation": "Пятница",
+    "translation": {
+      "ru": "Пятница",
+      "en": "The Congregation",
+      "ar": "الجمعة"
+    },
     "verses": 11,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/062-al-jumuah.mp3",
     "pdfUrl": "/files/quran/062-al-jumuah.pdf",
     "duration": 264,
-    "description": "Сура о пятничной молитве"
+    "description": {
+      "ru": "Сура о пятничной молитве",
+      "en": "Chapter about Friday prayer",
+      "ar": "سورة عن صلاة الجمعة"
+    }
   },
   {
     "id": 63,
     "name": "Al-Munafiqun",
     "nameArabic": "المنافقون",
     "transliteration": "Al-Munāfiqūn",
-    "translation": "Лицемеры",
+    "translation": {
+      "ru": "Лицемеры",
+      "en": "The Hypocrites",
+      "ar": "المنافقون"
+    },
     "verses": 11,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/063-al-munafiqun.mp3",
     "pdfUrl": "/files/quran/063-al-munafiqun.pdf",
     "duration": 264,
-    "description": "Сура о лицемерах"
+    "description": {
+      "ru": "Сура о лицемерах",
+      "en": "Chapter about hypocrites",
+      "ar": "سورة عن المنافقين"
+    }
   },
   {
     "id": 64,
     "name": "At-Taghabun",
     "nameArabic": "التغابن",
     "transliteration": "At-Taġābun",
-    "translation": "Взаимный обман",
+    "translation": {
+      "ru": "Взаимный обман",
+      "en": "The Mutual Disillusion",
+      "ar": "التغابن"
+    },
     "verses": 18,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/064-at-taghabun.mp3",
     "pdfUrl": "/files/quran/064-at-taghabun.pdf",
     "duration": 432,
-    "description": "Сура о взаимном обмане"
+    "description": {
+      "ru": "Сура о взаимном обмане",
+      "en": "Chapter about mutual disillusion",
+      "ar": "سورة عن التغابن"
+    }
   },
   {
     "id": 65,
     "name": "At-Talaq",
     "nameArabic": "الطلاق",
     "transliteration": "Aṭ-Ṭalāq",
-    "translation": "Развод",
+    "translation": {
+      "ru": "Развод",
+      "en": "The Divorce",
+      "ar": "الطلاق"
+    },
     "verses": 12,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/065-at-talaq.mp3",
     "pdfUrl": "/files/quran/065-at-talaq.pdf",
     "duration": 288,
-    "description": "Сура о разводе"
+    "description": {
+      "ru": "Сура о разводе",
+      "en": "Chapter about divorce",
+      "ar": "سورة عن الطلاق"
+    }
   },
   {
     "id": 66,
     "name": "At-Tahrim",
     "nameArabic": "التحريم",
     "transliteration": "At-Taḥrīm",
-    "translation": "Запрещение",
+    "translation": {
+      "ru": "Запрещение",
+      "en": "The Prohibition",
+      "ar": "التحريم"
+    },
     "verses": 12,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/066-at-tahrim.mp3",
     "pdfUrl": "/files/quran/066-at-tahrim.pdf",
     "duration": 288,
-    "description": "Сура о запрещении"
+    "description": {
+      "ru": "Сура о запрещении",
+      "en": "Chapter about prohibition",
+      "ar": "سورة عن التحريم"
+    }
   },
   {
     "id": 67,
     "name": "Al-Mulk",
     "nameArabic": "الملك",
     "transliteration": "Al-Mulk",
-    "translation": "Власть",
+    "translation": {
+      "ru": "Власть",
+      "en": "The Sovereignty",
+      "ar": "الملك"
+    },
     "verses": 30,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/067-al-mulk.mp3",
     "pdfUrl": "/files/quran/067-al-mulk.pdf",
     "duration": 720,
-    "description": "Сура о власти Аллаха"
+    "description": {
+      "ru": "Сура о власти Аллаха",
+      "en": "Chapter about Allah's sovereignty",
+      "ar": "سورة عن ملك الله"
+    }
   },
   {
     "id": 68,
     "name": "Al-Qalam",
     "nameArabic": "القلم",
     "transliteration": "Al-Qalam",
-    "translation": "Перо",
+    "translation": {
+      "ru": "Перо",
+      "en": "The Pen",
+      "ar": "القلم"
+    },
     "verses": 52,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/068-al-qalam.mp3",
     "pdfUrl": "/files/quran/068-al-qalam.pdf",
     "duration": 1248,
-    "description": "Сура о пере и письме"
+    "description": {
+      "ru": "Сура о пере и письме",
+      "en": "Chapter about the pen and writing",
+      "ar": "سورة عن القلم والكتابة"
+    }
   },
   {
     "id": 69,
     "name": "Al-Haqqah",
     "nameArabic": "الحاقة",
     "transliteration": "Al-Ḥāqqah",
-    "translation": "Неизбежное",
+    "translation": {
+      "ru": "Неизбежное",
+      "en": "The Reality",
+      "ar": "الحاقة"
+    },
     "verses": 52,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/069-al-haqqah.mp3",
     "pdfUrl": "/files/quran/069-al-haqqah.pdf",
     "duration": 1248,
-    "description": "Сура о неизбежном"
+    "description": {
+      "ru": "Сура о неизбежном",
+      "en": "Chapter about the reality",
+      "ar": "سورة عن الحاقة"
+    }
   },
   {
     "id": 70,
     "name": "Al-Ma'arij",
     "nameArabic": "المعارج",
     "transliteration": "Al-Maʿārij",
-    "translation": "Ступени",
+    "translation": {
+      "ru": "Ступени",
+      "en": "The Ascending Stairways",
+      "ar": "المعارج"
+    },
     "verses": 44,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/070-al-maarij.mp3",
     "pdfUrl": "/files/quran/070-al-maarij.pdf",
     "duration": 1056,
-    "description": "Сура о ступенях восхождения"
+    "description": {
+      "ru": "Сура о ступенях восхождения",
+      "en": "Chapter about ascending stairways",
+      "ar": "سورة عن المعارج"
+    }
   },
   {
     "id": 71,
     "name": "Nuh",
     "nameArabic": "نوح",
     "transliteration": "Nūḥ",
-    "translation": "Ной",
+    "translation": {
+      "ru": "Ной",
+      "en": "Noah",
+      "ar": "نوح"
+    },
     "verses": 28,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/071-nuh.mp3",
     "pdfUrl": "/files/quran/071-nuh.pdf",
     "duration": 672,
-    "description": "Сура о пророке Нухе (Ное)"
+    "description": {
+      "ru": "Сура о пророке Нухе (Ное)",
+      "en": "Chapter about Prophet Nuh (Noah)",
+      "ar": "سورة عن النبي نوح عليه السلام"
+    }
   },
   {
     "id": 72,
     "name": "Al-Jinn",
     "nameArabic": "الجن",
     "transliteration": "Al-Jinn",
-    "translation": "Джинны",
+    "translation": {
+      "ru": "Джинны",
+      "en": "The Jinn",
+      "ar": "الجن"
+    },
     "verses": 28,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/072-al-jinn.mp3",
     "pdfUrl": "/files/quran/072-al-jinn.pdf",
     "duration": 672,
-    "description": "Сура о джиннах"
+    "description": {
+      "ru": "Сура о джиннах",
+      "en": "Chapter about the jinn",
+      "ar": "سورة عن الجن"
+    }
   },
   {
     "id": 73,
     "name": "Al-Muzzammil",
     "nameArabic": "المزمل",
     "transliteration": "Al-Muzzammil",
-    "translation": "Закутавшийся",
+    "translation": {
+      "ru": "Закутавшийся",
+      "en": "The Enshrouded One",
+      "ar": "المزمل"
+    },
     "verses": 20,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/073-al-muzzammil.mp3",
     "pdfUrl": "/files/quran/073-al-muzzammil.pdf",
     "duration": 480,
-    "description": "Сура о закутавшемся"
+    "description": {
+      "ru": "Сура о закутавшемся",
+      "en": "Chapter about the enshrouded one",
+      "ar": "سورة عن المزمل"
+    }
   },
   {
     "id": 74,
     "name": "Al-Muddaththir",
     "nameArabic": "المدثر",
     "transliteration": "Al-Muddaṯṯir",
-    "translation": "Завернувшийся",
+    "translation": {
+      "ru": "Завернувшийся",
+      "en": "The Cloaked One",
+      "ar": "المدثر"
+    },
     "verses": 56,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/074-al-muddaththir.mp3",
     "pdfUrl": "/files/quran/074-al-muddaththir.pdf",
     "duration": 1344,
-    "description": "Сура о завернувшемся"
+    "description": {
+      "ru": "Сура о завернувшемся",
+      "en": "Chapter about the cloaked one",
+      "ar": "سورة عن المدثر"
+    }
   },
   {
     "id": 75,
     "name": "Al-Qiyamah",
     "nameArabic": "القيامة",
     "transliteration": "Al-Qiyāmah",
-    "translation": "Воскресение",
+    "translation": {
+      "ru": "Воскресение",
+      "en": "The Resurrection",
+      "ar": "القيامة"
+    },
     "verses": 40,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/075-al-qiyamah.mp3",
     "pdfUrl": "/files/quran/075-al-qiyamah.pdf",
     "duration": 960,
-    "description": "Сура о Дне воскресения"
+    "description": {
+      "ru": "Сура о Дне воскресения",
+      "en": "Chapter about the Day of Resurrection",
+      "ar": "سورة عن يوم القيامة"
+    }
   },
   {
     "id": 76,
     "name": "Al-Insan",
     "nameArabic": "الإنسان",
     "transliteration": "Al-Insān",
-    "translation": "Человек",
+    "translation": {
+      "ru": "Человек",
+      "en": "The Human",
+      "ar": "الإنسان"
+    },
     "verses": 31,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/076-al-insan.mp3",
     "pdfUrl": "/files/quran/076-al-insan.pdf",
     "duration": 744,
-    "description": "Сура о человеке"
+    "description": {
+      "ru": "Сура о человеке",
+      "en": "Chapter about human beings",
+      "ar": "سورة عن الإنسان"
+    }
   },
   {
     "id": 77,
     "name": "Al-Mursalat",
     "nameArabic": "المرسلات",
     "transliteration": "Al-Mursalāt",
-    "translation": "Посылаемые",
+    "translation": {
+      "ru": "Посылаемые",
+      "en": "The Emissaries",
+      "ar": "المرسلات"
+    },
     "verses": 50,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/077-al-mursalat.mp3",
     "pdfUrl": "/files/quran/077-al-mursalat.pdf",
     "duration": 1200,
-    "description": "Сура о посылаемых ветрах"
+    "description": {
+      "ru": "Сура о посылаемых ветрах",
+      "en": "Chapter about the emissaries",
+      "ar": "سورة عن المرسلات"
+    }
   },
   {
     "id": 78,
     "name": "An-Naba",
     "nameArabic": "النبأ",
     "transliteration": "An-Nabaʾ",
-    "translation": "Весть",
+    "translation": {
+      "ru": "Весть",
+      "en": "The Tidings",
+      "ar": "النبأ"
+    },
     "verses": 40,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/078-an-naba.mp3",
     "pdfUrl": "/files/quran/078-an-naba.pdf",
     "duration": 960,
-    "description": "Сура о великой вести"
+    "description": {
+      "ru": "Сура о великой вести",
+      "en": "Chapter about the great tidings",
+      "ar": "سورة عن النبأ العظيم"
+    }
   },
   {
     "id": 79,
     "name": "An-Nazi'at",
     "nameArabic": "النازعات",
     "transliteration": "An-Nāziʿāt",
-    "translation": "Исторгающие",
+    "translation": {
+      "ru": "Исторгающие",
+      "en": "Those who Drag Forth",
+      "ar": "النازعات"
+    },
     "verses": 46,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/079-an-naziat.mp3",
     "pdfUrl": "/files/quran/079-an-naziat.pdf",
     "duration": 1104,
-    "description": "Сура об исторгающих души ангелах"
+    "description": {
+      "ru": "Сура об исторгающих души ангелах",
+      "en": "Chapter about angels who drag forth souls",
+      "ar": "سورة عن الملائكة النازعات"
+    }
   },
   {
     "id": 80,
     "name": "Abasa",
     "nameArabic": "عبس",
     "transliteration": "ʿAbasa",
-    "translation": "Нахмурился",
+    "translation": {
+      "ru": "Нахмурился",
+      "en": "He Frowned",
+      "ar": "عبس"
+    },
     "verses": 42,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/080-abasa.mp3",
     "pdfUrl": "/files/quran/080-abasa.pdf",
     "duration": 1008,
-    "description": "Сура о том, кто нахмурился"
+    "description": {
+      "ru": "Сура о том, кто нахмурился",
+      "en": "Chapter about he who frowned",
+      "ar": "سورة عن الذي عبس"
+    }
   },
   {
     "id": 81,
     "name": "At-Takwir",
     "nameArabic": "التكوير",
     "transliteration": "At-Takwīr",
-    "translation": "Скручивание",
+    "translation": {
+      "ru": "Скручивание",
+      "en": "The Overthrowing",
+      "ar": "التكوير"
+    },
     "verses": 29,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/081-at-takwir.mp3",
     "pdfUrl": "/files/quran/081-at-takwir.pdf",
     "duration": 696,
-    "description": "Сура о скручивании солнца"
+    "description": {
+      "ru": "Сура о скручивании солнца",
+      "en": "Chapter about the overthrowing",
+      "ar": "سورة عن التكوير"
+    }
   },
   {
     "id": 82,
     "name": "Al-Infitar",
     "nameArabic": "الانفطار",
     "transliteration": "Al-Infiṭār",
-    "translation": "Раскалывание",
+    "translation": {
+      "ru": "Раскалывание",
+      "en": "The Cleaving",
+      "ar": "الانفطار"
+    },
     "verses": 19,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/082-al-infitar.mp3",
     "pdfUrl": "/files/quran/082-al-infitar.pdf",
     "duration": 456,
-    "description": "Сура о раскалывании неба"
+    "description": {
+      "ru": "Сура о раскалывании неба",
+      "en": "Chapter about the cleaving of heaven",
+      "ar": "سورة عن انفطار السماء"
+    }
   },
   {
     "id": 83,
     "name": "Al-Mutaffifin",
     "nameArabic": "المطففين",
     "transliteration": "Al-Muṭaffifīn",
-    "translation": "Обвешивающие",
+    "translation": {
+      "ru": "Обвешивающие",
+      "en": "The Defrauding",
+      "ar": "المطففين"
+    },
     "verses": 36,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/083-al-mutaffifin.mp3",
     "pdfUrl": "/files/quran/083-al-mutaffifin.pdf",
     "duration": 864,
-    "description": "Сура об обвешивающих в торговле"
+    "description": {
+      "ru": "Сура об обвешивающих в торговле",
+      "en": "Chapter about those who give short measure",
+      "ar": "سورة عن المطففين في التجارة"
+    }
   },
   {
     "id": 84,
     "name": "Al-Inshiqaq",
     "nameArabic": "الانشقاق",
     "transliteration": "Al-Inšiqāq",
-    "translation": "Разверзание",
+    "translation": {
+      "ru": "Разверзание",
+      "en": "The Splitting Open",
+      "ar": "الانشقاق"
+    },
     "verses": 25,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/084-al-inshiqaq.mp3",
     "pdfUrl": "/files/quran/084-al-inshiqaq.pdf",
     "duration": 600,
-    "description": "Сура о разверзании неба"
+    "description": {
+      "ru": "Сура о разверзании неба",
+      "en": "Chapter about the splitting open of heaven",
+      "ar": "سورة عن انشقاق السماء"
+    }
   },
   {
     "id": 85,
     "name": "Al-Buruj",
     "nameArabic": "البروج",
     "transliteration": "Al-Burūj",
-    "translation": "Созвездия",
+    "translation": {
+      "ru": "Созвездия",
+      "en": "The Mansions of the Stars",
+      "ar": "البروج"
+    },
     "verses": 22,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/085-al-buruj.mp3",
     "pdfUrl": "/files/quran/085-al-buruj.pdf",
     "duration": 528,
-    "description": "Сура о созвездиях"
+    "description": {
+      "ru": "Сура о созвездиях",
+      "en": "Chapter about the mansions of stars",
+      "ar": "سورة عن البروج"
+    }
   },
   {
     "id": 86,
     "name": "At-Tariq",
     "nameArabic": "الطارق",
     "transliteration": "Aṭ-Ṭāriq",
-    "translation": "Ночной путник",
+    "translation": {
+      "ru": "Ночной путник",
+      "en": "The Morning Star",
+      "ar": "الطارق"
+    },
     "verses": 17,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/086-at-tariq.mp3",
     "pdfUrl": "/files/quran/086-at-tariq.pdf",
     "duration": 408,
-    "description": "Сура о ночном путнике"
+    "description": {
+      "ru": "Сура о ночном путнике",
+      "en": "Chapter about the morning star",
+      "ar": "سورة عن الطارق"
+    }
   },
   {
     "id": 87,
     "name": "Al-A'la",
     "nameArabic": "الأعلى",
     "transliteration": "Al-Aʿlā",
-    "translation": "Всевышний",
+    "translation": {
+      "ru": "Всевышний",
+      "en": "The Most High",
+      "ar": "الأعلى"
+    },
     "verses": 19,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/087-al-ala.mp3",
     "pdfUrl": "/files/quran/087-al-ala.pdf",
     "duration": 456,
-    "description": "Сура о Всевышнем"
+    "description": {
+      "ru": "Сура о Всевышнем",
+      "en": "Chapter about the Most High",
+      "ar": "سورة عن الله الأعلى"
+    }
   },
   {
     "id": 88,
     "name": "Al-Ghashiyah",
     "nameArabic": "الغاشية",
     "transliteration": "Al-Ġāšiyah",
-    "translation": "Покрывающее",
+    "translation": {
+      "ru": "Покрывающее",
+      "en": "The Overwhelming",
+      "ar": "الغاشية"
+    },
     "verses": 26,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/088-al-ghashiyah.mp3",
     "pdfUrl": "/files/quran/088-al-ghashiyah.pdf",
     "duration": 624,
-    "description": "Сура о покрывающем бедствии"
+    "description": {
+      "ru": "Сура о покрывающем бедствии",
+      "en": "Chapter about the overwhelming event",
+      "ar": "سورة عن الغاشية"
+    }
   },
   {
     "id": 89,
     "name": "Al-Fajr",
     "nameArabic": "الفجر",
     "transliteration": "Al-Fajr",
-    "translation": "Заря",
+    "translation": {
+      "ru": "Заря",
+      "en": "The Dawn",
+      "ar": "الفجر"
+    },
     "verses": 30,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/089-al-fajr.mp3",
     "pdfUrl": "/files/quran/089-al-fajr.pdf",
     "duration": 720,
-    "description": "Сура о заре"
+    "description": {
+      "ru": "Сура о заре",
+      "en": "Chapter about the dawn",
+      "ar": "سورة عن الفجر"
+    }
   },
   {
     "id": 90,
     "name": "Al-Balad",
     "nameArabic": "البلد",
     "transliteration": "Al-Balad",
-    "translation": "Город",
+    "translation": {
+      "ru": "Город",
+      "en": "The City",
+      "ar": "البلد"
+    },
     "verses": 20,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/090-al-balad.mp3",
     "pdfUrl": "/files/quran/090-al-balad.pdf",
     "duration": 480,
-    "description": "Сура о городе"
+    "description": {
+      "ru": "Сура о городе",
+      "en": "Chapter about the city",
+      "ar": "سورة عن البلد"
+    }
   },
   {
     "id": 91,
     "name": "Ash-Shams",
     "nameArabic": "الشمس",
     "transliteration": "Aš-Šams",
-    "translation": "Солнце",
+    "translation": {
+      "ru": "Солнце",
+      "en": "The Sun",
+      "ar": "الشمس"
+    },
     "verses": 15,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/091-ash-shams.mp3",
     "pdfUrl": "/files/quran/091-ash-shams.pdf",
     "duration": 360,
-    "description": "Сура о солнце"
+    "description": {
+      "ru": "Сура о солнце",
+      "en": "Chapter about the sun",
+      "ar": "سورة عن الشمس"
+    }
   },
   {
     "id": 92,
     "name": "Al-Layl",
     "nameArabic": "الليل",
     "transliteration": "Al-Layl",
-    "translation": "Ночь",
+    "translation": {
+      "ru": "Ночь",
+      "en": "The Night",
+      "ar": "الليل"
+    },
     "verses": 21,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/092-al-layl.mp3",
     "pdfUrl": "/files/quran/092-al-layl.pdf",
     "duration": 504,
-    "description": "Сура о ночи"
+    "description": {
+      "ru": "Сура о ночи",
+      "en": "Chapter about the night",
+      "ar": "سورة عن الليل"
+    }
   },
   {
     "id": 93,
     "name": "Ad-Duha",
     "nameArabic": "الضحى",
     "transliteration": "Aḍ-Ḍuḥā",
-    "translation": "Утро",
+    "translation": {
+      "ru": "Утро",
+      "en": "The Morning Hours",
+      "ar": "الضحى"
+    },
     "verses": 11,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/093-ad-duha.mp3",
     "pdfUrl": "/files/quran/093-ad-duha.pdf",
     "duration": 264,
-    "description": "Сура об утреннем времени"
+    "description": {
+      "ru": "Сура об утреннем времени",
+      "en": "Chapter about the morning hours",
+      "ar": "سورة عن الضحى"
+    }
   },
   {
     "id": 94,
     "name": "Ash-Sharh",
     "nameArabic": "الشرح",
     "transliteration": "Aš-Šarḥ",
-    "translation": "Раскрытие",
+    "translation": {
+      "ru": "Раскрытие",
+      "en": "The Relief",
+      "ar": "الشرح"
+    },
     "verses": 8,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/094-ash-sharh.mp3",
     "pdfUrl": "/files/quran/094-ash-sharh.pdf",
     "duration": 192,
-    "description": "Сура о раскрытии груди"
+    "description": {
+      "ru": "Сура о раскрытии груди",
+      "en": "Chapter about the expansion of the breast",
+      "ar": "سورة عن شرح الصدر"
+    }
   },
   {
     "id": 95,
     "name": "At-Tin",
     "nameArabic": "التين",
     "transliteration": "At-Tīn",
-    "translation": "Смоковница",
+    "translation": {
+      "ru": "Смоковница",
+      "en": "The Fig",
+      "ar": "التين"
+    },
     "verses": 8,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/095-at-tin.mp3",
     "pdfUrl": "/files/quran/095-at-tin.pdf",
     "duration": 192,
-    "description": "Сура о смоковнице и маслине"
+    "description": {
+      "ru": "Сура о смоковнице и маслине",
+      "en": "Chapter about the fig and olive",
+      "ar": "سورة عن التين والزيتون"
+    }
   },
   {
     "id": 96,
     "name": "Al-Alaq",
     "nameArabic": "العلق",
     "transliteration": "Al-ʿAlaq",
-    "translation": "Сгусток",
+    "translation": {
+      "ru": "Сгусток",
+      "en": "The Clinging Clot",
+      "ar": "العلق"
+    },
     "verses": 19,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/096-al-alaq.mp3",
     "pdfUrl": "/files/quran/096-al-alaq.pdf",
     "duration": 456,
-    "description": "Первая ниспосланная сура о сгустке крови"
+    "description": {
+      "ru": "Первая ниспосланная сура о сгустке крови",
+      "en": "The first revealed chapter about the clinging clot",
+      "ar": "أول سورة نزلت عن العلق"
+    }
   },
   {
     "id": 97,
     "name": "Al-Qadr",
     "nameArabic": "القدر",
     "transliteration": "Al-Qadr",
-    "translation": "Могущество",
+    "translation": {
+      "ru": "Могущество",
+      "en": "The Power",
+      "ar": "القدر"
+    },
     "verses": 5,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/097-al-qadr.mp3",
     "pdfUrl": "/files/quran/097-al-qadr.pdf",
     "duration": 120,
-    "description": "Сура о ночи могущества"
+    "description": {
+      "ru": "Сура о ночи могущества",
+      "en": "Chapter about the Night of Power",
+      "ar": "سورة عن ليلة القدر"
+    }
   },
   {
     "id": 98,
     "name": "Al-Bayyinah",
     "nameArabic": "البينة",
     "transliteration": "Al-Bayyinah",
-    "translation": "Ясное знамение",
+    "translation": {
+      "ru": "Ясное знамение",
+      "en": "The Clear Proof",
+      "ar": "البينة"
+    },
     "verses": 8,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/098-al-bayyinah.mp3",
     "pdfUrl": "/files/quran/098-al-bayyinah.pdf",
     "duration": 192,
-    "description": "Сура о ясном знамении"
+    "description": {
+      "ru": "Сура о ясном знамении",
+      "en": "Chapter about the clear proof",
+      "ar": "سورة عن البينة"
+    }
   },
   {
     "id": 99,
     "name": "Az-Zalzalah",
     "nameArabic": "الزلزلة",
     "transliteration": "Az-Zalzalah",
-    "translation": "Землетрясение",
+    "translation": {
+      "ru": "Землетрясение",
+      "en": "The Earthquake",
+      "ar": "الزلزلة"
+    },
     "verses": 8,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/099-az-zalzalah.mp3",
     "pdfUrl": "/files/quran/099-az-zalzalah.pdf",
     "duration": 192,
-    "description": "Сура о землетрясении"
+    "description": {
+      "ru": "Сура о землетрясении",
+      "en": "Chapter about the earthquake",
+      "ar": "سورة عن الزلزلة"
+    }
   },
   {
     "id": 100,
     "name": "Al-Adiyat",
     "nameArabic": "العاديات",
     "transliteration": "Al-ʿĀdiyāt",
-    "translation": "Скачущие",
+    "translation": {
+      "ru": "Скачущие",
+      "en": "The Chargers",
+      "ar": "العاديات"
+    },
     "verses": 11,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/100-al-adiyat.mp3",
     "pdfUrl": "/files/quran/100-al-adiyat.pdf",
     "duration": 264,
-    "description": "Сура о скачущих конях"
+    "description": {
+      "ru": "Сура о скачущих конях",
+      "en": "Chapter about charging horses",
+      "ar": "سورة عن الخيل العاديات"
+    }
   },
   {
     "id": 101,
     "name": "Al-Qari'ah",
     "nameArabic": "القارعة",
     "transliteration": "Al-Qāriʿah",
-    "translation": "Поражающее",
+    "translation": {
+      "ru": "Поражающее",
+      "en": "The Calamity",
+      "ar": "القارعة"
+    },
     "verses": 11,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/101-al-qariah.mp3",
     "pdfUrl": "/files/quran/101-al-qariah.pdf",
     "duration": 264,
-    "description": "Сура о поражающем бедствии"
+    "description": {
+      "ru": "Сура о поражающем бедствии",
+      "en": "Chapter about the striking calamity",
+      "ar": "سورة عن القارعة"
+    }
   },
   {
     "id": 102,
     "name": "At-Takathur",
     "nameArabic": "التكاثر",
     "transliteration": "At-Takāṯur",
-    "translation": "Приумножение",
+    "translation": {
+      "ru": "Приумножение",
+      "en": "The Rivalry in World Increase",
+      "ar": "التكاثر"
+    },
     "verses": 8,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/102-at-takathur.mp3",
     "pdfUrl": "/files/quran/102-at-takathur.pdf",
     "duration": 192,
-    "description": "Сура о страсти к приумножению"
+    "description": {
+      "ru": "Сура о страсти к приумножению",
+      "en": "Chapter about rivalry in worldly increase",
+      "ar": "سورة عن التكاثر في الدنيا"
+    }
   },
   {
     "id": 103,
     "name": "Al-Asr",
     "nameArabic": "العصر",
     "transliteration": "Al-ʿAṣr",
-    "translation": "Время",
+    "translation": {
+      "ru": "Время",
+      "en": "The Time",
+      "ar": "العصر"
+    },
     "verses": 3,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/103-al-asr.mp3",
     "pdfUrl": "/files/quran/103-al-asr.pdf",
     "duration": 72,
-    "description": "Сура о времени"
+    "description": {
+      "ru": "Сура о времени и важности праведных дел",
+      "en": "Chapter about time and the importance of righteous deeds",
+      "ar": "سورة عن الوقت وأهمية الأعمال الصالحة"
+    }
   },
   {
     "id": 104,
     "name": "Al-Humazah",
     "nameArabic": "الهمزة",
     "transliteration": "Al-Humazah",
-    "translation": "Хулитель",
+    "translation": {
+      "ru": "Хулитель",
+      "en": "The Traducer",
+      "ar": "الهمزة"
+    },
     "verses": 9,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/104-al-humazah.mp3",
     "pdfUrl": "/files/quran/104-al-humazah.pdf",
     "duration": 216,
-    "description": "Сура о хулителе"
+    "description": {
+      "ru": "Сура о хулителе и клеветнике",
+      "en": "Chapter about the traducer and slanderer",
+      "ar": "سورة عن الهماز واللماز"
+    }
   },
   {
     "id": 105,
     "name": "Al-Fil",
     "nameArabic": "الفيل",
     "transliteration": "Al-Fīl",
-    "translation": "Слон",
+    "translation": {
+      "ru": "Слон",
+      "en": "The Elephant",
+      "ar": "الفيل"
+    },
     "verses": 5,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/105-al-fil.mp3",
     "pdfUrl": "/files/quran/105-al-fil.pdf",
     "duration": 120,
-    "description": "Сура о слоне"
+    "description": {
+      "ru": "Сура о войске слона",
+      "en": "Chapter about the army of the elephant",
+      "ar": "سورة عن أصحاب الفيل"
+    }
   },
   {
     "id": 106,
     "name": "Quraysh",
     "nameArabic": "قريش",
     "transliteration": "Qurayš",
-    "translation": "Курайшиты",
+    "translation": {
+      "ru": "Курайшиты",
+      "en": "Quraysh",
+      "ar": "قريش"
+    },
     "verses": 4,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/106-quraysh.mp3",
     "pdfUrl": "/files/quran/106-quraysh.pdf",
     "duration": 96,
-    "description": "Сура о племени курайшитов"
+    "description": {
+      "ru": "Сура о племени курайшитов",
+      "en": "Chapter about the Quraysh tribe",
+      "ar": "سورة عن قبيلة قريش"
+    }
   },
   {
     "id": 107,
     "name": "Al-Ma'un",
     "nameArabic": "الماعون",
     "transliteration": "Al-Māʿūn",
-    "translation": "Мелочь",
+    "translation": {
+      "ru": "Мелочь",
+      "en": "The Small Kindnesses",
+      "ar": "الماعون"
+    },
     "verses": 7,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/107-al-maun.mp3",
     "pdfUrl": "/files/quran/107-al-maun.pdf",
     "duration": 168,
-    "description": "Сура о подаянии"
+    "description": {
+      "ru": "Сура о подаянии и малых добрых делах",
+      "en": "Chapter about almsgiving and small acts of kindness",
+      "ar": "سورة عن الصدقة والأعمال الخيرية الصغيرة"
+    }
   },
   {
     "id": 108,
     "name": "Al-Kawthar",
     "nameArabic": "الكوثر",
     "transliteration": "Al-Kawṯar",
-    "translation": "Изобилие",
+    "translation": {
+      "ru": "Изобилие",
+      "en": "The Abundance",
+      "ar": "الكوثر"
+    },
     "verses": 3,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/108-al-kawthar.mp3",
     "pdfUrl": "/files/quran/108-al-kawthar.pdf",
     "duration": 72,
-    "description": "Сура об изобилии"
+    "description": {
+      "ru": "Сура об изобилии, дарованном Пророку",
+      "en": "Chapter about the abundance granted to the Prophet",
+      "ar": "سورة عن الكوثر الذي أعطيه النبي"
+    }
   },
   {
     "id": 109,
     "name": "Al-Kafirun",
     "nameArabic": "الكافرون",
     "transliteration": "Al-Kāfirūn",
-    "translation": "Неверующие",
+    "translation": {
+      "ru": "Неверующие",
+      "en": "The Disbelievers",
+      "ar": "الكافرون"
+    },
     "verses": 6,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/109-al-kafirun.mp3",
     "pdfUrl": "/files/quran/109-al-kafirun.pdf",
     "duration": 144,
-    "description": "Сура о неверующих"
+    "description": {
+      "ru": "Сура о неверующих и религиозной терпимости",
+      "en": "Chapter about disbelievers and religious tolerance",
+      "ar": "سورة عن الكافرين والتسامح الديني"
+    }
   },
   {
     "id": 110,
     "name": "An-Nasr",
     "nameArabic": "النصر",
     "transliteration": "An-Naṣr",
-    "translation": "Помощь",
+    "translation": {
+      "ru": "Помощь",
+      "en": "The Divine Support",
+      "ar": "النصر"
+    },
     "verses": 3,
     "revelationType": "medinan",
     "audioUrl": "/audio/quran/110-an-nasr.mp3",
     "pdfUrl": "/files/quran/110-an-nasr.pdf",
     "duration": 72,
-    "description": "Сура о помощи Аллаха"
+    "description": {
+      "ru": "Сура о помощи и победе от Аллаха",
+      "en": "Chapter about divine help and victory",
+      "ar": "سورة عن نصر الله والفتح"
+    }
   },
   {
     "id": 111,
     "name": "Al-Masad",
     "nameArabic": "المسد",
     "transliteration": "Al-Masad",
-    "translation": "Пальмовые волокна",
+    "translation": {
+      "ru": "Пальмовые волокна",
+      "en": "The Palm Fiber",
+      "ar": "المسد"
+    },
     "verses": 5,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/111-al-masad.mp3",
     "pdfUrl": "/files/quran/111-al-masad.pdf",
     "duration": 120,
-    "description": "Сура об Абу Лахабе"
+    "description": {
+      "ru": "Сура об Абу Лахабе и его жене",
+      "en": "Chapter about Abu Lahab and his wife",
+      "ar": "سورة عن أبي لهب وامرأته"
+    }
   },
   {
     "id": 112,
     "name": "Al-Ikhlas",
     "nameArabic": "الإخلاص",
     "transliteration": "Al-Iḫlāṣ",
-    "translation": "Искренность",
+    "translation": {
+      "ru": "Искренность",
+      "en": "The Sincerity",
+      "ar": "الإخلاص"
+    },
     "verses": 4,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/112-al-ikhlas.mp3",
     "pdfUrl": "/files/quran/112-al-ikhlas.pdf",
     "duration": 96,
-    "description": "Сура об искренности веры"
+    "description": {
+      "ru": "Сура об искренности веры и единобожии",
+      "en": "Chapter about sincerity of faith and monotheism",
+      "ar": "سورة عن إخلاص الإيمان والتوحيد"
+    }
   },
   {
     "id": 113,
     "name": "Al-Falaq",
     "nameArabic": "الفلق",
     "transliteration": "Al-Falaq",
-    "translation": "Рассвет",
+    "translation": {
+      "ru": "Рассвет",
+      "en": "The Daybreak",
+      "ar": "الفلق"
+    },
     "verses": 5,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/113-al-falaq.mp3",
     "pdfUrl": "/files/quran/113-al-falaq.pdf",
     "duration": 120,
-    "description": "Сура о рассвете"
+    "description": {
+      "ru": "Сура о защите от зла на рассвете",
+      "en": "Chapter about seeking protection from evil at daybreak",
+      "ar": "سورة عن الاستعاذة من الشر عند الفلق"
+    }
   },
   {
     "id": 114,
     "name": "An-Nas",
     "nameArabic": "الناس",
     "transliteration": "An-Nās",
-    "translation": "Люди",
+    "translation": {
+      "ru": "Люди",
+      "en": "The Mankind",
+      "ar": "الناس"
+    },
     "verses": 6,
     "revelationType": "meccan",
     "audioUrl": "/audio/quran/114-an-nas.mp3",
     "pdfUrl": "/files/quran/114-an-nas.pdf",
     "duration": 144,
-    "description": "Сура о людях"
+    "description": {
+      "ru": "Сура о защите людей от зла",
+      "en": "Chapter about protecting mankind from evil",
+      "ar": "سورة عن حماية الناس من الشر"
+    }
   }
 ]

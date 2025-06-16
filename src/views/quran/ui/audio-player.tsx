@@ -42,6 +42,7 @@ interface AudioPlayerProps {
 
 export interface AudioPlayerHandle {
   playSpecificAyah: (ayahIndex: number) => void;
+  pauseAudio: () => void;
 }
 
 export const AudioPlayer = forwardRef<AudioPlayerHandle, AudioPlayerProps>(
@@ -86,23 +87,33 @@ export const AudioPlayer = forwardRef<AudioPlayerHandle, AudioPlayerProps>(
           if (ayahIndex >= 0 && ayahIndex < ayahs.length) {
             setCurrentAyahIndex(ayahIndex);
             setCurrentTime(0);
-            if (!isPlaying) {
-              const audio = audioRef.current;
-              if (audio && ayahs[ayahIndex]?.audio) {
-                audio.src = ayahs[ayahIndex].audio!;
-                audio
-                  .play()
-                  .then(() => setIsPlaying(true))
-                  .catch(console.error);
-              }
+
+            const audio = audioRef.current;
+            if (audio && ayahs[ayahIndex]?.audio) {
+              // Останавливаем текущее воспроизведение перед началом нового
+              audio.pause();
+              audio.src = ayahs[ayahIndex].audio!;
+              audio
+                .play()
+                .then(() => setIsPlaying(true))
+                .catch((error) => {
+                  if (error.name !== "AbortError") {
+                    console.error("Ошибка воспроизведения:", error);
+                  }
+                });
             }
+          }
+        },
+        pauseAudio: () => {
+          if (audioRef.current && isPlaying) {
+            audioRef.current.pause();
+            setIsPlaying(false);
           }
         },
       }),
       [ayahs, isPlaying]
     );
 
-    // Загружаем информацию о чтеце
     useEffect(() => {
       const loadReciterInfo = async () => {
         const info = await getReciterInfo(reciterIdentifier);

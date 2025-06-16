@@ -1,17 +1,23 @@
 'use client'
 
+export interface LocalizedText {
+    ru: string;
+    en: string;
+    ar: string;
+}
+
 export interface Surah {
     id: number;
     name: string;
     nameArabic: string;
     transliteration: string;
-    translation: string;
+    translation: LocalizedText;
     verses: number;
     revelationType: 'meccan' | 'medinan';
     audioUrl?: string;
     pdfUrl?: string;
     duration?: number;
-    description?: string;
+    description: LocalizedText;
 }
 
 export interface Verse {

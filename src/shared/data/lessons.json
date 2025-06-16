@@ -2,8 +2,16 @@
   "1": [
     {
       "id": "1-1",
-      "title": "Арабский алфавит",
-      "description": "Изучение всех 28 букв арабского алфавита и их правильное произношение",
+      "title": {
+        "ru": "Арабский алфавит",
+        "en": "Arabic Alphabet",
+        "ar": "الأبجدية العربية"
+      },
+      "description": {
+        "ru": "Изучение всех 28 букв арабского алфавита и их правильное произношение",
+        "en": "Learning all 28 letters of the Arabic alphabet and their correct pronunciation",
+        "ar": "تعلم جميع الحروف الـ28 للأبجدية العربية ونطقها الصحيح"
+      },
       "duration": 1200,
       "videoUrl": "https://youtu.be/S8umhDWtgn8",
       "thumbnail": "/thumbnails/alphabet.jpg",
@@ -13,8 +21,16 @@
     },
     {
       "id": "1-2",
-      "title": "Огласовки",
-      "description": "Изучение фатха, касра, дамма и их правильное произношение",
+      "title": {
+        "ru": "Огласовки",
+        "en": "Diacritics",
+        "ar": "الحركات"
+      },
+      "description": {
+        "ru": "Изучение фатха, касра, дамма и их правильное произношение",
+        "en": "Learning fatha, kasra, damma and their correct pronunciation",
+        "ar": "تعلم الفتحة والكسرة والضمة ونطقها الصحيح"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/CejCnn2d3RU",
       "thumbnail": "/thumbnails/harakats.jpg",
@@ -24,8 +40,16 @@
     },
     {
       "id": "1-3",
-      "title": "Буквы Исти1лаъ",
-      "description": "Изучение букв исти1лаъ и их правильное произношение",
+      "title": {
+        "ru": "Буквы Истилаъ",
+        "en": "Isti'la Letters",
+        "ar": "حروف الاستعلاء"
+      },
+      "description": {
+        "ru": "Изучение букв истилаъ и их правильное произношение",
+        "en": "Learning the isti'la letters and their correct pronunciation",
+        "ar": "تعلم حروف الاستعلاء ونطقها الصحيح"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/rinx-AMc_uU",
       "thumbnail": "/thumbnails/istilaa.jpg",
@@ -35,8 +59,16 @@
     },
     {
       "id": "1-4",
-      "title": "Буквы ب ت ث ن",
-      "description": "Изучение букв ب ت ث ن и их правильное произношение",
+      "title": {
+        "ru": "Буквы ب ت ث ن",
+        "en": "Letters ب ت ث ن",
+        "ar": "الحروف ب ت ث ن"
+      },
+      "description": {
+        "ru": "Изучение букв ب ت ث ن и их правильное произношение",
+        "en": "Learning the letters ب ت ث ن and their correct pronunciation",
+        "ar": "تعلم الحروف ب ت ث ن ونطقها الصحيح"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/KQJcVYHX4ow",
       "thumbnail": "/thumbnails/letters-bttn.jpg",
@@ -46,8 +78,16 @@
     },
     {
       "id": "1-5",
-      "title": "Буквы ي ج ح خ",
-      "description": "Изучение букв ي ج ح خ и их правильное произношение",
+      "title": {
+        "ru": "Буквы ي ج ح خ",
+        "en": "Letters ي ج ح خ",
+        "ar": "الحروف ي ج ح خ"
+      },
+      "description": {
+        "ru": "Изучение букв ي ج ح خ и их правильное произношение",
+        "en": "Learning the letters ي ج ح خ and their correct pronunciation",
+        "ar": "تعلم الحروف ي ج ح خ ونطقها الصحيح"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/ySy1AV0atHQ",
       "thumbnail": "/thumbnails/letters-yjhk.jpg",
@@ -57,8 +97,16 @@
     },
     {
       "id": "1-6",
-      "title": "Буквы س ش ص ض",
-      "description": "Изучение букв س ش ص ض и их правильное произношение",
+      "title": {
+        "ru": "Буквы س ش ص ض",
+        "en": "Letters س ش ص ض",
+        "ar": "الحروف س ش ص ض"
+      },
+      "description": {
+        "ru": "Изучение букв س ش ص ض и их правильное произношение",
+        "en": "Learning the letters س ش ص ض and their correct pronunciation",
+        "ar": "تعلم الحروف س ش ص ض ونطقها الصحيح"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/ciZAhpItZFg",
       "thumbnail": "/thumbnails/letters-sssd.jpg",
@@ -68,8 +116,16 @@
     },
     {
       "id": "1-7",
-      "title": "Буквы ط ظ ع غ",
-      "description": "Изучение букв ط ظ ع غ и их правильное произношение",
+      "title": {
+        "ru": "Буквы ط ظ ع غ",
+        "en": "Letters ط ظ ع غ",
+        "ar": "الحروف ط ظ ع غ"
+      },
+      "description": {
+        "ru": "Изучение букв ط ظ ع غ и их правильное произношение",
+        "en": "Learning the letters ط ظ ع غ and their correct pronunciation",
+        "ar": "تعلم الحروف ط ظ ع غ ونطقها الصحيح"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/phwar7MJyzo",
       "thumbnail": "/thumbnails/letters-tpeg.jpg",
@@ -79,8 +135,16 @@
     },
     {
       "id": "1-8",
-      "title": "Буквы ف ق ك ل",
-      "description": "Изучение букв ف ق ك ل и их правильное произношение",
+      "title": {
+        "ru": "Буквы ف ق ك ل",
+        "en": "Letters ف ق ك ل",
+        "ar": "الحروف ف ق ك ل"
+      },
+      "description": {
+        "ru": "Изучение букв ف ق ك ل и их правильное произношение",
+        "en": "Learning the letters ف ق ك ل and their correct pronunciation",
+        "ar": "تعلم الحروف ف ق ك ل ونطقها الصحيح"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/tmTRJjbBX5I",
       "thumbnail": "/thumbnails/letters-fqkl.jpg",
@@ -90,8 +154,16 @@
     },
     {
       "id": "1-9",
-      "title": "Буквы م ه د ذ",
-      "description": "Изучение букв م ه د ذ и их правильное произношение",
+      "title": {
+        "ru": "Буквы م ه د ذ",
+        "en": "Letters م ه د ذ",
+        "ar": "الحروف م ه د ذ"
+      },
+      "description": {
+        "ru": "Изучение букв م ه د ذ и их правильное произношение",
+        "en": "Learning the letters م ه د ذ and their correct pronunciation",
+        "ar": "تعلم الحروف م ه د ذ ونطقها الصحيح"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/4IspThuEB9c",
       "thumbnail": "/thumbnails/letters-mhdd.jpg",
@@ -101,8 +173,16 @@
     },
     {
       "id": "1-10",
-      "title": "Буквы ر ز و ا",
-      "description": "Изучение букв ر ز و ا и их правильное произношение",
+      "title": {
+        "ru": "Буквы ر ز و ا",
+        "en": "Letters ر ز و ا",
+        "ar": "الحروف ر ز و ا"
+      },
+      "description": {
+        "ru": "Изучение букв ر ز و ا и их правильное произношение",
+        "en": "Learning the letters ر ز و ا and their correct pronunciation",
+        "ar": "تعلم الحروف ر ز و ا ونطقها الصحيح"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/wDehDgFNOi8",
       "thumbnail": "/thumbnails/letters-rzwa.jpg",
@@ -112,8 +192,16 @@
     },
     {
       "id": "1-11",
-      "title": "Буквы мадда (тянущиеся буквы)",
-      "description": "Изучение букв мадда и правил их удлинения",
+      "title": {
+        "ru": "Буквы мадда (тянущиеся буквы)",
+        "en": "Madd Letters (Prolonged Letters)",
+        "ar": "حروف المد"
+      },
+      "description": {
+        "ru": "Изучение букв мадда и правил их удлинения",
+        "en": "Learning madd letters and their prolongation rules",
+        "ar": "تعلم حروف المد وقواعد إطالتها"
+      },
       "duration": 1200,
       "videoUrl": "https://youtu.be/_X7tG_Ivbnc",
       "thumbnail": "/thumbnails/madd-letters.jpg",
@@ -123,8 +211,16 @@
     },
     {
       "id": "1-12",
-      "title": "Х1амза и маленькие буквы мадда",
-      "description": "Изучение х1амзы и маленьких букв мадда",
+      "title": {
+        "ru": "Хамза и маленькие буквы мадда",
+        "en": "Hamza and Small Madd Letters",
+        "ar": "الهمزة وحروف المد الصغيرة"
+      },
+      "description": {
+        "ru": "Изучение хамзы и маленьких букв мадда",
+        "en": "Learning hamza and small madd letters",
+        "ar": "تعلم الهمزة وحروف المد الصغيرة"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/LxZ60b8Sk1A",
       "thumbnail": "/thumbnails/hamza-madd.jpg",
@@ -134,8 +230,16 @@
     },
     {
       "id": "1-13",
-      "title": "Сукун",
-      "description": "Изучение знака сукун и его применение",
+      "title": {
+        "ru": "Сукун",
+        "en": "Sukun",
+        "ar": "السكون"
+      },
+      "description": {
+        "ru": "Изучение знака сукун и его применение",
+        "en": "Learning the sukun mark and its application",
+        "ar": "تعلم علامة السكون وتطبيقها"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/Qy6vqbtr8h0",
       "thumbnail": "/thumbnails/sukun.jpg",
@@ -145,8 +249,16 @@
     },
     {
       "id": "1-14",
-      "title": "Танвин",
-      "description": "Изучение танвина и его правил",
+      "title": {
+        "ru": "Танвин",
+        "en": "Tanween",
+        "ar": "التنوين"
+      },
+      "description": {
+        "ru": "Изучение танвина и его правил",
+        "en": "Learning tanween and its rules",
+        "ar": "تعلم التنوين وقواعده"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/_Y1dpUQdph8",
       "thumbnail": "/thumbnails/tanvin.jpg",
@@ -156,8 +268,16 @@
     },
     {
       "id": "1-15",
-      "title": "Ташдид",
-      "description": "Изучение знака ташдид и его применение",
+      "title": {
+        "ru": "Ташдид",
+        "en": "Tashdeed",
+        "ar": "التشديد"
+      },
+      "description": {
+        "ru": "Изучение знака ташдид и его применение",
+        "en": "Learning the tashdeed mark and its application",
+        "ar": "تعلم علامة التشديد وتطبيقها"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/FRvg9Qf3rTw",
       "thumbnail": "/thumbnails/tashdid.jpg",
@@ -167,8 +287,16 @@
     },
     {
       "id": "1-16",
-      "title": "Артикль",
-      "description": "Изучение артикля في арабском языке",
+      "title": {
+        "ru": "Артикль",
+        "en": "Article",
+        "ar": "أل التعريف"
+      },
+      "description": {
+        "ru": "Изучение артикля в арабском языке",
+        "en": "Learning the article in Arabic language",
+        "ar": "تعلم أل التعريف في اللغة العربية"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/VSYQdefnVQw",
       "thumbnail": "/thumbnails/article.jpg",
@@ -178,8 +306,16 @@
     },
     {
       "id": "1-17",
-      "title": "Артикль. Продолжение",
-      "description": "Продолжение изучения артикля и его правил",
+      "title": {
+        "ru": "Артикль. Продолжение",
+        "en": "Article. Continuation",
+        "ar": "أل التعريف. المتابعة"
+      },
+      "description": {
+        "ru": "Продолжение изучения артикля и его правил",
+        "en": "Continuation of learning the article and its rules",
+        "ar": "متابعة تعلم أل التعريف وقواعدها"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/W_hVI_bosro",
       "thumbnail": "/thumbnails/article-cont.jpg",
@@ -189,8 +325,16 @@
     },
     {
       "id": "1-18",
-      "title": "Лам в слове Аллах1. Сукун из-за паузы",
-      "description": "Изучение лам в слове Аллах1 и сукун из-за паузы",
+      "title": {
+        "ru": "Лам в слове Аллах. Сукун из-за паузы",
+        "en": "Lam in the word Allah. Sukun due to pause",
+        "ar": "لام في كلمة الله. السكون بسبب الوقف"
+      },
+      "description": {
+        "ru": "Изучение лам в слове Аллах и сукун из-за паузы",
+        "en": "Learning lam in the word Allah and sukun due to pause",
+        "ar": "تعلم لام في كلمة الله والسكون بسبب الوقف"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/NqN_Aeyu71A",
       "thumbnail": "/thumbnails/lam-allah.jpg",
@@ -200,8 +344,16 @@
     },
     {
       "id": "1-19",
-      "title": "Къалькъала",
-      "description": "Изучение правила къалькъала",
+      "title": {
+        "ru": "Къалькъала",
+        "en": "Qalqala",
+        "ar": "القلقلة"
+      },
+      "description": {
+        "ru": "Изучение правила къалькъала",
+        "en": "Learning the qalqala rule",
+        "ar": "تعلم قاعدة القلقلة"
+      },
       "duration": 1200,
       "videoUrl": "https://youtu.be/ej6uB6FVD2Y",
       "thumbnail": "/thumbnails/qalqala.jpg",
@@ -211,8 +363,16 @@
     },
     {
       "id": "1-20",
-      "title": "Мин и нун с ташдидом. Икълаб нуна",
-      "description": "Изучение мин и нун с ташдидом, икълаб нуна",
+      "title": {
+        "ru": "Мим и нун с ташдидом. Икляб нуна",
+        "en": "Mim and Nun with Tashdeed. Iqlab of Nun",
+        "ar": "الميم والنون مع التشديد. إقلاب النون"
+      },
+      "description": {
+        "ru": "Изучение мим и нун с ташдидом, икляб нуна",
+        "en": "Learning mim and nun with tashdeed, iqlab of nun",
+        "ar": "تعلم الميم والنون مع التشديد، إقلاب النون"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/NWw0oz4qhmw",
       "thumbnail": "/thumbnails/min-nun.jpg",
@@ -222,8 +382,16 @@
     },
     {
       "id": "1-21",
-      "title": "Идг1ам нуна",
-      "description": "Изучение правила идг1ам нуна",
+      "title": {
+        "ru": "Идгам нуна",
+        "en": "Idgham of Nun",
+        "ar": "إدغام النون"
+      },
+      "description": {
+        "ru": "Изучение правила идгам нуна",
+        "en": "Learning the idgham of nun rule",
+        "ar": "تعلم قاعدة إدغام النون"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/Gk4CxraEAyo",
       "thumbnail": "/thumbnails/idgam-nun.jpg",
@@ -233,8 +401,16 @@
     },
     {
       "id": "1-22",
-      "title": "Изх1ар нуна",
-      "description": "Изучение правила изх1ар нуна",
+      "title": {
+        "ru": "Изхар нуна",
+        "en": "Izhar of Nun",
+        "ar": "إظهار النون"
+      },
+      "description": {
+        "ru": "Изучение правила изхар нуна",
+        "en": "Learning the izhar of nun rule",
+        "ar": "تعلم قاعدة إظهار النون"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/1DND0gbGcaI",
       "thumbnail": "/thumbnails/izhar-nun.jpg",
@@ -244,8 +420,16 @@
     },
     {
       "id": "1-23",
-      "title": "Ихфаъ нуна",
-      "description": "Изучение правила ихфаъ нуна",
+      "title": {
+        "ru": "Ихфа нуна",
+        "en": "Ikhfa of Nun",
+        "ar": "إخفاء النون"
+      },
+      "description": {
+        "ru": "Изучение правила ихфа нуна",
+        "en": "Learning the ikhfa of nun rule",
+        "ar": "تعلم قاعدة إخفاء النون"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/na1-2uISWNY",
       "thumbnail": "/thumbnails/ihfa-nun.jpg",
@@ -255,8 +439,16 @@
     },
     {
       "id": "1-24",
-      "title": "Правила нуна. Закрепление",
-      "description": "Закрепление всех правил нуна",
+      "title": {
+        "ru": "Правила нуна. Закрепление",
+        "en": "Nun Rules. Reinforcement",
+        "ar": "قواعد النون. التعزيز"
+      },
+      "description": {
+        "ru": "Закрепление всех правил нуна",
+        "en": "Reinforcement of all nun rules",
+        "ar": "تعزيز جميع قواعد النون"
+      },
       "duration": 1200,
       "videoUrl": "https://youtu.be/9jqKmK_qgKY",
       "thumbnail": "/thumbnails/nun-rules.jpg",
@@ -266,8 +458,16 @@
     },
     {
       "id": "1-25",
-      "title": "Ихфаъ мима",
-      "description": "Изучение правила ихфаъ мима",
+      "title": {
+        "ru": "Ихфа мима",
+        "en": "Ikhfa of Mim",
+        "ar": "إخفاء الميم"
+      },
+      "description": {
+        "ru": "Изучение правила ихфа мима",
+        "en": "Learning the ikhfa of mim rule",
+        "ar": "تعلم قاعدة إخفاء الميم"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/Bj346TIFliw",
       "thumbnail": "/thumbnails/ihfa-mim.jpg",
@@ -277,8 +477,16 @@
     },
     {
       "id": "1-26",
-      "title": "Идг1ам мима",
-      "description": "Изучение правила идг1ам мима",
+      "title": {
+        "ru": "Идгам мима",
+        "en": "Idgham of Mim",
+        "ar": "إدغام الميم"
+      },
+      "description": {
+        "ru": "Изучение правила идгам мима",
+        "en": "Learning the idgham of mim rule",
+        "ar": "تعلم قاعدة إدغام الميم"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/JbEjA8Wts4U",
       "thumbnail": "/thumbnails/idgam-mim.jpg",
@@ -288,8 +496,16 @@
     },
     {
       "id": "1-27",
-      "title": "Изх1ар мима",
-      "description": "Изучение правила изх1ар мима",
+      "title": {
+        "ru": "Изхар мима",
+        "en": "Izhar of Mim",
+        "ar": "إظهار الميم"
+      },
+      "description": {
+        "ru": "Изучение правила изхар мима",
+        "en": "Learning the izhar of mim rule",
+        "ar": "تعلم قاعدة إظهار الميم"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/MpyhPeflOPE",
       "thumbnail": "/thumbnails/izhar-mim.jpg",
@@ -299,8 +515,16 @@
     },
     {
       "id": "1-28",
-      "title": "Та марбута",
-      "description": "Изучение та марбута и его правил",
+      "title": {
+        "ru": "Та марбута",
+        "en": "Ta Marbuta",
+        "ar": "التاء المربوطة"
+      },
+      "description": {
+        "ru": "Изучение та марбута и его правил",
+        "en": "Learning ta marbuta and its rules",
+        "ar": "تعلم التاء المربوطة وقواعدها"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/Nd8x1dTdNhY",
       "thumbnail": "/thumbnails/ta-marbuta.jpg",
@@ -310,8 +534,16 @@
     },
     {
       "id": "1-29",
-      "title": "Слитная и раздельная мадды",
-      "description": "Изучение слитной и раздельной мадды",
+      "title": {
+        "ru": "Слитная и раздельная мадды",
+        "en": "Connected and Separated Madd",
+        "ar": "المد المتصل والمنفصل"
+      },
+      "description": {
+        "ru": "Изучение слитной и раздельной мадды",
+        "en": "Learning connected and separated madd",
+        "ar": "تعلم المد المتصل والمنفصل"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/dZtbW9Aun18",
       "thumbnail": "/thumbnails/madd-types.jpg",
@@ -321,8 +553,16 @@
     },
     {
       "id": "1-30",
-      "title": "Мадда из-за выставленного сукуна",
-      "description": "Изучение мадды из-за выставленного сукуна",
+      "title": {
+        "ru": "Мадда из-за выставленного сукуна",
+        "en": "Madd due to Presented Sukun",
+        "ar": "المد بسبب السكون المعروض"
+      },
+      "description": {
+        "ru": "Изучение мадды из-за выставленного сукуна",
+        "en": "Learning madd due to presented sukun",
+        "ar": "تعلم المد بسبب السكون المعروض"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/Z5aOFQyMQ7E",
       "thumbnail": "/thumbnails/madd-sukun.jpg",
@@ -332,8 +572,16 @@
     },
     {
       "id": "1-31",
-      "title": "Мягкая мадда",
-      "description": "Изучение мягкой мадды и ее применение",
+      "title": {
+        "ru": "Мягкая мадда",
+        "en": "Soft Madd",
+        "ar": "المد اللين"
+      },
+      "description": {
+        "ru": "Изучение мягкой мадды и ее применение",
+        "en": "Learning soft madd and its application",
+        "ar": "تعلم المد اللين وتطبيقه"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/oAeD-TLgQZs",
       "thumbnail": "/thumbnails/soft-madd.jpg",
@@ -343,8 +591,16 @@
     },
     {
       "id": "1-32",
-      "title": "Возмещенная мадда",
-      "description": "Изучение возмещенной мадды",
+      "title": {
+        "ru": "Возмещенная мадда",
+        "en": "Compensatory Madd",
+        "ar": "المد العوض"
+      },
+      "description": {
+        "ru": "Изучение возмещенной мадды",
+        "en": "Learning compensatory madd",
+        "ar": "تعلم المد العوض"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/s3cAa8kt3Iw",
       "thumbnail": "/thumbnails/compensation-madd.jpg",
@@ -354,8 +610,16 @@
     },
     {
       "id": "1-33",
-      "title": "Обязательная мадда",
-      "description": "Изучение обязательной мадды",
+      "title": {
+        "ru": "Обязательная мадда",
+        "en": "Obligatory Madd",
+        "ar": "المد الواجب"
+      },
+      "description": {
+        "ru": "Изучение обязательной мадды",
+        "en": "Learning obligatory madd",
+        "ar": "تعلم المد الواجب"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/lH6E3x-vVUY",
       "thumbnail": "/thumbnails/obligatory-madd.jpg",
@@ -365,8 +629,16 @@
     },
     {
       "id": "1-34",
-      "title": "Естественная мадда",
-      "description": "Изучение естественной мадды",
+      "title": {
+        "ru": "Естественная мадда",
+        "en": "Natural Madd",
+        "ar": "المد الطبيعي"
+      },
+      "description": {
+        "ru": "Изучение естественной мадды",
+        "en": "Learning natural madd",
+        "ar": "تعلم المد الطبيعي"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/e1QQ_BSCbrw",
       "thumbnail": "/thumbnails/natural-madd.jpg",
@@ -376,8 +648,16 @@
     },
     {
       "id": "1-35",
-      "title": "Буква Ро",
-      "description": "Изучение буквы Ро и ее правил",
+      "title": {
+        "ru": "Буква Ро",
+        "en": "Letter Ra",
+        "ar": "حرف الراء"
+      },
+      "description": {
+        "ru": "Изучение буквы Ро и ее правил",
+        "en": "Learning the letter Ra and its rules",
+        "ar": "تعلم حرف الراء وقواعده"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/unWSVVu_jg8",
       "thumbnail": "/thumbnails/letter-ra.jpg",
@@ -387,8 +667,16 @@
     },
     {
       "id": "1-36",
-      "title": "Знаки остановок",
-      "description": "Изучение знаков остановок в Коране",
+      "title": {
+        "ru": "Знаки остановок",
+        "en": "Stop Signs",
+        "ar": "علامات الوقف"
+      },
+      "description": {
+        "ru": "Изучение знаков остановок в Коране",
+        "en": "Learning stop signs in the Quran",
+        "ar": "تعلم علامات الوقف في القرآن"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/5N389eCGHiE",
       "thumbnail": "/thumbnails/stop-signs.jpg",
@@ -398,8 +686,16 @@
     },
     {
       "id": "1-37",
-      "title": "Знак сужуда",
-      "description": "Изучение знака сужуда",
+      "title": {
+        "ru": "Знак сужуда",
+        "en": "Sajdah Sign",
+        "ar": "علامة السجدة"
+      },
+      "description": {
+        "ru": "Изучение знака сужуда",
+        "en": "Learning the sajdah sign",
+        "ar": "تعلم علامة السجدة"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/HY2-sbpCA_8",
       "thumbnail": "/thumbnails/sujud-sign.jpg",
@@ -409,8 +705,16 @@
     },
     {
       "id": "1-38",
-      "title": "Х1амзатуль васли",
-      "description": "Изучение х1амзатуль васли",
+      "title": {
+        "ru": "Хамзатуль васли",
+        "en": "Hamzatul Wasl",
+        "ar": "همزة الوصل"
+      },
+      "description": {
+        "ru": "Изучение хамзатуль васли",
+        "en": "Learning hamzatul wasl",
+        "ar": "تعلم همزة الوصل"
+      },
       "duration": 1020,
       "videoUrl": "https://youtu.be/S0RH_NII7D0",
       "thumbnail": "/thumbnails/hamzatul-wasl.jpg",
@@ -420,8 +724,16 @@
     },
     {
       "id": "1-39",
-      "title": "Арабские цифры",
-      "description": "Изучение арабских цифр",
+      "title": {
+        "ru": "Арабские цифры",
+        "en": "Arabic Numbers",
+        "ar": "الأرقام العربية"
+      },
+      "description": {
+        "ru": "Изучение арабских цифр",
+        "en": "Learning Arabic numbers",
+        "ar": "تعلم الأرقام العربية"
+      },
       "duration": 1080,
       "videoUrl": "https://youtu.be/0Yt65YJz2XY",
       "thumbnail": "/thumbnails/arabic-numbers.jpg",
@@ -431,8 +743,16 @@
     },
     {
       "id": "1-40",
-      "title": "Окончания слов при паузе",
-      "description": "Изучение окончаний слов при паузе",
+      "title": {
+        "ru": "Окончания слов при паузе",
+        "en": "Word Endings during Pause",
+        "ar": "نهايات الكلمات عند الوقف"
+      },
+      "description": {
+        "ru": "Изучение окончаний слов при паузе",
+        "en": "Learning word endings during pause",
+        "ar": "تعلم نهايات الكلمات عند الوقف"
+      },
       "duration": 1140,
       "videoUrl": "https://youtu.be/MbtwV2yPE8M",
       "thumbnail": "/thumbnails/word-endings.jpg",
@@ -442,8 +762,16 @@
     },
     {
       "id": "1-41",
-      "title": "Встреча танвина с сукуном",
-      "description": "Изучение встречи танвина с сукуном",
+      "title": {
+        "ru": "Встреча танвина с сукуном",
+        "en": "Meeting of Tanween with Sukun",
+        "ar": "التقاء التنوين مع السكون"
+      },
+      "description": {
+        "ru": "Изучение встречи танвина с сукуном",
+        "en": "Learning the meeting of tanween with sukun",
+        "ar": "تعلم التقاء التنوين مع السكون"
+      },
       "duration": 900,
       "videoUrl": "https://youtu.be/FPNE-QEcdTA",
       "thumbnail": "/thumbnails/tanvin-sukun.jpg",
@@ -453,8 +781,16 @@
     },
     {
       "id": "1-42",
-      "title": "Положение исти1азы и басмалы",
-      "description": "Изучение положения исти1азы и басмалы",
+      "title": {
+        "ru": "Положение истиазы и басмалы",
+        "en": "Position of Istiaza and Basmala",
+        "ar": "موضع الاستعاذة والبسملة"
+      },
+      "description": {
+        "ru": "Изучение положения истиазы и басмалы",
+        "en": "Learning the position of istiaza and basmala",
+        "ar": "تعلم موضع الاستعاذة والبسملة"
+      },
       "duration": 960,
       "videoUrl": "https://youtu.be/0onAavLnIE0",
       "thumbnail": "/thumbnails/istiaza-basmala.jpg",
@@ -466,35 +802,572 @@
   "2": [
     {
       "id": "2-1",
-      "title": "Идгам (слияние)",
-      "description": "Правила слияния букв при чтении Корана",
-      "duration": 1500,
-      "videoUrl": "https://youtu.be/advanced-idgam",
-      "thumbnail": "/thumbnails/idgam-advanced.jpg",
+      "title": {
+        "ru": "Буква и звук. Органы речи",
+        "en": "Letter and Sound. Speech Organs",
+        "ar": "الحرف والصوت. أعضاء النطق"
+      },
+      "description": {
+        "ru": "Изучение взаимосвязи между буквами и звуками, знакомство с органами речи",
+        "en": "Learning the relationship between letters and sounds, introduction to speech organs",
+        "ar": "تعلم العلاقة بين الحروف والأصوات، التعريف بأعضاء النطق"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/6GASp9BN2m8",
+      "thumbnail": "/thumbnails/speech-organs.jpg",
       "courseId": "2",
       "order": 1,
       "status": "not_started"
     },
     {
       "id": "2-2",
-      "title": "Икляб (замена)",
-      "description": "Правило замены звуков в определенных случаях",
-      "duration": 1200,
-      "videoUrl": "https://youtu.be/advanced-iklyab",
-      "thumbnail": "/thumbnails/iklyab-advanced.jpg",
+      "title": {
+        "ru": "Махраджи букв мад ا و ي",
+        "en": "Makharij of Madd Letters ا و ي",
+        "ar": "مخارج حروف المد ا و ي"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции букв мадда: алиф, вав, йа",
+        "en": "Learning the articulation points of madd letters: alif, waw, ya",
+        "ar": "تعلم مخارج حروف المد: الألف والواو والياء"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/qRw9ecd40Bw",
+      "thumbnail": "/thumbnails/makharij-madd.jpg",
       "courseId": "2",
       "order": 2,
       "status": "not_started"
     },
     {
       "id": "2-3",
-      "title": "Ихфа (сокрытие)",
-      "description": "Правила сокрытия звуков при чтении",
-      "duration": 1800,
-      "videoUrl": "https://youtu.be/advanced-ihfa",
-      "thumbnail": "/thumbnails/ihfa-advanced.jpg",
+      "title": {
+        "ru": "Махраджи горла",
+        "en": "Makharij of the Throat",
+        "ar": "مخارج الحلق"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции букв, произносимых из горла",
+        "en": "Learning the articulation points of letters pronounced from the throat",
+        "ar": "تعلم مخارج الحروف التي تخرج من الحلق"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/kGRmUMYWvtY",
+      "thumbnail": "/thumbnails/makharij-throat.jpg",
       "courseId": "2",
       "order": 3,
+      "status": "not_started"
+    },
+    {
+      "id": "2-4",
+      "title": {
+        "ru": "Махраджи языка. Къоф и Каф",
+        "en": "Makharij of the Tongue. Qaf and Kaf",
+        "ar": "مخارج اللسان. القاف والكاف"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции языка, особенности произношения букв къоф и каф",
+        "en": "Learning tongue articulation points, pronunciation features of qaf and kaf letters",
+        "ar": "تعلم مخارج اللسان، خصائص نطق حرفي القاف والكاف"
+      },
+      "duration": 1320,
+      "videoUrl": "https://youtu.be/6CMmgTwsPjY",
+      "thumbnail": "/thumbnails/makharij-tongue-qaf-kaf.jpg",
+      "courseId": "2",
+      "order": 4,
+      "status": "not_started"
+    },
+    {
+      "id": "2-5",
+      "title": {
+        "ru": "Махраджи букв ي ج ش",
+        "en": "Makharij of Letters ي ج ش",
+        "ar": "مخارج الحروف ي ج ش"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции букв йа, джим, шин",
+        "en": "Learning the articulation points of letters ya, jim, shin",
+        "ar": "تعلم مخارج حروف الياء والجيم والشين"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/KveRcItXejg",
+      "thumbnail": "/thumbnails/makharij-ya-jim-shin.jpg",
+      "courseId": "2",
+      "order": 5,
+      "status": "not_started"
+    },
+    {
+      "id": "2-6",
+      "title": {
+        "ru": "Махрадж буквы ض",
+        "en": "Makharaj of Letter ض",
+        "ar": "مخرج حرف الضاد"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции буквы дад",
+        "en": "Learning the articulation point of letter dad",
+        "ar": "تعلم مخرج حرف الضاد"
+      },
+      "duration": 960,
+      "videoUrl": "https://youtu.be/iqMi3m3vXK0",
+      "thumbnail": "/thumbnails/makharaj-dad.jpg",
+      "courseId": "2",
+      "order": 6,
+      "status": "not_started"
+    },
+    {
+      "id": "2-7",
+      "title": {
+        "ru": "Махрадж буквы ل",
+        "en": "Makharaj of Letter ل",
+        "ar": "مخرج حرف اللام"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции буквы лам",
+        "en": "Learning the articulation point of letter lam",
+        "ar": "تعلم مخرج حرف اللام"
+      },
+      "duration": 1020,
+      "videoUrl": "https://youtu.be/txDIUwbg-jg",
+      "thumbnail": "/thumbnails/makharaj-lam.jpg",
+      "courseId": "2",
+      "order": 7,
+      "status": "not_started"
+    },
+    {
+      "id": "2-8",
+      "title": {
+        "ru": "Махраджи букв ن ر",
+        "en": "Makharij of Letters ن ر",
+        "ar": "مخارج حرفي النون والراء"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции букв нун и ра",
+        "en": "Learning the articulation points of letters nun and ra",
+        "ar": "تعلم مخارج حرفي النون والراء"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/ngyPiDNfxqQ",
+      "thumbnail": "/thumbnails/makharij-nun-ra.jpg",
+      "courseId": "2",
+      "order": 8,
+      "status": "not_started"
+    },
+    {
+      "id": "2-9",
+      "title": {
+        "ru": "Махрадж букв ت د ط",
+        "en": "Makharaj of Letters ت د ط",
+        "ar": "مخرج حروف التاء والدال والطاء"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции букв та, дал, та",
+        "en": "Learning the articulation point of letters ta, dal, ta",
+        "ar": "تعلم مخرج حروف التاء والدال والطاء"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/onGmzdn28TA",
+      "thumbnail": "/thumbnails/makharaj-ta-dal-ta.jpg",
+      "courseId": "2",
+      "order": 9,
+      "status": "not_started"
+    },
+    {
+      "id": "2-10",
+      "title": {
+        "ru": "Махрадж букв ز س ص",
+        "en": "Makharaj of Letters ز س ص",
+        "ar": "مخرج حروف الزاي والسين والصاد"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции букв за, син, сад",
+        "en": "Learning the articulation point of letters za, sin, sad",
+        "ar": "تعلم مخرج حروف الزاي والسين والصاد"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/hBm9WajXp44",
+      "thumbnail": "/thumbnails/makharaj-za-sin-sad.jpg",
+      "courseId": "2",
+      "order": 10,
+      "status": "not_started"
+    },
+    {
+      "id": "2-11",
+      "title": {
+        "ru": "Махрадж букв ث ذ ظ",
+        "en": "Makharaj of Letters ث ذ ظ",
+        "ar": "مخرج حروف الثاء والذال والظاء"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции букв са, заль, за",
+        "en": "Learning the articulation point of letters tha, dhal, dha",
+        "ar": "تعلم مخرج حروف الثاء والذال والظاء"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/GKK40NumzEo",
+      "thumbnail": "/thumbnails/makharaj-tha-dhal-dha.jpg",
+      "courseId": "2",
+      "order": 11,
+      "status": "not_started"
+    },
+    {
+      "id": "2-12",
+      "title": {
+        "ru": "Махраджи губ. Буквы ب م و ف",
+        "en": "Makharij of Lips. Letters ب م و ف",
+        "ar": "مخارج الشفتين. حروف الباء والميم والواو والفاء"
+      },
+      "description": {
+        "ru": "Изучение мест артикуляции губ и букв ба, мим, вав, фа",
+        "en": "Learning lip articulation points and letters ba, mim, waw, fa",
+        "ar": "تعلم مخارج الشفتين وحروف الباء والميم والواو والفاء"
+      },
+      "duration": 1260,
+      "videoUrl": "https://youtu.be/6QLbndCZEgk",
+      "thumbnail": "/thumbnails/makharij-lips.jpg",
+      "courseId": "2",
+      "order": 12,
+      "status": "not_started"
+    },
+    {
+      "id": "2-13",
+      "title": {
+        "ru": "Махрадж полости носа. Г1унна",
+        "en": "Makharaj of Nasal Cavity. Ghunna",
+        "ar": "مخرج تجويف الأنف. الغنة"
+      },
+      "description": {
+        "ru": "Изучение места артикуляции носовой полости и понятия гунна",
+        "en": "Learning the articulation point of nasal cavity and the concept of ghunna",
+        "ar": "تعلم مخرج تجويف الأنف ومفهوم الغنة"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/LMyw8rSja1M",
+      "thumbnail": "/thumbnails/makharaj-nasal-ghunna.jpg",
+      "courseId": "2",
+      "order": 13,
+      "status": "not_started"
+    },
+    {
+      "id": "2-14",
+      "title": {
+        "ru": "Сыфаты букв. Ознакомление",
+        "en": "Sifat of Letters. Introduction",
+        "ar": "صفات الحروف. التعارف"
+      },
+      "description": {
+        "ru": "Знакомство с качествами и характеристиками арабских букв",
+        "en": "Introduction to the qualities and characteristics of Arabic letters",
+        "ar": "التعريف بصفات وخصائص الحروف العربية"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/PivC7ejM8lk",
+      "thumbnail": "/thumbnails/sifat-introduction.jpg",
+      "courseId": "2",
+      "order": 14,
+      "status": "not_started"
+    },
+    {
+      "id": "2-15",
+      "title": {
+        "ru": "Взаимоисключающие сыфаты. Аль-х1мс и Аль-Джах1р",
+        "en": "Mutually Exclusive Sifat. Al-Hams and Al-Jahr",
+        "ar": "الصفات المتضادة. الهمس والجهر"
+      },
+      "description": {
+        "ru": "Изучение взаимоисключающих качеств: глухость и звонкость букв",
+        "en": "Learning mutually exclusive qualities: voicelessness and voicing of letters",
+        "ar": "تعلم الصفات المتضادة: الهمس والجهر في الحروف"
+      },
+      "duration": 1320,
+      "videoUrl": "https://youtu.be/pd4eYSCszJM",
+      "thumbnail": "/thumbnails/hams-jahr.jpg",
+      "courseId": "2",
+      "order": 15,
+      "status": "not_started"
+    },
+    {
+      "id": "2-16",
+      "title": {
+        "ru": "Аш-шидда, ар-рахава, ат-тавасут1",
+        "en": "Ash-Shidda, Ar-Rakhawa, At-Tawassut",
+        "ar": "الشدة والرخاوة والتوسط"
+      },
+      "description": {
+        "ru": "Изучение качеств твердости, мягкости и умеренности букв",
+        "en": "Learning the qualities of strength, softness and moderation of letters",
+        "ar": "تعلم صفات الشدة والرخاوة والتوسط في الحروف"
+      },
+      "duration": 1260,
+      "videoUrl": "https://youtu.be/lZRN6sNl-R0",
+      "thumbnail": "/thumbnails/shidda-rakhawa.jpg",
+      "courseId": "2",
+      "order": 16,
+      "status": "not_started"
+    },
+    {
+      "id": "2-17",
+      "title": {
+        "ru": "Долгота букв",
+        "en": "Length of Letters",
+        "ar": "طول الحروف"
+      },
+      "description": {
+        "ru": "Изучение временной долготы произношения различных букв",
+        "en": "Learning the temporal length of pronunciation of different letters",
+        "ar": "تعلم الطول الزمني لنطق الحروف المختلفة"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/LbKwTgWITsc",
+      "thumbnail": "/thumbnails/letter-length.jpg",
+      "courseId": "2",
+      "order": 17,
+      "status": "not_started"
+    },
+    {
+      "id": "2-18",
+      "title": {
+        "ru": "Аль-исти1лаъ, аль-истифаль",
+        "en": "Al-Isti'la, Al-Istifal",
+        "ar": "الاستعلاء والاستفال"
+      },
+      "description": {
+        "ru": "Изучение качеств возвышения и понижения языка при произношении",
+        "en": "Learning the qualities of tongue elevation and lowering during pronunciation",
+        "ar": "تعلم صفتي الاستعلاء والاستفال للسان عند النطق"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/ivgzuyiaFIU",
+      "thumbnail": "/thumbnails/istila-istifal.jpg",
+      "courseId": "2",
+      "order": 18,
+      "status": "not_started"
+    },
+    {
+      "id": "2-19",
+      "title": {
+        "ru": "Аль-Ит1бакъ и Аль-Инфитахь",
+        "en": "Al-Itbaq and Al-Infitah",
+        "ar": "الإطباق والانفتاح"
+      },
+      "description": {
+        "ru": "Изучение качеств закрытости и открытости при произношении",
+        "en": "Learning the qualities of closure and openness during pronunciation",
+        "ar": "تعلم صفتي الإطباق والانفتاح عند النطق"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/kwum9GBqQok",
+      "thumbnail": "/thumbnails/itbaq-infitah.jpg",
+      "courseId": "2",
+      "order": 19,
+      "status": "not_started"
+    },
+    {
+      "id": "2-20",
+      "title": {
+        "ru": "Аль-Излакъ, Аль-Исмат",
+        "en": "Al-Izlaq, Al-Ismat",
+        "ar": "الإذلاق والإصمات"
+      },
+      "description": {
+        "ru": "Изучение качеств легкости и тяжести произношения букв",
+        "en": "Learning the qualities of ease and difficulty in letter pronunciation",
+        "ar": "تعلم صفتي الإذلاق والإصمات في نطق الحروف"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/1U2zYSXayjk",
+      "thumbnail": "/thumbnails/izlaq-ismat.jpg",
+      "courseId": "2",
+      "order": 20,
+      "status": "not_started"
+    },
+    {
+      "id": "2-21",
+      "title": {
+        "ru": "Одинарные сыфаты. Аль-Къалькъала",
+        "en": "Individual Sifat. Al-Qalqala",
+        "ar": "الصفات المفردة. القلقلة"
+      },
+      "description": {
+        "ru": "Изучение индивидуальных качеств букв и правила къалькъала",
+        "en": "Learning individual letter qualities and the qalqala rule",
+        "ar": "تعلم الصفات المفردة للحروف وقاعدة القلقلة"
+      },
+      "duration": 1260,
+      "videoUrl": "https://youtu.be/S4HBX6WYJec",
+      "thumbnail": "/thumbnails/qalqala-individual.jpg",
+      "courseId": "2",
+      "order": 21,
+      "status": "not_started"
+    },
+    {
+      "id": "2-22",
+      "title": {
+        "ru": "Аль-Къалькъала. Продолжение",
+        "en": "Al-Qalqala. Continuation",
+        "ar": "القلقلة. المتابعة"
+      },
+      "description": {
+        "ru": "Продолжение изучения правила къалькъала и его применения",
+        "en": "Continuation of learning the qalqala rule and its application",
+        "ar": "متابعة تعلم قاعدة القلقلة وتطبيقها"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/p47ZuwiSwAs",
+      "thumbnail": "/thumbnails/qalqala-continuation.jpg",
+      "courseId": "2",
+      "order": 22,
+      "status": "not_started"
+    },
+    {
+      "id": "2-23",
+      "title": {
+        "ru": "Ас-Софир, Ат-Тафащи",
+        "en": "As-Safir, At-Tafashi",
+        "ar": "الصفير والتفشي"
+      },
+      "description": {
+        "ru": "Изучение качеств свиста и распространения звука",
+        "en": "Learning the qualities of whistling and sound spreading",
+        "ar": "تعلم صفتي الصفير والتفشي في الأصوات"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/VyQHlCjOuaY",
+      "thumbnail": "/thumbnails/safir-tafashi.jpg",
+      "courseId": "2",
+      "order": 23,
+      "status": "not_started"
+    },
+    {
+      "id": "2-24",
+      "title": {
+        "ru": "Ал-Лин",
+        "en": "Al-Leen",
+        "ar": "اللين"
+      },
+      "description": {
+        "ru": "Изучение качества мягкости в произношении",
+        "en": "Learning the quality of softness in pronunciation",
+        "ar": "تعلم صفة اللين في النطق"
+      },
+      "duration": 1020,
+      "videoUrl": "https://youtu.be/z-n_nph3cQw",
+      "thumbnail": "/thumbnails/leen.jpg",
+      "courseId": "2",
+      "order": 24,
+      "status": "not_started"
+    },
+    {
+      "id": "2-25",
+      "title": {
+        "ru": "Аль-Инхьиров и Ат-Такрир",
+        "en": "Al-Inhiraf and At-Takrir",
+        "ar": "الانحراف والتكرير"
+      },
+      "description": {
+        "ru": "Изучение качеств отклонения и повторения в произношении",
+        "en": "Learning the qualities of deviation and repetition in pronunciation",
+        "ar": "تعلم صفتي الانحراف والتكرير في النطق"
+      },
+      "duration": 1180,
+      "videoUrl": "https://youtu.be/tKGRsEOMMSg",
+      "thumbnail": "/thumbnails/inhiraf-takrir.jpg",
+      "courseId": "2",
+      "order": 25,
+      "status": "not_started"
+    },
+    {
+      "id": "2-26",
+      "title": {
+        "ru": "Аль-Истит1ола (Продление)",
+        "en": "Al-Istitala (Extension)",
+        "ar": "الاستطالة"
+      },
+      "description": {
+        "ru": "Изучение качества продления звука при произношении",
+        "en": "Learning the quality of sound extension during pronunciation",
+        "ar": "تعلم صفة الاستطالة في النطق"
+      },
+      "duration": 1080,
+      "videoUrl": "https://youtu.be/56JuhnZBcx4",
+      "thumbnail": "/thumbnails/istitala.jpg",
+      "courseId": "2",
+      "order": 26,
+      "status": "not_started"
+    },
+    {
+      "id": "2-27",
+      "title": {
+        "ru": "Солнечные и лунные буквы",
+        "en": "Solar and Lunar Letters",
+        "ar": "الحروف الشمسية والقمرية"
+      },
+      "description": {
+        "ru": "Изучение классификации букв на солнечные и лунные",
+        "en": "Learning the classification of letters into solar and lunar",
+        "ar": "تعلم تصنيف الحروف إلى شمسية وقمرية"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/TSlqR22T6c0",
+      "thumbnail": "/thumbnails/solar-lunar.jpg",
+      "courseId": "2",
+      "order": 27,
+      "status": "not_started"
+    },
+    {
+      "id": "2-28",
+      "title": {
+        "ru": "Идг1ам двух одинаковых букв",
+        "en": "Idgham of Two Identical Letters",
+        "ar": "إدغام حرفين متماثلين"
+      },
+      "description": {
+        "ru": "Изучение правила слияния двух одинаковых букв",
+        "en": "Learning the rule of merging two identical letters",
+        "ar": "تعلم قاعدة إدغام حرفين متماثلين"
+      },
+      "duration": 1260,
+      "videoUrl": "https://youtu.be/87EOsfMU5-g",
+      "thumbnail": "/thumbnails/idgham-identical.jpg",
+      "courseId": "2",
+      "order": 28,
+      "status": "not_started"
+    },
+    {
+      "id": "2-29",
+      "title": {
+        "ru": "Идг1ам двух однотипных букв",
+        "en": "Idgham of Two Similar Letters",
+        "ar": "إدغام حرفين متجانسين"
+      },
+      "description": {
+        "ru": "Изучение правила слияния двух однотипных букв",
+        "en": "Learning the rule of merging two similar letters",
+        "ar": "تعلم قاعدة إدغام حرفين متجانسين"
+      },
+      "duration": 1200,
+      "videoUrl": "https://youtu.be/EixrYcPDkpw",
+      "thumbnail": "/thumbnails/idgham-similar.jpg",
+      "courseId": "2",
+      "order": 29,
+      "status": "not_started"
+    },
+    {
+      "id": "2-30",
+      "title": {
+        "ru": "Идг1ам двух близких букв",
+        "en": "Idgham of Two Close Letters",
+        "ar": "إدغام حرفين متقاربين"
+      },
+      "description": {
+        "ru": "Изучение правила слияния двух близких по произношению букв",
+        "en": "Learning the rule of merging two letters close in pronunciation",
+        "ar": "تعلم قاعدة إدغام حرفين متقاربين في النطق"
+      },
+      "duration": 1140,
+      "videoUrl": "https://youtu.be/MOW-Rj3HIvo",
+      "thumbnail": "/thumbnails/idgham-close.jpg",
+      "courseId": "2",
+      "order": 30,
       "status": "not_started"
     }
   ]

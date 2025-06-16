@@ -4,6 +4,7 @@ import { QuranApiAyah } from "@/shared/lib/quran-api";
 import { useEffect, useRef } from "react";
 import { Play, Pause } from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useAppSettings } from "@/shared/hooks/use-app-settings";
 
 interface AyahDisplayProps {
   ayahs: QuranApiAyah[];
@@ -20,6 +21,7 @@ export function AyahDisplay({
 }: AyahDisplayProps) {
   const { t } = useI18n();
   const ayahRefs = useRef<{ [key: number]: HTMLDivElement | null }>({});
+  const { settings } = useAppSettings();
 
   // Автоматически прокручивать к текущему аяту
   useEffect(() => {
@@ -90,7 +92,13 @@ export function AyahDisplay({
             </div>
 
             <div className="flex-1 flex justify-center items-center">
-              <p className="text-2xl text-[#E0E0E0] font-arabic leading-loose text-right">
+              <p
+                className="text-[#E0E0E0] font-arabic leading-loose text-right"
+                style={{
+                  fontSize: `${settings.arabicFontSize * 2}px`,
+                  lineHeight: 1.5,
+                }}
+              >
                 {ayah.text}
               </p>
             </div>

@@ -1,12 +1,48 @@
 [
   {
     "id": "1",
-    "title": "Буквы ب ت ث ن (6а, та, са, нун)",
+    "title": {
+      "ru": "Буквы ب ت ث ن (ба, та, са, нун)",
+      "en": "Letters ب ت ث ن (Ba, Ta, Tha, Nun)",
+      "ar": "الحروف ب ت ث ن (باء، تاء، ثاء، نون)"
+    },
     "letters": [
-      { "letter": "ن", "name": "Нун", "transliteration": "nun" },
-      { "letter": "ث", "name": "Са", "transliteration": "tha" },
-      { "letter": "ت", "name": "Та", "transliteration": "ta" },
-      { "letter": "ب", "name": "Ба", "transliteration": "ba" }
+      {
+        "letter": "ن",
+        "name": {
+          "ru": "Нун",
+          "en": "Nun",
+          "ar": "نون"
+        },
+        "transliteration": "nun"
+      },
+      {
+        "letter": "ث",
+        "name": {
+          "ru": "Са",
+          "en": "Tha",
+          "ar": "ثاء"
+        },
+        "transliteration": "tha"
+      },
+      {
+        "letter": "ت",
+        "name": {
+          "ru": "Та",
+          "en": "Ta",
+          "ar": "تاء"
+        },
+        "transliteration": "ta"
+      },
+      {
+        "letter": "ب",
+        "name": {
+          "ru": "Ба",
+          "en": "Ba",
+          "ar": "باء"
+        },
+        "transliteration": "ba"
+      }
     ],
     "pdfUrl": "/pdfs/group-1-writing.pdf",
     "videoUrl": "https://youtu.be/KQJcVYHX4ow",
@@ -14,12 +50,48 @@
   },
   {
     "id": "2",
-    "title": "Буквы ي ج ح خ (йа, джим, хьа, хо)",
+    "title": {
+      "ru": "Буквы ي ج ح خ (йа, джим, хьа, хо)",
+      "en": "Letters ي ج ح خ (Ya, Jim, Ha, Kha)",
+      "ar": "الحروف ي ج ح خ (ياء، جيم، حاء، خاء)"
+    },
     "letters": [
-      { "letter": "خ", "name": "Хо", "transliteration": "ho" },
-      { "letter": "ح", "name": "Хьа", "transliteration": "ha" },
-      { "letter": "ج", "name": "Джим", "transliteration": "jim" },
-      { "letter": "ي", "name": "Йа", "transliteration": "ya" }
+      {
+        "letter": "خ",
+        "name": {
+          "ru": "Хо",
+          "en": "Kha",
+          "ar": "خاء"
+        },
+        "transliteration": "kha"
+      },
+      {
+        "letter": "ح",
+        "name": {
+          "ru": "Хьа",
+          "en": "Ha",
+          "ar": "حاء"
+        },
+        "transliteration": "ha"
+      },
+      {
+        "letter": "ج",
+        "name": {
+          "ru": "Джим",
+          "en": "Jim",
+          "ar": "جيم"
+        },
+        "transliteration": "jim"
+      },
+      {
+        "letter": "ي",
+        "name": {
+          "ru": "Йа",
+          "en": "Ya",
+          "ar": "ياء"
+        },
+        "transliteration": "ya"
+      }
     ],
     "pdfUrl": "/pdfs/group-2-writing.pdf",
     "videoUrl": "https://youtu.be/ySy1AV0atHQ",
@@ -27,12 +99,48 @@
   },
   {
     "id": "3",
-    "title": "Буквы س ش ص ض (син, шин, сод, дод)",
+    "title": {
+      "ru": "Буквы س ش ص ض (син, шин, сод, дод)",
+      "en": "Letters س ش ص ض (Sin, Shin, Sad, Dad)",
+      "ar": "الحروف س ش ص ض (سين، شين، صاد، ضاد)"
+    },
     "letters": [
-      { "letter": "ض", "name": "Дод", "transliteration": "dad" },
-      { "letter": "ص", "name": "Сод", "transliteration": "sad" },
-      { "letter": "ش", "name": "Шин", "transliteration": "shin" },
-      { "letter": "س", "name": "Син", "transliteration": "sin" }
+      {
+        "letter": "ض",
+        "name": {
+          "ru": "Дод",
+          "en": "Dad",
+          "ar": "ضاد"
+        },
+        "transliteration": "dad"
+      },
+      {
+        "letter": "ص",
+        "name": {
+          "ru": "Сод",
+          "en": "Sad",
+          "ar": "صاد"
+        },
+        "transliteration": "sad"
+      },
+      {
+        "letter": "ش",
+        "name": {
+          "ru": "Шин",
+          "en": "Shin",
+          "ar": "شين"
+        },
+        "transliteration": "shin"
+      },
+      {
+        "letter": "س",
+        "name": {
+          "ru": "Син",
+          "en": "Sin",
+          "ar": "سين"
+        },
+        "transliteration": "sin"
+      }
     ],
     "pdfUrl": "/pdfs/group-3-writing.pdf",
     "videoUrl": "https://youtu.be/ciZAhpItZFg",
@@ -40,12 +148,48 @@
   },
   {
     "id": "4",
-    "title": "Буквы ط ظ ع غ (тIо, зо, 1айн, г1ойн)",
+    "title": {
+      "ru": "Буквы ط ظ ع غ (то, зо, айн, гойн)",
+      "en": "Letters ط ظ ع غ (Ta, Za, Ain, Ghain)",
+      "ar": "الحروف ط ظ ع غ (طاء، ظاء، عين، غين)"
+    },
     "letters": [
-      { "letter": "غ", "name": "Гайн", "transliteration": "ghayn" },
-      { "letter": "ع", "name": "Айн", "transliteration": "ayn" },
-      { "letter": "ظ", "name": "ЗIo", "transliteration": "zIo" },
-      { "letter": "ط", "name": "ТIo", "transliteration": "tIo" }
+      {
+        "letter": "غ",
+        "name": {
+          "ru": "Гойн",
+          "en": "Ghain",
+          "ar": "غين"
+        },
+        "transliteration": "ghain"
+      },
+      {
+        "letter": "ع",
+        "name": {
+          "ru": "Айн",
+          "en": "Ain",
+          "ar": "عين"
+        },
+        "transliteration": "ain"
+      },
+      {
+        "letter": "ظ",
+        "name": {
+          "ru": "Зо",
+          "en": "Za",
+          "ar": "ظاء"
+        },
+        "transliteration": "za"
+      },
+      {
+        "letter": "ط",
+        "name": {
+          "ru": "То",
+          "en": "Ta",
+          "ar": "طاء"
+        },
+        "transliteration": "ta"
+      }
     ],
     "pdfUrl": "/pdfs/group-4-writing.pdf",
     "videoUrl": "https://youtu.be/phwar7MJyzo",
@@ -53,12 +197,48 @@
   },
   {
     "id": "5",
-    "title": "Буквы ف ق ك ل (фа, къоф, каф, лам)",
+    "title": {
+      "ru": "Буквы ف ق ك ل (фа, къаф, каф, лам)",
+      "en": "Letters ف ق ك ل (Fa, Qaf, Kaf, Lam)",
+      "ar": "الحروف ف ق ك ل (فاء، قاف، كاف، لام)"
+    },
     "letters": [
-      { "letter": "ل", "name": "Лам", "transliteration": "lam" },
-      { "letter": "ك", "name": "Каф", "transliteration": "kaf" },
-      { "letter": "ق", "name": "Къоф", "transliteration": "qaf" },
-      { "letter": "ف", "name": "Фа", "transliteration": "fa" }
+      {
+        "letter": "ل",
+        "name": {
+          "ru": "Лам",
+          "en": "Lam",
+          "ar": "لام"
+        },
+        "transliteration": "lam"
+      },
+      {
+        "letter": "ك",
+        "name": {
+          "ru": "Каф",
+          "en": "Kaf",
+          "ar": "كاف"
+        },
+        "transliteration": "kaf"
+      },
+      {
+        "letter": "ق",
+        "name": {
+          "ru": "Къаф",
+          "en": "Qaf",
+          "ar": "قاف"
+        },
+        "transliteration": "qaf"
+      },
+      {
+        "letter": "ف",
+        "name": {
+          "ru": "Фа",
+          "en": "Fa",
+          "ar": "فاء"
+        },
+        "transliteration": "fa"
+      }
     ],
     "pdfUrl": "/pdfs/group-5-writing.pdf",
     "videoUrl": "https://youtu.be/tmTRJjbBX5I",
@@ -66,12 +246,48 @@
   },
   {
     "id": "6",
-    "title": "Буквы م ه د ذ (мим, хIа, даль, заль)",
+    "title": {
+      "ru": "Буквы م ه د ذ (мим, ха, даль, заль)",
+      "en": "Letters م ه د ذ (Mim, Ha, Dal, Zal)",
+      "ar": "الحروف م ه د ذ (ميم، هاء، دال، ذال)"
+    },
     "letters": [
-      { "letter": "ذ", "name": "Заль", "transliteration": "zal" },
-      { "letter": "د", "name": "Даль", "transliteration": "dal" },
-      { "letter": "ه", "name": "ХIа", "transliteration": "ha" },
-      { "letter": "م", "name": "Мим", "transliteration": "mim" }
+      {
+        "letter": "ذ",
+        "name": {
+          "ru": "Заль",
+          "en": "Zal",
+          "ar": "ذال"
+        },
+        "transliteration": "zal"
+      },
+      {
+        "letter": "د",
+        "name": {
+          "ru": "Даль",
+          "en": "Dal",
+          "ar": "دال"
+        },
+        "transliteration": "dal"
+      },
+      {
+        "letter": "ه",
+        "name": {
+          "ru": "Ха",
+          "en": "Ha",
+          "ar": "هاء"
+        },
+        "transliteration": "ha"
+      },
+      {
+        "letter": "م",
+        "name": {
+          "ru": "Мим",
+          "en": "Mim",
+          "ar": "ميم"
+        },
+        "transliteration": "mim"
+      }
     ],
     "pdfUrl": "/pdfs/group-6-writing.pdf",
     "videoUrl": "https://youtu.be/4IspThuEB9c",
@@ -79,12 +295,48 @@
   },
   {
     "id": "7",
-    "title": "Буквы ر ز و ا (ро, за, вав, алиф)",
+    "title": {
+      "ru": "Буквы ر ز و ا (ро, за, вав, алиф)",
+      "en": "Letters ر ز و ا (Ra, Zay, Waw, Alif)",
+      "ar": "الحروف ر ز و ا (راء، زاي، واو، ألف)"
+    },
     "letters": [
-      { "letter": "ر", "name": "Ро", "transliteration": "ro" },
-      { "letter": "و", "name": "Вав", "transliteration": "waw" },
-      { "letter": "ز", "name": "За", "transliteration": "za" },
-      { "letter": "ا", "name": "Алиф", "transliteration": "alif" }
+      {
+        "letter": "ر",
+        "name": {
+          "ru": "Ро",
+          "en": "Ra",
+          "ar": "راء"
+        },
+        "transliteration": "ra"
+      },
+      {
+        "letter": "و",
+        "name": {
+          "ru": "Вав",
+          "en": "Waw",
+          "ar": "واو"
+        },
+        "transliteration": "waw"
+      },
+      {
+        "letter": "ز",
+        "name": {
+          "ru": "За",
+          "en": "Zay",
+          "ar": "زاي"
+        },
+        "transliteration": "zay"
+      },
+      {
+        "letter": "ا",
+        "name": {
+          "ru": "Алиф",
+          "en": "Alif",
+          "ar": "ألف"
+        },
+        "transliteration": "alif"
+      }
     ],
     "pdfUrl": "/pdfs/group-7-writing.pdf",
     "videoUrl": "https://youtu.be/wDehDgFNOi8",
@@ -92,8 +344,22 @@
   },
   {
     "id": "8",
-    "title": "Буква ء (х1амза)",
-    "letters": [{ "letter": "ء", "name": "Хамза", "transliteration": "hamza" }],
+    "title": {
+      "ru": "Буква ء (хамза)",
+      "en": "Letter ء (Hamza)",
+      "ar": "الحرف ء (همزة)"
+    },
+    "letters": [
+      {
+        "letter": "ء",
+        "name": {
+          "ru": "Хамза",
+          "en": "Hamza",
+          "ar": "همزة"
+        },
+        "transliteration": "hamza"
+      }
+    ],
     "pdfUrl": "/pdfs/group-8-writing.pdf",
     "videoUrl": "https://youtu.be/LxZ60b8Sk1A",
     "isDownloaded": false

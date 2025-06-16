@@ -11,14 +11,21 @@ import {
   VolumeX,
 } from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 import writingGroupsData from "@/shared/data/writing-groups.json";
+
+interface LocalizedText {
+  ru: string;
+  en: string;
+  ar: string;
+}
 
 interface WritingGroup {
   id: string;
-  title: string;
+  title: LocalizedText;
   letters: Array<{
     letter: string;
-    name: string;
+    name: LocalizedText;
     transliteration: string;
   }>;
   pdfUrl: string;
@@ -30,6 +37,7 @@ const writingGroups: WritingGroup[] = writingGroupsData;
 
 export function WritingPage() {
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
   const totalPDFs = writingGroups.length;
   const totalVideos = writingGroups.length;
 
@@ -146,7 +154,7 @@ export function WritingPage() {
                 <div className="relative bg-secondary rounded-3xl p-6 hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:bg-[#E0E0E0]/15">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-lg font-semibold text-[#E0E0E0] group-hover:text-[#E0E0E0]/90 transition-colors flex-1">
-                      {group.title}
+                      {getLocalizedText(group.title)}
                     </h3>
                     {group.isDownloaded && (
                       <div className="w-3 h-3 bg-green-500 rounded-full ml-2"></div>

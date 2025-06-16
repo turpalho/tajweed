@@ -87,6 +87,7 @@
   "quran.number": "Номер",
   "quran.type": "Тип",
   "quran.duration": "Длительность",
+  "quran.translation": "Перевод",
   "quran.surahText": "Текст суры",
   "quran.audioPlayer": "Аудио плеер",
   "quran.loadingSurahData": "Загрузка данных суры...",

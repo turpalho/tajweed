@@ -6,6 +6,7 @@ import { CheckCircle, Play, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import lessonsData from "@/shared/data/lessons.json";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 
 // Обновленные данные курсов с реальными уроками
 const mockCourses: Course[] = [
@@ -13,7 +14,7 @@ const mockCourses: Course[] = [
     id: "1",
     title: "lessons.basicTajweed",
     description: "Базовые правила чтения Корана и произношения арабских букв",
-    lessons: lessonsData["1"] as Lesson[],
+    lessons: lessonsData["1"] as unknown as Lesson[],
     totalDuration: lessonsData["1"].reduce(
       (total, lesson) => total + lesson.duration,
       0
@@ -25,7 +26,7 @@ const mockCourses: Course[] = [
     title: "lessons.advancedRules",
     description:
       "Сложные правила таджвида и их применение в различных контекстах",
-    lessons: lessonsData["2"] as Lesson[],
+    lessons: lessonsData["2"] as unknown as Lesson[],
     totalDuration: lessonsData["2"].reduce(
       (total, lesson) => total + lesson.duration,
       0
@@ -41,6 +42,7 @@ interface LessonItemProps {
 
 function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
 
   const getStatusIcon = (status: Lesson["status"]) => {
     switch (status) {
@@ -97,10 +99,10 @@ function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
             </div>
             <div className="min-w-0 flex-1">
               <h3 className="font-semibold text-base md:text-lg text-[#E0E0E0] mb-1 group-hover:text-[#E0E0E0]/90 transition-colors">
-                {lesson.title}
+                {getLocalizedText(lesson.title)}
               </h3>
               <p className="text-sm text-[#E0E0E0]/70 mb-2 font-light line-clamp-2">
-                {lesson.description}
+                {getLocalizedText(lesson.description)}
               </p>
               <div className="flex flex-wrap items-center gap-2 md:gap-4 text-xs text-[#E0E0E0]/50">
                 <span>
@@ -156,7 +158,7 @@ export function LessonsPage() {
   const { t } = useI18n();
 
   const activeCourse = mockCourses.find((course) => course.id === activeTab);
-  const lessons = (lessonsData[activeTab] as Lesson[]) || [];
+  const lessons = (lessonsData[activeTab] as unknown as Lesson[]) || [];
 
   const handleLessonClick = (lessonId: string) => {
     router.push(`/lessons/${lessonId}`);

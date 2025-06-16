@@ -4,10 +4,12 @@ import { useState, useMemo } from "react";
 import { SurahList } from "@/widgets/surah-list";
 import { Surah } from "@/entities/quran";
 import { useI18n } from "@/shared/lib/i18n/context";
+import { useLocalizedText } from "@/shared/lib/localized-data";
 import quranData from "@/shared/data/quran-surahs.json";
 
 export function QuranPage() {
   const { t } = useI18n();
+  const { getLocalizedText } = useLocalizedText();
   const [filter, setFilter] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<string>("");
@@ -28,14 +30,14 @@ export function QuranPage() {
 
     // Поиск по названию
     if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
       result = result.filter(
         (surah) =>
-          surah.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          surah.name.toLowerCase().includes(query) ||
           surah.nameArabic.includes(searchQuery) ||
-          surah.transliteration
-            .toLowerCase()
-            .includes(searchQuery.toLowerCase()) ||
-          surah.translation.toLowerCase().includes(searchQuery.toLowerCase())
+          surah.transliteration.toLowerCase().includes(query) ||
+          getLocalizedText(surah.translation).toLowerCase().includes(query) ||
+          getLocalizedText(surah.description).toLowerCase().includes(query)
       );
     }
 
@@ -46,7 +48,11 @@ export function QuranPage() {
           result.sort((a, b) => a.id - b.id);
           break;
         case "name":
-          result.sort((a, b) => a.name.localeCompare(b.name));
+          result.sort((a, b) =>
+            getLocalizedText(a.translation).localeCompare(
+              getLocalizedText(b.translation)
+            )
+          );
           break;
         case "duration":
           result.sort((a, b) => {
@@ -62,7 +68,7 @@ export function QuranPage() {
     }
 
     return result;
-  }, [surahs, filter, searchQuery, sortBy]);
+  }, [surahs, filter, searchQuery, sortBy, getLocalizedText]);
 
   return (
     <div className="min-h-screen relative">
