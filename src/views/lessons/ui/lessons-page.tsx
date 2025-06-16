@@ -13,7 +13,7 @@ const mockCourses: Course[] = [
   {
     id: "1",
     title: "lessons.basicTajweed",
-    description: "Базовые правила чтения Корана и произношения арабских букв",
+    description: "lessons.basicTajweedDescription",
     lessons: lessonsData["1"] as unknown as Lesson[],
     totalDuration: lessonsData["1"].reduce(
       (total, lesson) => total + lesson.duration,
@@ -24,8 +24,7 @@ const mockCourses: Course[] = [
   {
     id: "2",
     title: "lessons.advancedRules",
-    description:
-      "Сложные правила таджвида и их применение в различных контекстах",
+    description: "lessons.advancedRulesDescription",
     lessons: lessonsData["2"] as unknown as Lesson[],
     totalDuration: lessonsData["2"].reduce(
       (total, lesson) => total + lesson.duration,
@@ -223,7 +222,7 @@ export function LessonsPage() {
                       : t("lessons.advancedRules")}
                   </h2>
                   <p className="text-[#E0E0E0]/70 text-base md:text-lg font-light leading-relaxed">
-                    {activeCourse.description}
+                    {t(activeCourse.description)}
                   </p>
                 </div>
                 <div className="text-right">

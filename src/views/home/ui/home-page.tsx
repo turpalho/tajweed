@@ -87,7 +87,16 @@ export function HomePage() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-[#E0E0E0] leading-tight tracking-tight">
-              {t("home.title")}
+              {t("home.title").split(" ")[0]}
+              <span
+                className="bg-gradient-to-r bg-clip-text text-transparent"
+                style={{
+                  backgroundImage: `linear-gradient(to right, #ED6F4C, #ED6F4C80, #ED6F4CCC)`,
+                }}
+              >
+                {" "}
+                {t("home.title").split(" ")[1]}
+              </span>
             </h1>
           </div>
 

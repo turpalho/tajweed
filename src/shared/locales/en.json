@@ -138,6 +138,8 @@
   "lessons.start": "Start",
   "lessons.continue": "Continue",
   "lessons.rewatch": "Rewatch",
+  "lessons.basicTajweedDescription": "Basic rules of Quran reading and Arabic letter pronunciation",
+  "lessons.advancedRulesDescription": "Complex Tajweed rules and their application in various contexts",
 
   "writing.title": "Writing",
   "writing.letterCopies": "Letter Copies",
