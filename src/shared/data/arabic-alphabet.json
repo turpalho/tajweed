@@ -158,8 +158,8 @@
       "ar": "خاء"
     },
     "transliteration": "Kha",
-    "audioUrl": "/audio/letters/kha.ogg",
-    "imageUrl": "/images/letters/kha.jpg",
+    "audioUrl": "/audio/letters/kho.ogg",
+    "imageUrl": "/images/letters/kho.jpg",
     "positions": {
       "isolated": "خ",
       "initial": "خـ",
@@ -233,8 +233,8 @@
       "ar": "راء"
     },
     "transliteration": "Ra",
-    "audioUrl": "/audio/letters/ra.ogg",
-    "imageUrl": "/images/letters/ra.jpg",
+    "audioUrl": "/audio/letters/ro.ogg",
+    "imageUrl": "/images/letters/ro.jpg",
     "positions": {
       "isolated": "ر",
       "initial": "ر",
@@ -258,8 +258,8 @@
       "ar": "زاي"
     },
     "transliteration": "Zay",
-    "audioUrl": "/audio/letters/zay.ogg",
-    "imageUrl": "/images/letters/zay.jpg",
+    "audioUrl": "/audio/letters/za.ogg",
+    "imageUrl": "/images/letters/za.jpg",
     "positions": {
       "isolated": "ز",
       "initial": "ز",
@@ -333,8 +333,8 @@
       "ar": "صاد"
     },
     "transliteration": "Sad",
-    "audioUrl": "/audio/letters/sad.ogg",
-    "imageUrl": "/images/letters/sad.jpg",
+    "audioUrl": "/audio/letters/sod.ogg",
+    "imageUrl": "/images/letters/sod.jpg",
     "positions": {
       "isolated": "ص",
       "initial": "صـ",
@@ -358,8 +358,8 @@
       "ar": "ضاد"
     },
     "transliteration": "Dad",
-    "audioUrl": "/audio/letters/dad.ogg",
-    "imageUrl": "/images/letters/dad.jpg",
+    "audioUrl": "/audio/letters/dod.ogg",
+    "imageUrl": "/images/letters/dod.jpg",
     "positions": {
       "isolated": "ض",
       "initial": "ضـ",
@@ -458,8 +458,8 @@
       "ar": "غين"
     },
     "transliteration": "Ghain",
-    "audioUrl": "/audio/letters/ghain.ogg",
-    "imageUrl": "/images/letters/ghain.jpg",
+    "audioUrl": "/audio/letters/goin.ogg",
+    "imageUrl": "/images/letters/goin.jpg",
     "positions": {
       "isolated": "غ",
       "initial": "غـ",
@@ -508,8 +508,8 @@
       "ar": "قاف"
     },
     "transliteration": "Qaf",
-    "audioUrl": "/audio/letters/qaf.ogg",
-    "imageUrl": "/images/letters/qaf.jpg",
+    "audioUrl": "/audio/letters/qof.ogg",
+    "imageUrl": "/images/letters/qof.jpg",
     "positions": {
       "isolated": "ق",
       "initial": "قـ",
