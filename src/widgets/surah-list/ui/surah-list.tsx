@@ -51,7 +51,7 @@ export function SurahList({ surahs }: SurahListProps) {
                     {surah.id}
                     {/* Status indicator */}
                     {isRead && (
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#ED6F4C] rounded-full flex items-center justify-center">
                         <CheckCircle size={14} className="text-white" />
                       </div>
                     )}
@@ -88,7 +88,7 @@ export function SurahList({ surahs }: SurahListProps) {
                       </div>
                     )}
                     {isRead && (
-                      <div className="text-xs text-green-400 font-medium">
+                      <div className="text-xs text-[#ED6F4C] font-medium">
                         {t("quran.read")}
                       </div>
                     )}

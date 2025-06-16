@@ -1,12 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Course, Lesson } from "@/entities/lesson";
 import { CheckCircle, Play, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import lessonsData from "@/shared/data/lessons.json";
 import { useI18n } from "@/shared/lib/i18n/context";
 import { useLocalizedText } from "@/shared/lib/localized-data";
+import {
+  getLearningProgress,
+  isLessonCompleted,
+} from "@/shared/lib/learning-progress";
 
 // Обновленные данные курсов с реальными уроками
 const mockCourses: Course[] = [
@@ -94,7 +98,10 @@ function LessonItem({ lesson, onLessonClick }: LessonItemProps) {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex items-center space-x-4">
             <div className="w-12 h-12 md:w-16 md:h-16 bg-[#E0E0E0]/20 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-[#E0E0E0]/30 group-hover:bg-[#E0E0E0]/30 transition-colors flex-shrink-0">
-              <StatusIcon size={24} color="#E0E0E0" />
+              <StatusIcon
+                size={24}
+                color={lesson.status === "completed" ? "#ED6F4C" : "#E0E0E0"}
+              />
             </div>
             <div className="min-w-0 flex-1">
               <h3 className="font-semibold text-base md:text-lg text-[#E0E0E0] mb-1 group-hover:text-[#E0E0E0]/90 transition-colors">
@@ -153,11 +160,54 @@ function LessonList({ lessons, onLessonClick }: LessonListProps) {
 
 export function LessonsPage() {
   const [activeTab, setActiveTab] = useState<"1" | "2">("1");
+  const [coursesWithProgress, setCoursesWithProgress] =
+    useState<Course[]>(mockCourses);
   const router = useRouter();
   const { t } = useI18n();
 
-  const activeCourse = mockCourses.find((course) => course.id === activeTab);
-  const lessons = (lessonsData[activeTab] as unknown as Lesson[]) || [];
+  // Обновляем прогресс курсов при изменении данных
+  useEffect(() => {
+    const progress = getLearningProgress();
+
+    const updatedCourses = mockCourses.map((course) => {
+      const completedCount = course.lessons.filter((lesson) =>
+        progress.completedLessons.includes(lesson.id)
+      ).length;
+
+      return {
+        ...course,
+        completedLessons: completedCount,
+      };
+    });
+
+    setCoursesWithProgress(updatedCourses);
+  }, [activeTab]);
+
+  // Обновляем статус уроков на основе прогресса
+  useEffect(() => {
+    const lessonsWithStatus = (
+      lessonsData[activeTab] as unknown as Lesson[]
+    ).map((lesson) => ({
+      ...lesson,
+      status: isLessonCompleted(lesson.id)
+        ? ("completed" as const)
+        : ("not_started" as const),
+    }));
+
+    // Обновляем курсы с новыми статусами уроков
+    setCoursesWithProgress((prev) =>
+      prev.map((course) =>
+        course.id === activeTab
+          ? { ...course, lessons: lessonsWithStatus }
+          : course
+      )
+    );
+  }, [activeTab]);
+
+  const activeCourse = coursesWithProgress.find(
+    (course) => course.id === activeTab
+  );
+  const lessons = activeCourse?.lessons || [];
 
   const handleLessonClick = (lessonId: string) => {
     router.push(`/lessons/${lessonId}`);
