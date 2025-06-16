@@ -141,7 +141,9 @@ export function LetterPage({ letterId }: LetterPageProps) {
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-6">
                   {t("alphabet.letterForms")}
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                {/* desktop */}
+                <div className="hidden sm:grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="text-center">
                     <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
                       <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
@@ -152,6 +154,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                       {t("alphabet.atEnd")}
                     </p>
                   </div>
+
                   <div className="text-center">
                     <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
                       <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
@@ -162,6 +165,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                       {t("alphabet.inMiddle")}
                     </p>
                   </div>
+
                   <div className="text-center">
                     <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
                       <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
@@ -172,6 +176,7 @@ export function LetterPage({ letterId }: LetterPageProps) {
                       {t("alphabet.atBeginning")}
                     </p>
                   </div>
+
                   <div className="text-center">
                     <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
                       <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
@@ -180,6 +185,56 @@ export function LetterPage({ letterId }: LetterPageProps) {
                     </div>
                     <p className="text-sm text-[#E0E0E0]/70">
                       {t("alphabet.isolated")}
+                    </p>
+                  </div>
+                </div>
+
+                {/* mobile */}
+                <div
+                  className="grid sm:hidden grid-cols-2 md:grid-cols-4 gap-6"
+                  style={{ direction: "rtl" }}
+                >
+                  <div className="text-center">
+                    <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
+                        {letter.positions.isolated}
+                      </div>
+                    </div>
+                    <p className="text-sm text-[#E0E0E0]/70">
+                      {t("alphabet.isolated")}
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
+                        {letter.positions.initial}
+                      </div>
+                    </div>
+                    <p className="text-sm text-[#E0E0E0]/70">
+                      {t("alphabet.atBeginning")}
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
+                        {letter.positions.medial}
+                      </div>
+                    </div>
+                    <p className="text-sm text-[#E0E0E0]/70">
+                      {t("alphabet.inMiddle")}
+                    </p>
+                  </div>
+
+                  <div className="text-center">
+                    <div className="bg-primary rounded-2xl p-6 mb-3 aspect-square flex items-center justify-center">
+                      <div className="text-4xl md:text-5xl text-[#E0E0E0] font-arabic">
+                        {letter.positions.final}
+                      </div>
+                    </div>
+                    <p className="text-sm text-[#E0E0E0]/70">
+                      {t("alphabet.atEnd")}
                     </p>
                   </div>
                 </div>
@@ -245,8 +300,24 @@ export function LetterPage({ letterId }: LetterPageProps) {
                 <h3 className="text-lg font-semibold text-[#E0E0E0] mb-4">
                   {t("alphabet.examples")}
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                {/* desktop */}
+                <div className="hidden sm:grid grid-cols-1 md:grid-cols-3 gap-4">
                   {[...letter.examples].reverse().map((example, index) => (
+                    <div
+                      key={index}
+                      className="bg-primary rounded-2xl p-4 text-center"
+                    >
+                      <div className="text-2xl md:text-3xl text-[#E0E0E0] font-arabic mb-2">
+                        {example}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* mobile */}
+                <div className="sm:hidden grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {letter.examples.map((example, index) => (
                     <div
                       key={index}
                       className="bg-primary rounded-2xl p-4 text-center"
