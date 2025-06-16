@@ -1,6 +1,13 @@
 "use client";
 
-import { BookOpen, Info, MessageCircle, User, Send } from "lucide-react";
+import {
+  BookOpen,
+  Info,
+  MessageCircle,
+  User,
+  Send,
+  GraduationCap,
+} from "lucide-react";
 import { useI18n } from "@/shared/lib/i18n/context";
 
 export function AboutSettings() {
@@ -16,6 +23,14 @@ export function AboutSettings() {
 
   const handleInstagramClick = () => {
     window.open("https://instagram.com/turpal_shams", "_blank");
+  };
+
+  const handleSchoolTelegramClick = () => {
+    window.open("https://t.me/sahlan_online", "_blank");
+  };
+
+  const handleSchoolInstagramClick = () => {
+    window.open("https://instagram.com/sahlan_online", "_blank");
   };
 
   return (
@@ -47,6 +62,33 @@ export function AboutSettings() {
           >
             <MessageCircle size={16} color="#E0E0E0" />
             {t("settings.feedback")}
+          </div>
+
+          {/* School Section */}
+          <div className="bg-primary border border-[#E0E0E0]/10 rounded-2xl p-4 mt-4">
+            <div className="flex items-center gap-2 mb-3">
+              <GraduationCap size={20} color="#E0E0E0" />
+              <h4 className="text-lg font-semibold text-[#E0E0E0]">
+                {t("settings.schoolName")}
+              </h4>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div
+                className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-secondary border border-[#E0E0E0]/20 rounded-xl text-sm font-medium text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/20 transition-colors cursor-pointer text-center"
+                onClick={handleSchoolTelegramClick}
+              >
+                <Send size={14} color="#E0E0E0" />
+                Telegram: @sahlan_online
+              </div>
+              <div
+                className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-secondary border border-[#E0E0E0]/20 rounded-xl text-sm font-medium text-[#E0E0E0]/80 hover:bg-[#E0E0E0]/20 transition-colors cursor-pointer text-center"
+                onClick={handleSchoolInstagramClick}
+              >
+                <MessageCircle size={14} color="#E0E0E0" />
+                Instagram: @sahlan_online
+              </div>
+            </div>
           </div>
 
           {/* Developer Section */}
