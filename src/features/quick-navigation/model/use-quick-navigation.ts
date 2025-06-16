@@ -20,7 +20,7 @@ export function useQuickNavigation() {
             id: "alphabet",
             titleKey: "quickAccess.arabicAlphabet",
             icon: Type,
-            subtitle: `28 ${t("quickAccess.lettersWithPronunciation")}`,
+            subtitle: `29 ${t("quickAccess.lettersWithPronunciation")}`,
             path: "/alphabet",
             gradient: "from-green-500/20 to-emerald-500/20",
         },
