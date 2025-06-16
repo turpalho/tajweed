@@ -1,0 +1,1 @@
+export { SurahPageHeader } from "./ui/surah-page-header"; 

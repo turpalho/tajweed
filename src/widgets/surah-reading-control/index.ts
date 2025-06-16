@@ -1,0 +1,1 @@
+export { SurahReadingControl } from "./ui/surah-reading-control"; 

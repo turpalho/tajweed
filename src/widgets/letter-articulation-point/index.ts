@@ -1,0 +1,1 @@
+export { LetterArticulationPoint } from './ui/letter-articulation-point'; 

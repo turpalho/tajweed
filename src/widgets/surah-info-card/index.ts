@@ -1,0 +1,1 @@
+export { SurahInfoCard } from "./ui/surah-info-card"; 

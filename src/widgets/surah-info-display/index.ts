@@ -1,0 +1,1 @@
+export { SurahInfoDisplay } from "./ui/surah-info-display"; 

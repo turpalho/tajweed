@@ -1,0 +1,1 @@
+export { SurahStudyMaterials } from "./ui/surah-study-materials"; 
